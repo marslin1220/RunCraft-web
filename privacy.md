@@ -22,7 +22,6 @@ training methodology. It is published by Cheng Lung Lin as a personal
 project.
 
 - **Contact:** [marslin@gmail.com](mailto:marslin@gmail.com)
-- **Source code:** [github.com/marslin1220/RunCraft](https://github.com/marslin1220/RunCraft)
 
 ---
 
