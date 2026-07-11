@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RunCraft — VDOT training plans for runners</title>
+<meta name="description" content="RunCraft turns the proven VDOT methodology into a personal running coach on your iPhone and Apple Watch. Personalized marathon plans, watch-guided pacing, and insights that turn every run into progress.">
+<meta property="og:title" content="RunCraft — VDOT training plans for runners">
+<meta property="og:description" content="A personal running coach on iPhone and Apple Watch, built on the VDOT methodology.">
+<meta property="og:image" content="https://marslin1220.github.io/RunCraft-web/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.png">
+<link rel="alternate" hreflang="en" href="https://marslin1220.github.io/RunCraft-web/">
+<link rel="alternate" hreflang="zh-Hant" href="https://marslin1220.github.io/RunCraft-web/zh-Hant/">
+<link rel="alternate" hreflang="ja" href="https://marslin1220.github.io/RunCraft-web/ja/">
+<link rel="alternate" hreflang="ko" href="https://marslin1220.github.io/RunCraft-web/ko/">
+<link rel="alternate" hreflang="x-default" href="https://marslin1220.github.io/RunCraft-web/">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem("rc-lang"); } catch (e) {}
+  if (saved === "en") return;
+  var target = null;
+  if (saved && saved !== "en") {
+    target = saved;
+  } else if (!saved) {
+    var nl = (navigator.language || "").toLowerCase();
+    if (nl.indexOf("zh") === 0) target = "zh-Hant";
+    else if (nl.indexOf("ja") === 0) target = "ja";
+    else if (nl.indexOf("ko") === 0) target = "ko";
+  }
+  if (target) location.replace(target + "/" + location.hash);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a class="brand" href="#"><img src="icon.png" alt="RunCraft icon" width="32" height="32">RunCraft</a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#watch">Apple Watch</a>
+      <a href="#support">Support</a>
+      <a href="privacy/">Privacy</a>
+      <span class="lang">
+        <a class="on" href="./" data-lang="en">EN</a>
+        <a href="zh-Hant/" data-lang="zh-Hant">繁中</a>
+        <a href="ja/" data-lang="ja">日本語</a>
+        <a href="ko/" data-lang="ko">한국어</a>
+      </span>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Know exactly<br>what to run <em>today</em></h1>
+    <p class="sub">RunCraft turns the proven VDOT methodology into a personal running coach on your iPhone and Apple Watch — a periodized plan, watch-guided pacing, and insights that turn every run into progress.</p>
+    <div class="cta">
+      <a class="btn-notify" href="mailto:marslin@gmail.com?subject=Notify%20me%20%E2%80%94%20RunCraft">Get notified when it launches</a>
+      <span class="badge-note">iPhone &amp; Apple Watch · Coming soon</span>
+    </div>
+    <div class="shots">
+      <img class="phone" src="assets/plan.png" alt="Weekly training plan with today's interval session" width="600" height="1304">
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="kicker">Why RunCraft</div>
+    <h2>Built on VDOT, not vibes</h2>
+    <p class="lede">Tell it your race and a recent result. RunCraft derives your fitness score and builds every session around your real paces — easy runs kept genuinely easy, quality sessions with precise targets.</p>
+
+    <!-- Row 1: Personalized pace zones -->
+    <div class="row">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="9"/>
+            <path d="M11 6v5l3 2"/>
+          </svg>
+        </div>
+        <h3>Personalized pace zones</h3>
+        <p>Your VDOT score, derived from a real race, calculates every training zone precisely.</p>
+        <ul>
+          <li>Easy, Marathon, Threshold, Interval and Repetition paces</li>
+          <li>Race predictions from 5K to marathon</li>
+          <li>Zones update automatically as your fitness improves</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="assets/insights.png" alt="VDOT insights: pace zones and race predictions" width="600" height="1304" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Row 2: A plan that knows today -->
+    <div class="row rev">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="16" height="16" rx="3"/>
+            <path d="M3 9h16M8 2v4M14 2v4"/>
+          </svg>
+        </div>
+        <h3>A plan that knows today</h3>
+        <p>A periodized 16-week schedule toward race day, built automatically from your VDOT.</p>
+        <ul>
+          <li>Open the app — today's session is right there</li>
+          <li>Lock Screen and Home Screen widgets keep it one glance away</li>
+          <li>Adjusts recovery days when your readiness dips</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="assets/plan.png" alt="Weekly training plan with today's interval session" width="600" height="1304" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Row 3: Build your own workouts -->
+    <div class="row">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h14M4 11h10M4 16h6"/>
+            <circle cx="17" cy="15" r="3"/>
+            <path d="M17 13v2l1 1"/>
+          </svg>
+        </div>
+        <h3>Build your own workouts</h3>
+        <p>Design interval sessions with the drag-and-drop editor and send them to Apple Watch with one tap.</p>
+        <ul>
+          <li>Warmup, work, recovery and cooldown blocks</li>
+          <li>Distance or time-based goals per step</li>
+          <li>Pace alerts configured per interval</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="assets/editor.png" alt="Custom interval workout editor" width="600" height="1304" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Row 4: Training-load guard -->
+    <div class="row rev">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 3L3 8v6c0 4 8 7 8 7s8-3 8-7V8L11 3z"/>
+          </svg>
+        </div>
+        <h3>Training-load guard</h3>
+        <p>An acute-to-chronic load ratio watches your ramp-up so you don't overreach.</p>
+        <ul>
+          <li>Weekly load trend shown as a clear banner</li>
+          <li>Warns before you spike into injury risk</li>
+          <li>80/20 easy-run check keeps recovery days honest</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="assets/loadbanner.png" alt="Training load banner showing weekly ramp-up" width="600" height="1303" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Row 5: Every run, understood -->
+    <div class="row">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 17 8 12 12 15 17 8 21 11"/>
+            <path d="M3 20h18"/>
+          </svg>
+        </div>
+        <h3>Every run, understood</h3>
+        <p>Detailed post-run analysis that turns splits data into actionable insight.</p>
+        <ul>
+          <li>Per-kilometre splits with pace and heart-rate</li>
+          <li>Effort rating vs your planned session</li>
+          <li>VDOT progress over time</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="assets/detail.png" alt="Run detail with per-kilometre splits" width="600" height="1303" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Row 6: Made to be shared -->
+    <div class="row rev">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="16" height="16" rx="3"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+        </div>
+        <h3>Made to be shared</h3>
+        <p>Turn any run into a story-format card — clean stats over your own photo, sized for Instagram.</p>
+        <ul>
+          <li>Pick a photo from your library</li>
+          <li>Stats overlaid automatically</li>
+          <li>Preview before you post</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="assets/share.png" alt="Share card preview over a sunset photo" width="600" height="1304" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="watch">
+    <div class="kicker">Apple Watch</div>
+    <h2>A pacing coach on your wrist</h2>
+
+    <div class="row">
+      <div class="copy">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="3" width="8" height="18" rx="3"/>
+            <path d="M7 7H5a2 2 0 00-2 2v4a2 2 0 002 2h2M15 7h2a2 2 0 012 2v4a2 2 0 01-2 2h-2"/>
+          </svg>
+        </div>
+        <h3>Run the session, not the math</h3>
+        <p>Start today's workout straight from the watch. During the run, RunCraft guides every step:</p>
+        <ul>
+          <li>Live pace target with on-target feedback</li>
+          <li>Heart-rate zone display with haptic alerts when you drift</li>
+          <li>Interval progress — rep count, distance remaining</li>
+          <li>A complication that shows today's session on your watch face</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="watchshot" src="assets/watch-pace.png" alt="Apple Watch pace target screen showing on-target pace" width="300" height="357" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="kicker">Support</div>
+    <h2>Questions or feedback?</h2>
+    <div class="support-card">
+      <div>
+        <h3>Email</h3>
+        <p><a href="mailto:marslin@gmail.com">marslin@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Bug reports &amp; requests</h3>
+        <p><a href="https://github.com/marslin1220/RunCraft-web/issues">Open an issue on GitHub</a></p>
+      </div>
+      <div>
+        <h3>Privacy</h3>
+        <p>Your health data stays yours — computed on device, synced privately via iCloud. <a href="privacy/">Read the policy</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Cheng Lung Lin · RunCraft is an indie iOS app.</span>
+    <div class="links">
+      <a href="https://github.com/marslin1220/RunCraft-web">GitHub</a>
+      <a href="privacy/">Privacy Policy</a>
+      <a href="#support">Support</a>
+    </div>
+  </footer>
+
+</div>
+<script>
+document.querySelectorAll("a[data-lang]").forEach(function (a) {
+  a.addEventListener("click", function () {
+    try { localStorage.setItem("rc-lang", a.dataset.lang); } catch (e) {}
+  });
+});
+</script>
+</body>
+</html>
