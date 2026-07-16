@@ -21,7 +21,7 @@ RunCraft is an iOS app for serious runners following Jack Daniels' VDOT
 training methodology. It is published by Cheng Lung Lin as a personal
 project.
 
-- **Contact:** [marslin@gmail.com](mailto:marslin@gmail.com)
+- **Contact:** [support@marstudio.app](mailto:support@marstudio.app)
 
 ---
 
@@ -123,7 +123,7 @@ changed.
 
 ## Contact
 
-Questions, concerns, or requests: [marslin@gmail.com](mailto:marslin@gmail.com).
+Questions, concerns, or requests: [support@marstudio.app](mailto:support@marstudio.app).
 
 ---
 
