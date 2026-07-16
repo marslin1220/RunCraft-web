@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RunCraft プライバシーポリシー</title>
+<meta name="description" content="RunCraft はユーザーデータを収集しません。あなたのデータは iPhone 内に留まります。">
+<link rel="icon" href="../icon.png">
+<link rel="alternate" hreflang="en"      href="https://marslin1220.github.io/RunCraft-web/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://marslin1220.github.io/RunCraft-web/zh-Hant/privacy.html">
+<link rel="alternate" hreflang="ja"      href="https://marslin1220.github.io/RunCraft-web/ja/privacy.html">
+<link rel="alternate" hreflang="ko"      href="https://marslin1220.github.io/RunCraft-web/ko/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://marslin1220.github.io/RunCraft-web/privacy/">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.prose { max-width: 720px; margin: 48px auto 80px; }
+.prose h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
+.prose .meta { color: var(--text-faint); font-size: 14px; margin-bottom: 40px; }
+.prose h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--accent); }
+.prose p { color: var(--text-dim); margin-bottom: 14px; }
+.prose ul { color: var(--text-dim); padding-left: 20px; margin-bottom: 14px; }
+.prose ul li { margin-bottom: 6px; }
+.prose hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+.prose a { color: var(--accent); }
+.prose em { font-style: normal; color: var(--text); font-weight: 600; }
+.prose .no-list { list-style: none; padding-left: 0; }
+.prose .no-list li { padding: 4px 0; }
+footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a class="brand" href="../"><img src="../icon.png" alt="RunCraft アイコン" width="32" height="32">RunCraft</a>
+    <div class="links">
+      <a href="./">機能</a>
+      <a href="#" style="color:var(--accent);font-weight:700;">プライバシー</a>
+      <span class="lang">
+        <a href="../privacy/" data-lang="en">EN</a>
+        <a href="../zh-Hant/privacy.html" data-lang="zh-Hant">繁中</a>
+        <a class="on" href="./privacy.html" data-lang="ja">日本語</a>
+        <a href="../ko/privacy.html" data-lang="ko">한국어</a>
+      </span>
+    </div>
+  </nav>
+
+  <div class="prose">
+    <h1>RunCraft プライバシーポリシー</h1>
+    <p class="meta">発効日：2026年6月11日 &nbsp;·&nbsp; 最終更新：2026年6月11日</p>
+
+    <p>本プライバシーポリシーは、RunCraft アプリ（「RunCraft」「私たち」）があなたのデータをどのように扱うかを説明しています。簡単に言えば：<em>あなたのデータは iPhone の外に出ることはありません</em>。サーバーも、アカウントも、アナリティクスも、サードパーティトラッキングも一切ありません。</p>
+
+    <hr>
+
+    <h2>私たちについて</h2>
+    <p>RunCraft は Jack Daniels の VDOT トレーニング手法を採用した iOS ランニングアプリで、Cheng Lung Lin が個人プロジェクトとして公開しています。</p>
+    <ul>
+      <li>お問い合わせ：<a href="mailto:marslin@gmail.com">marslin@gmail.com</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>RunCraft が読み取るデータ</h2>
+    <p>権限を付与した場合、RunCraft は iPhone の <em>Apple ヘルス（HealthKit）</em> から以下のデータを読み取ります。</p>
+    <ul>
+      <li><em>ランニングワークアウト</em>——距離・時間・開始時刻。5K / 10K / ハーフマラソンの自己ベストを検出し、初期 VDOT を算出するために使用します。</li>
+      <li><em>心拍変動（HRV）</em>——直近7日間の平均値。「今日の回復が低下しています」バナーに使用し、ハードセッションをイージーランに変更するよう提案します。</li>
+      <li><em>睡眠</em>——昨夜の合計睡眠時間。HRV と同じ目的で使用します。</li>
+      <li><em>VO₂max</em>——直近180日間のサンプル。Insights タブの VDOT トレンドに表示します。</li>
+    </ul>
+    <p>いずれも<em>読み取り専用</em>です。RunCraft は HealthKit に<em>何も書き込みません</em>。</p>
+    <p>アクセスはいつでも取り消せます：<em>iOS 設定 → プライバシーとセキュリティ → ヘルス → RunCraft</em>。取り消し後、影響を受ける機能（VDOT 検出・回復バナー・VO₂max グラフ）は静かに停止しますが、それ以外の機能は引き続き利用できます。</p>
+
+    <hr>
+
+    <h2>RunCraft が保存するデータ</h2>
+    <p>RunCraft が生成するすべてのデータは、<em>iPhone のアプリサンドボックス内</em>のプライベート SQLite データベースにローカル保存されます。</p>
+    <ul>
+      <li>レース目標（名前・日付・距離）</li>
+      <li>生成された16週間のトレーニングプラン</li>
+      <li>作成したワークアウトと保存したテンプレート</li>
+      <li>完了したランの記録（音声入力または HealthKit 同期）</li>
+      <li>VDOT 履歴（変更ごとに1行）</li>
+      <li>設定（ペース単位・リマインダー時刻など）</li>
+    </ul>
+    <p>このデータベースが <em>iPhone の外に出ることは一切ありません</em>。RunCraft にはサーバーがなく、アプリデータのためのネットワークリクエストも行いません。</p>
+    <p>データを削除するには：iPhone から RunCraft を削除してください。</p>
+
+    <hr>
+
+    <h2>Apple フレームワークの取り扱い</h2>
+    <p>一部の機能は Apple 独自のシステムに処理を委ねており、それらには Apple のプライバシーポリシーが適用されます。</p>
+    <ul>
+      <li><em>WorkoutKit</em>——「ワークアウトを開始」をタップすると、ワークアウト構造が Apple の <code>WorkoutScheduler</code> を通じてペアリングした Apple Watch に送信されます。<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a>が適用されます。</li>
+      <li><em>App Intents／Siri</em>——Siri に「今日のトレーニングは？」と尋ねた場合、応答はローカルで生成されますが、音声認識と呼び出しは Apple が処理します。<a href="https://www.apple.com/legal/privacy/data/en/siri/" target="_blank" rel="noopener">Apple Siri プライバシーポリシー</a>が適用されます。</li>
+      <li><em>ローカル通知</em>——毎日のトレーニングリマインダーは <code>UNUserNotificationCenter</code> によってローカルでスケジュールされ、配信されます。通知データは iPhone の外に出ません。</li>
+    </ul>
+    <p>RunCraft は Siri の音声認識テキストや Apple ID を受け取ることはありません。</p>
+
+    <hr>
+
+    <h2>収集しないデータ</h2>
+    <ul class="no-list">
+      <li>❌ アカウント・サインアップ・メールアドレスの収集なし</li>
+      <li>❌ アナリティクスなし（Firebase・Mixpanel・Amplitude 不使用）</li>
+      <li>❌ クラッシュレポートサービスなし（Sentry・Crashlytics 不使用）</li>
+      <li>❌ 広告 SDK なし</li>
+      <li>❌ サードパーティトラッカーなし</li>
+      <li>❌ HealthKit ワークアウトに含まれる以外の位置情報なし</li>
+      <li>❌ クラウド同期なし（v2.0 で Apple iCloud を予定。エンドツーエンドでプライベートを維持）</li>
+    </ul>
+
+    <hr>
+
+    <h2>お子様について</h2>
+    <p>RunCraft の App Store レーティングは <em>4+</em> で、不適切なコンテンツは含まれていません。<em>ユーザーを識別するデータを一切収集しない</em>ため、13歳未満のお子様のデータを意図的に収集することもありません。</p>
+
+    <hr>
+
+    <h2>ポリシーの変更</h2>
+    <p>RunCraft のデータ取り扱い方法が変わる場合——iCloud 同期・Pro サブスクリプション・アナリティクスの将来的な追加を含む——このページを更新し、上部の発効日を変更します。重要な変更は、アプリ内の設定 → About セクションで通知しますので、ポリシーを再読しなくても変更内容を把握できます。</p>
+
+    <hr>
+
+    <h2>お問い合わせ</h2>
+    <p>ご質問・ご懸念・ご要望はこちら：<a href="mailto:marslin@gmail.com">marslin@gmail.com</a></p>
+
+    <hr>
+    <p style="color:var(--text-faint);font-size:13px;">最終確認：2026年6月11日</p>
+  </div>
+
+</div>
+<footer>© 2026 Cheng Lung Lin · <a href="../privacy/">English</a> · <a href="../zh-Hant/privacy.html">繁中</a> · <a href="../ko/privacy.html">한국어</a></footer>
+</body>
+</html>
