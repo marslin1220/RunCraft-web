@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RunCraft 隐私政策</title>
+<meta name="description" content="RunCraft 不收集任何用户数据。你的数据只留在 iPhone 上。">
+<link rel="icon" href="../icon.png">
+<link rel="alternate" hreflang="en"      href="https://runcraft.marstudio.app/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://runcraft.marstudio.app/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="ja"      href="https://runcraft.marstudio.app/ja/privacy.html">
+<link rel="alternate" hreflang="ko"      href="https://runcraft.marstudio.app/ko/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://runcraft.marstudio.app/privacy/">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.prose { max-width: 720px; margin: 48px auto 80px; }
+.prose h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
+.prose .meta { color: var(--text-faint); font-size: 14px; margin-bottom: 40px; }
+.prose h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--accent); }
+.prose p { color: var(--text-dim); margin-bottom: 14px; }
+.prose ul { color: var(--text-dim); padding-left: 20px; margin-bottom: 14px; }
+.prose ul li { margin-bottom: 6px; }
+.prose hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+.prose a { color: var(--accent); }
+.prose em { font-style: normal; color: var(--text); font-weight: 600; }
+.prose .no-list { list-style: none; padding-left: 0; }
+.prose .no-list li { padding: 4px 0; }
+footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a class="brand" href="../"><img src="../icon.png" alt="RunCraft 图标" width="32" height="32">RunCraft</a>
+    <div class="links">
+      <a href="./">功能</a>
+      <a href="#" style="color:var(--accent);font-weight:700;">隐私</a>
+      <span class="lang">
+        <a href="../privacy/" data-lang="en">EN</a>
+        <a href="../zh-Hant/privacy.html" data-lang="zh-Hant">繁中</a>
+        <a class="on" href="./privacy.html" data-lang="zh-Hans">简中</a>
+        <a href="../ja/privacy.html" data-lang="ja">日本語</a>
+        <a href="../ko/privacy.html" data-lang="ko">한국어</a>
+      </span>
+    </div>
+  </nav>
+
+  <div class="prose">
+    <h1>RunCraft 隐私政策</h1>
+    <p class="meta">生效日期：2026 年 6 月 11 日 &nbsp;·&nbsp; 最后更新：2026 年 6 月 11 日</p>
+
+    <p>本隐私政策说明 RunCraft App（“RunCraft”、“我们”）如何处理你的数据。简而言之：<em>你的数据永远不会离开你的 iPhone</em>。没有服务器、没有账号、没有数据分析，也没有第三方追踪。</p>
+
+    <hr>
+
+    <h2>关于我们</h2>
+    <p>RunCraft 是一款遵循 Jack Daniels VDOT 训练方法论的 iOS 跑步 App，由 Cheng Lung Lin 以个人项目形式发行。</p>
+    <ul>
+      <li>联系邮箱：<a href="mailto:support@marstudio.app">support@marstudio.app</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>RunCraft 读取哪些数据</h2>
+    <p>当你授予权限后，RunCraft 会从你 iPhone 的 <em>Apple 健康（HealthKit）</em> 读取以下数据：</p>
+    <ul>
+      <li><em>跑步记录</em>——距离、时长、开始时间。用于检测你的 5K／10K／半程马拉松最佳成绩，并推算初始 VDOT。</li>
+      <li><em>心率变异度（HRV）</em>——最近 7 天平均值。供“今日恢复偏低”提示使用，建议将高强度课表换为轻松跑。</li>
+      <li><em>睡眠</em>——昨晚的总睡眠时长。用途同 HRV。</li>
+      <li><em>VO₂max</em>——最近 180 天的样本，显示于 Insights 页面的 VDOT 趋势图。</li>
+    </ul>
+    <p>以上均为<em>只读</em>。RunCraft <em>不会</em>将任何数据写回 HealthKit。</p>
+    <p>你可以随时撤销授权：<em>iOS 设置 → 隐私与安全性 → 健康 → RunCraft</em>。撤销后，受影响的功能（VDOT 检测、恢复提示、VO₂max 图表）将静默停止，其余功能不受影响。</p>
+
+    <hr>
+
+    <h2>RunCraft 存储哪些数据</h2>
+    <p>RunCraft 产生的所有内容均<em>本机存储</em>在你 iPhone 的应用程序沙盒内的私有 SQLite 数据库中：</p>
+    <ul>
+      <li>你的比赛目标（名称、日期、距离）</li>
+      <li>生成的 16 周训练计划</li>
+      <li>你创建的课表与保存的模板</li>
+      <li>完成的跑步记录（语音记录或 HealthKit 同步）</li>
+      <li>VDOT 历史记录（每次变更一条）</li>
+      <li>你的偏好设置（配速单位、提醒时间等）</li>
+    </ul>
+    <p>此数据库<em>永远不会离开你的 iPhone</em>。RunCraft 没有服务器，也不会为 App 数据发出任何网络请求。</p>
+    <p>如需删除数据：从 iPhone 移除 RunCraft 即可。</p>
+
+    <hr>
+
+    <h2>Apple 系统框架的处理方式</h2>
+    <p>部分功能会移交给 Apple 自身的系统，Apple 的隐私政策适用于这些情况：</p>
+    <ul>
+      <li><em>WorkoutKit</em>——点选“开始训练”时，课表结构会通过 Apple 的 <code>WorkoutScheduler</code> 发送至配对的 Apple Watch。适用 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 隐私政策</a>。</li>
+      <li><em>App Intents／Siri</em>——当你使用 Siri 询问“今天的训练是什么？”时，语音转录与调用由 Apple 处理。适用 <a href="https://www.apple.com/legal/privacy/data/en/siri/" target="_blank" rel="noopener">Apple Siri 隐私政策</a>。</li>
+      <li><em>本机通知</em>——每日训练提醒由 <code>UNUserNotificationCenter</code> 在本机排程并传递，通知数据不会离开你的 iPhone。</li>
+    </ul>
+    <p>RunCraft 不会看到你的 Siri 语音转录或 Apple ID。</p>
+
+    <hr>
+
+    <h2>我们不收集的数据</h2>
+    <ul class="no-list">
+      <li>❌ 无账号、无注册、不收集电子邮件</li>
+      <li>❌ 无数据分析（不使用 Firebase、Mixpanel、Amplitude）</li>
+      <li>❌ 无崩溃回报服务（不使用 Sentry、Crashlytics）</li>
+      <li>❌ 无广告 SDK</li>
+      <li>❌ 无第三方追踪器</li>
+      <li>❌ 不收集位置数据（HealthKit 跑步记录中已含的除外）</li>
+      <li>❌ 无云端同步（规划于 v2.0 使用 Apple iCloud，届时仍端对端私密）</li>
+    </ul>
+
+    <hr>
+
+    <h2>儿童</h2>
+    <p>RunCraft 在 App Store 评级为 <em>4+</em>，不含任何不当内容。由于我们<em>完全不收集任何用户识别数据</em>，因此亦不会刻意收集 13 岁以下儿童的数据。</p>
+
+    <hr>
+
+    <h2>政策变更</h2>
+    <p>若 RunCraft 对数据处理方式有所调整——包括日后新增 iCloud 同步、Pro 订阅或数据分析——本页面将更新，顶部的生效日期也会随之变更。重大变更将通过 App 内的设置 → 关于区域通知，让你无需重新阅读政策即可掌握最新信息。</p>
+
+    <hr>
+
+    <h2>联系我们</h2>
+    <p>如有问题、疑虑或请求，请联系：<a href="mailto:support@marstudio.app">support@marstudio.app</a></p>
+
+    <hr>
+    <p style="color:var(--text-faint);font-size:13px;">最后审阅：2026 年 6 月 11 日</p>
+  </div>
+
+</div>
+<footer>© 2026 Cheng Lung Lin · <a href="../privacy/">English</a> · <a href="../zh-Hant/privacy.html">繁中</a> · <a href="../ja/privacy.html">日本語</a> · <a href="../ko/privacy.html">한국어</a></footer>
+</body>
+</html>
