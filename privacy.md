@@ -7,11 +7,12 @@ permalink: /privacy/
 # RunCraft Privacy Policy
 
 **Effective date:** 11 June 2026
-**Last updated:** 11 June 2026
+**Last updated:** 25 July 2026
 
 This Privacy Policy describes how the RunCraft app ("RunCraft", "we", "us")
-handles your data. The short version: **your data never leaves your iPhone**.
-There are no servers, no accounts, no analytics, and no third-party tracking.
+handles your data. The short version: **your data stays yours** — it lives on
+your devices and syncs only through your own private iCloud. RunCraft has no
+servers of its own, no accounts, no analytics, and no third-party tracking.
 
 ---
 
@@ -60,10 +61,15 @@ private SQLite database inside the app's sandbox:
 - VDOT history (one row per change)
 - Your preferences (pace unit, reminder time, etc.)
 
-This database **never leaves your iPhone**. RunCraft has no servers and
-performs no network requests for app data.
+This database syncs across your own Apple devices through your **private
+iCloud account** (Apple's CloudKit private database), so your plan and history
+follow you from one iPhone to the next. That sync stays entirely within your
+iCloud — **RunCraft has no servers of its own and never receives, sees, or
+stores your data**. You can turn the sync off in **iOS Settings → [your name]
+→ iCloud → Apps Using iCloud → RunCraft**.
 
-To delete the data: delete RunCraft from your iPhone.
+To delete the data: delete RunCraft from your iPhone. To remove synced copies,
+also turn off RunCraft in iCloud from the same Settings screen.
 
 ---
 
@@ -97,8 +103,8 @@ To be explicit:
 - ❌ No advertising SDKs
 - ❌ No third-party trackers
 - ❌ No location data beyond what HealthKit workouts already contain
-- ❌ No cloud sync (planned for v2.0; will use Apple's iCloud and remain
-  end-to-end private)
+- ❌ No third-party cloud — the only sync is through your own private Apple
+  iCloud, never our servers (we have none)
 
 ---
 
@@ -112,9 +118,9 @@ content. We do not knowingly collect data from children under 13 because
 
 ## Changes to this policy
 
-If we change how RunCraft handles your data — including any future
-addition of iCloud sync, a Pro subscription tier, or analytics — this
-page will be updated and the effective date at the top will change.
+If we change how RunCraft handles your data — including a future Pro
+subscription tier or any change to what is synced — this page will be
+updated and the effective date at the top will change.
 Material changes will be surfaced in-app via the Settings → About
 section so you don't have to re-read the policy to know something has
 changed.
@@ -127,4 +133,4 @@ Questions, concerns, or requests: [support@marstudio.app](mailto:support@marstud
 
 ---
 
-*Last reviewed: 11 June 2026*
+*Last reviewed: 25 July 2026*
