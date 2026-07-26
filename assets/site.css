@@ -263,11 +263,7 @@ h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.015
 .asset .preview.light { background: #f4f6fa; }
 .asset .preview img { max-width: 100%; height: auto; display: block; }
 .asset .preview .iconpreview { width: 104px; height: 104px; border-radius: 23px; }
-.asset .preview.placeholder {
-  color: var(--text-faint);
-  font-size: 14px;
-  border-bottom: 1px dashed var(--border);
-}
+.asset .preview .founderpreview { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; }
 .asset figcaption {
   padding: 18px 22px;
   display: flex; flex-direction: column; gap: 3px;
