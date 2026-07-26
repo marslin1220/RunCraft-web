@@ -15,29 +15,121 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "PingFang TC", "Hiragino Sans", "Apple SD Gothic Neo", sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
-  overflow-x: hidden;
 }
+/* The hero glow is wider than the viewport by design. `hidden` on <body>
+   alone still lets mobile Safari pan sideways into the blank overhang, so
+   both elements opt out — `clip` where supported, since it doesn't turn the
+   root into a scroll container (which breaks position: sticky). */
+html, body { overflow-x: hidden; }
+@supports (overflow: clip) {
+  html, body { overflow-x: clip; }
+}
+/* Body overflow only propagates to the viewport while <html> is `visible`,
+   which the rules above rule out — so the drawer's scroll lock sets both. */
+html.noscroll, body.noscroll { overflow: hidden; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
 /* Nav */
 nav {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 0; flex-wrap: wrap; gap: 12px;
+  display: flex; align-items: center; gap: 20px;
+  padding: 18px 0;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; color: var(--text); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; color: var(--text); flex: none; }
 .brand img { width: 32px; height: 32px; border-radius: 8px; }
 .brand:hover { text-decoration: none; }
-nav .links { display: flex; gap: 24px; font-size: 14px; align-items: center; }
-nav .links a { color: var(--text-dim); }
-nav .links a:hover { color: var(--text); text-decoration: none; }
+nav .navlinks { display: flex; gap: 26px; font-size: 14px; align-items: center; margin-left: auto; }
+nav .navlinks a { color: var(--text-dim); white-space: nowrap; }
+nav .navlinks a:hover { color: var(--text); text-decoration: none; }
+nav .navlinks a.on { color: var(--accent); font-weight: 700; }
 
-/* Language switcher */
-.lang { display: flex; gap: 12px; font-size: 13px; align-items: center; border-left: 1px solid var(--border); padding-left: 20px; }
-.lang a { color: var(--text-faint); }
-.lang a:hover { color: var(--text); text-decoration: none; }
-.lang a.on { color: var(--accent); font-weight: 700; }
+/* Icon buttons: globe (language) and, on narrow screens, the drawer toggle */
+.navtools { position: relative; display: flex; align-items: center; gap: 8px; flex: none; margin-left: auto; }
+nav .navlinks + .navtools { margin-left: 0; }
+.iconbtn {
+  width: 38px; height: 38px; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 11px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.iconbtn:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.2); }
+.iconbtn[aria-expanded="true"] { color: var(--accent); border-color: rgba(0, 190, 240, 0.42); }
+.iconbtn svg { width: 19px; height: 19px; }
+.menubtn { display: none; }
+
+.langmenu {
+  position: absolute; top: calc(100% + 10px); right: 0;
+  z-index: 70;
+  min-width: 178px;
+  padding: 6px;
+  display: flex; flex-direction: column;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #0b0d16;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.62);
+}
+.langmenu[hidden] { display: none; }
+.langmenu a {
+  padding: 9px 12px;
+  border-radius: 9px;
+  font-size: 14.5px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.langmenu a:hover { background: rgba(255, 255, 255, 0.06); color: var(--text); text-decoration: none; }
+.langmenu a.on { color: var(--accent); font-weight: 700; }
+.langmenu a.on::after { content: "✓"; float: right; margin-left: 18px; }
+
+/* Mobile drawer — cloned from .navlinks by nav.js */
+.drawer {
+  position: fixed; inset: 0; z-index: 80;
+  background: rgba(3, 4, 9, 0.62);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s;
+}
+.drawer.open { opacity: 1; pointer-events: auto; }
+.drawerpanel {
+  position: absolute; top: 0; right: 0; bottom: 0;
+  width: min(300px, 80vw);
+  padding: 78px 24px 24px;
+  background: #0b0d16;
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.24s ease;
+}
+.drawer.open .drawerpanel { transform: none; }
+.drawerclose {
+  position: absolute; top: 20px; right: 20px;
+  width: 38px; height: 38px; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--bg-card);
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.drawerclose:hover { color: var(--text); }
+.drawerclose svg { width: 18px; height: 18px; }
+.drawer .navlinks {
+  display: flex; flex-direction: column; align-items: stretch;
+  gap: 0; margin: 0; font-size: 16px;
+}
+.drawer .navlinks a {
+  padding: 14px 2px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 860px) {
+  nav > .navlinks { display: none; }
+  .menubtn { display: inline-flex; }
+}
 
 /* Hero */
 .hero {
@@ -47,7 +139,9 @@ nav .links a:hover { color: var(--text); text-decoration: none; }
 }
 .hero::before {
   content: "";
-  position: absolute; inset: -200px -400px auto;
+  position: absolute;
+  top: -200px; left: 50%; transform: translateX(-50%);
+  width: min(1480px, 100vw);
   height: 720px;
   background:
     radial-gradient(ellipse 560px 420px at 38% 30%, rgba(0, 190, 240, 0.17), transparent 70%),
@@ -226,20 +320,55 @@ h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.015
 .presshero { padding-bottom: 8px; }
 .presshero h1 { font-size: clamp(34px, 5.5vw, 54px); }
 
-/* Fast facts */
-.facts {
+/* Fast facts — an identity card, not a spreadsheet */
+.factsheet {
   margin-top: 32px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--border);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse 460px 240px at 8% 0%, rgba(0, 190, 240, 0.11), transparent 72%),
+    var(--bg-card);
   overflow: hidden;
 }
-.facts > div { background: var(--bg); padding: 18px 22px; }
-.facts dt { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); }
-.facts dd { margin-top: 5px; font-size: 15.5px; }
+.factsheet-head {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+}
+.factsheet-head img { width: 54px; height: 54px; border-radius: 13px; flex: none; }
+.factsheet-id { flex: 1 1 200px; min-width: 0; }
+.factsheet-id strong { display: block; font-size: 20px; font-weight: 800; letter-spacing: -0.015em; }
+.factsheet-id span { font-size: 14px; color: var(--text-dim); }
+.pill {
+  flex: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px; font-weight: 700;
+  color: var(--accent);
+  background: rgba(0, 190, 240, 0.13);
+  border: 1px solid rgba(0, 190, 240, 0.3);
+}
+.facts {
+  padding: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px 44px;
+}
+.facts .wide { grid-column: 1 / -1; }
+.facts dt {
+  font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--text-faint);
+}
+.facts dd { margin-top: 7px; font-size: 16px; letter-spacing: -0.01em; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips span {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 13.5px;
+  color: var(--text-dim);
+}
 
 /* Downloadable asset cards */
 .assetgrid {
@@ -324,8 +453,10 @@ h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.015
 .swatch span { font-size: 13px; color: var(--text-faint); }
 
 @media (max-width: 760px) {
-  .facts, .assetgrid, .swatches { grid-template-columns: 1fr; }
+  .assetgrid, .swatches { grid-template-columns: 1fr; }
   .shotgrid { grid-template-columns: repeat(2, 1fr); }
+  .facts { grid-template-columns: 1fr; gap: 22px; padding: 24px 22px; }
+  .factsheet-head { padding: 22px; }
 }
 
 footer {
