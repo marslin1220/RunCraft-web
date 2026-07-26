@@ -177,16 +177,17 @@ nav .navlinks + .navtools { margin-left: 0; }
   transition: opacity 0.15s;
 }
 .btn-notify:hover { opacity: 0.88; text-decoration: none; }
-.btn-soon {
+.btn-store {
   display: inline-flex; align-items: center; gap: 10px;
   padding: 12px 26px;
   border-radius: 14px;
-  border: 1px solid var(--border);
-  background: var(--bg-card);
-  color: var(--text-dim);
+  background: var(--accent);
+  color: #04121a;
   font-weight: 700;
   font-size: 16px;
+  transition: opacity 0.15s;
 }
+.btn-store:hover { opacity: 0.88; text-decoration: none; }
 .badge-note { font-size: 13px; color: var(--text-faint); }
 .hero .shots {
   margin-top: 56px;
