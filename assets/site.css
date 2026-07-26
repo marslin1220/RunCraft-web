@@ -156,6 +156,59 @@ h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.015
   .row .media { order: -1; }
 }
 
+/* Situation framing — the runner's words above the feature's answer */
+.situation {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+/* Pain-point grid: the "sound familiar?" hook, no imagery */
+.painlist {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.pain {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 24px;
+}
+.pain h3 { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.35; }
+.pain p { margin-top: 10px; font-size: 15px; color: var(--text-dim); }
+
+/* Two situations side by side where no distinct screenshot exists */
+.duo {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.duo.three { grid-template-columns: repeat(3, 1fr); }
+.duo.three .duocard { padding: 26px 24px; }
+.duo.three .duocard h3 { font-size: 18px; }
+.duocard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 30px 28px;
+}
+.duocard h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.01em; }
+.duocard p { margin-top: 10px; color: var(--text-dim); font-size: 15.5px; }
+.duocard ul { margin: 14px 0 0 20px; color: var(--text-dim); font-size: 14.5px; line-height: 1.7; }
+.duocard li { margin-top: 4px; }
+
+@media (max-width: 980px) {
+  .duo.three { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .painlist, .duo, .duo.three { grid-template-columns: 1fr; }
+}
+
 /* Support */
 .support-card {
   margin-top: 36px;
@@ -165,9 +218,119 @@ h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.015
   padding: 32px;
   display: flex; gap: 40px; flex-wrap: wrap;
 }
-.support-card div { min-width: 220px; }
+.support-card div { flex: 1 1 220px; min-width: 220px; }
 .support-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
 .support-card p { font-size: 14.5px; color: var(--text-dim); }
+
+/* ── Press kit ─────────────────────────────────────────────── */
+.presshero { padding-bottom: 8px; }
+.presshero h1 { font-size: clamp(34px, 5.5vw, 54px); }
+
+/* Fast facts */
+.facts {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.facts > div { background: var(--bg); padding: 18px 22px; }
+.facts dt { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); }
+.facts dd { margin-top: 5px; font-size: 15.5px; }
+
+/* Downloadable asset cards */
+.assetgrid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.asset {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--bg-card);
+}
+.asset .preview {
+  padding: 40px 28px;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 168px;
+}
+.asset .preview.dark { background: #05060c; }
+.asset .preview.light { background: #f4f6fa; }
+.asset .preview img { max-width: 100%; height: auto; display: block; }
+.asset .preview .iconpreview { width: 104px; height: 104px; border-radius: 23px; }
+.asset .preview.placeholder {
+  color: var(--text-faint);
+  font-size: 14px;
+  border-bottom: 1px dashed var(--border);
+}
+.asset figcaption {
+  padding: 18px 22px;
+  display: flex; flex-direction: column; gap: 3px;
+  border-top: 1px solid var(--border);
+}
+.asset figcaption strong { font-size: 15px; }
+.asset figcaption span { font-size: 13px; color: var(--text-faint); }
+.asset figcaption a { font-size: 14px; font-weight: 700; margin-top: 6px; }
+
+/* Screenshot grid */
+.shotgrid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.shotgrid figure { text-align: center; }
+.shotgrid img {
+  width: 100%; max-width: 200px; height: auto;
+  border-radius: 20px;
+  border: 4px solid #1c1f29;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+}
+.shotgrid .watchfig img { border-radius: 36px; max-width: 150px; }
+.shotgrid figcaption {
+  margin-top: 12px;
+  display: flex; flex-direction: column; gap: 2px;
+  font-size: 14px; color: var(--text-dim);
+}
+.shotgrid figcaption a { font-size: 13px; font-weight: 700; }
+
+/* Boilerplate blocks */
+.boiler {
+  margin-top: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 28px;
+}
+.boiler h3 {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text-faint); margin-bottom: 12px;
+}
+.boiler p { font-size: 16px; color: var(--text-dim); }
+.boiler p + p { margin-top: 14px; }
+
+/* Colour swatches */
+.swatches {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.swatch { display: flex; flex-direction: column; gap: 4px; }
+.swatch .chip { height: 96px; border-radius: 16px; margin-bottom: 10px; }
+.swatch strong { font-size: 15px; }
+.swatch code { font-size: 14px; color: var(--accent); font-weight: 700; }
+.swatch span { font-size: 13px; color: var(--text-faint); }
+
+@media (max-width: 760px) {
+  .facts, .assetgrid, .swatches { grid-template-columns: 1fr; }
+  .shotgrid { grid-template-columns: repeat(2, 1fr); }
+}
 
 footer {
   margin-top: 96px;
