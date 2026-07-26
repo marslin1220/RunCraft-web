@@ -22,7 +22,13 @@
       <a href="../">Home</a>
       <a href="#" style="color:var(--accent);font-weight:700;">Press</a>
       <a href="../privacy/">Privacy</a>
-      <a href="mailto:support@marstudio.app">Contact</a>
+      <span class="lang">
+        <a class="on" href="./" data-lang="en">EN</a>
+        <a href="../zh-Hant/press/" data-lang="zh-Hant">繁中</a>
+        <a href="../zh-Hans/press/" data-lang="zh-Hans">简中</a>
+        <a href="../ja/press/" data-lang="ja">日本語</a>
+        <a href="../ko/press/" data-lang="ko">한국어</a>
+      </span>
     </div>
   </nav>
 
@@ -226,5 +232,12 @@
   </footer>
 
 </div>
+<script>
+document.querySelectorAll("a[data-lang]").forEach(function (a) {
+  a.addEventListener("click", function () {
+    try { localStorage.setItem("rc-lang", a.dataset.lang); } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>

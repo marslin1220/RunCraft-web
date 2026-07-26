@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RunCraft — 給跑者的 VDOT 訓練計畫</title>
-<meta name="description" content="RunCraft 把經過驗證的 VDOT 方法變成你 iPhone 與 Apple Watch 上的私人跑步教練。個人化馬拉松課表、手錶即時配速引導，以及讓每一次練跑都化為進步的洞察。">
-<meta property="og:title" content="RunCraft — 給跑者的 VDOT 訓練計畫">
-<meta property="og:description" content="以 VDOT 方法打造、在 iPhone 與 Apple Watch 上的私人跑步教練。">
+<title>RunCraft — 今天該練什麼，一看就知道</title>
+<meta name="description" content="大多數跑步 app 不是丟給你一份課表，就是記錄你剛跑完的那一趟。RunCraft 把兩者接起來——依你真實體能生成的課表、手錶上的即時配速引導，以及每次衝線後那個答案：接下來該練什麼。">
+<meta property="og:title" content="RunCraft — 今天該練什麼，一看就知道">
+<meta property="og:description" content="比賽已經在行事曆上。RunCraft 決定你今天跑什麼，並帶你跑完。">
 <meta property="og:image" content="https://runcraft.marstudio.app/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../icon.png">
@@ -24,8 +24,9 @@
   <nav>
     <a class="brand" href="#"><img src="../icon.png" alt="RunCraft 圖示" width="32" height="32">RunCraft</a>
     <div class="links">
-      <a href="#features">功能</a>
+      <a href="#situations">情境</a>
       <a href="#watch">Apple Watch</a>
+      <a href="#method">原理</a>
       <a href="#support">支援</a>
       <a href="./privacy.html">隱私權</a>
       <span class="lang">
@@ -40,36 +41,55 @@
 
   <header class="hero">
     <h1>今天該練什麼<br><em>一看就知道</em></h1>
-    <p class="sub">RunCraft 把經過驗證的 VDOT 方法變成你 iPhone 與 Apple Watch 上的私人跑步教練——週期化課表、手錶即時配速引導，以及讓每一次練跑都化為進步的數據洞察。</p>
+    <p class="sub">大多數跑步 app 不是丟給你一份課表，就是記錄你剛跑完的那一趟。RunCraft 把兩者接起來——課表依你真實的體能生成，配速在手腕上即時引導，而每一次衝線後，答案已經在那裡等你：接下來該練什麼。</p>
     <div class="cta">
       <span class="btn-soon"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.06 10.05c.02 2.6 2.28 3.46 2.3 3.47-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.63 2.12-1.15.02-1.52-.68-2.84-.68-1.31 0-1.72.66-2.81.7-1.13.05-2-1.13-2.72-2.18C1.7 13.79.58 9.9 2.1 7.28c.75-1.3 2.1-2.13 3.56-2.15 1.11-.02 2.16.75 2.84.75.68 0 1.95-.92 3.29-.79.56.03 2.14.23 3.15 1.71-.08.05-1.88 1.1-1.86 3.25zM10.9 3.68c.6-.73 1-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.68-.91 2.66.96.08 1.95-.49 2.55-1.21z"/></svg> 即將上架 App Store</span>
-      <span class="badge-note">iPhone 與 Apple Watch · 一次買斷,免訂閱</span>
+      <span class="badge-note">iPhone 與 Apple Watch · 一次買斷，免訂閱</span>
     </div>
     <div class="shots">
       <img class="phone" src="../assets/zh-Hant/plan.png" alt="本週訓練課表與今日間歇課" width="600" height="1304">
     </div>
   </header>
 
-  <section id="features">
-    <div class="kicker">為什麼選 RunCraft</div>
-    <h2>以 VDOT 為本，而非憑感覺</h2>
-    <p class="lede">告訴它你的目標賽事和最近一次成績，RunCraft 便推導出你的體能分數，並以你真實的配速打造每一堂課——輕鬆跑保持真正輕鬆，質量課有精準目標。</p>
+  <section id="situations">
+    <div class="kicker">是不是很熟悉？</div>
+    <h2>問題從來不是不夠努力</h2>
+    <p class="lede">大多數卡關的跑者並不是懶，而是在猜——猜配速、猜量、猜今天到底該操還是該放。以下是「猜」最常現形的地方。</p>
 
-    <!-- Row 1: 個人化配速區間 -->
+    <div class="painlist">
+      <div class="pain">
+        <h3>每一趟都跑成差不多的「中等偏累」</h3>
+        <p>輕鬆日不夠輕鬆，恢復不了；質量日又不夠新鮮，跑不快。練得很勤，成績卻停在原地。</p>
+      </div>
+      <div class="pain">
+        <h3>網路上找來的課表，不是為你寫的</h3>
+        <p>搜尋結果裡的 PDF 預設了別人的體能。上面的配速對你來說不是慢跑就是比賽，而你分不出是哪一種。</p>
+      </div>
+      <div class="pain">
+        <h3>一直加量，然後祈禱不要出事</h3>
+        <p>加量的過程一路感覺良好，直到不再良好。等到某個地方開始痛，那個錯誤其實已經是三週前犯下的。</p>
+      </div>
+      <div class="pain">
+        <h3>跑完了，卻不知道這趟到底好不好</h3>
+        <p>手錶說 8 公里 44 分。它沒說這是不是你今天原本該跑的那一堂課。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="answers">
+    <div class="kicker">RunCraft 怎麼回答</div>
+    <h2>每一種情境，都有答案</h2>
+
+    <!-- Situation 1: what does "easy" actually mean -->
     <div class="row">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="9"/>
-            <path d="M11 6v5l3 2"/>
-          </svg>
-        </div>
-        <h3>個人化配速區間</h3>
-        <p>你的 VDOT 分數由真實比賽成績推導，精準計算每一個訓練區間。</p>
+        <div class="situation">「我的輕鬆跑，到底該多快？」</div>
+        <h3>從一次真實成績，推出你所有的配速</h3>
+        <p>輸入一次最近的比賽或測驗成績，RunCraft 由此推導出你的 VDOT 體能分數，再把這一個數字變成你會用到的每一種訓練配速——於是「輕鬆」有了明確的數字，其他強度也一樣。</p>
         <ul>
           <li>輕鬆（E）、馬拉松（M）、閾值（T）、間歇（I）、次數（R）五種配速</li>
-          <li>5K 到全馬的成績預測</li>
-          <li>體能進步時，區間自動更新</li>
+          <li>5K 到全馬的誠實成績預測</li>
+          <li>體能進步時配速跟著走，不必手動重設</li>
         </ul>
       </div>
       <div class="media">
@@ -77,24 +97,16 @@
       </div>
     </div>
 
-    <!-- Row 2: 懂得「今天」的課表 -->
+    <!-- Situation 2: the 6am decision -->
     <div class="row rev">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="16" height="16" rx="3"/>
-            <path d="M3 9h16M8 2v4M14 2v4"/>
-          </svg>
-        </div>
-        <h3>懂得「今天」的課表</h3>
-        <p>依你的 VDOT 自動生成、通往比賽日的 16 週週期化課表。</p>
+        <div class="situation">「早上六點，我不想再做決定。」</div>
+        <h3>今天的課表已經在那裡等你</h3>
+        <p>週期化課表從比賽日往回推排定，所以沒有一個早晨需要從空白開始。打開 app——或只是瞄一眼鎖定畫面——今天已經決定好了。</p>
         <ul>
-          <li>打開 app，今天的課表就在眼前</li>
-          <li>跑步新手?走跑交替課表帶你循序達成連續 30 分鐘</li>
-          <li>沒有 Apple Watch?用 iPhone 單機也能即時引導</li>
-          <li>不備賽?也能只跑每週固定的例行課表</li>
-          <li>鎖定畫面與主畫面小工具，一瞥即知</li>
-          <li>狀態下滑時，自動調整恢復日</li>
+          <li>小工具讓今日課表一瞥即知</li>
+          <li>狀態下滑時，恢復日自動調整</li>
+          <li>沒有備賽？那就只跑每週固定的例行課表</li>
         </ul>
       </div>
       <div class="media">
@@ -102,18 +114,46 @@
       </div>
     </div>
 
-    <!-- Row 3: 自訂你的課表 -->
+    <!-- Three situations with no distinct screenshot of their own. -->
+    <div class="duo three">
+      <div class="duocard">
+        <div class="situation">「我還沒辦法連續跑 30 分鐘。」</div>
+        <h3>從走路開始，不必覺得丟臉</h3>
+        <p>不是每份課表都該從 5K 起跳。RunCraft 的走跑交替進程從你真正的起點出發，一步一步帶你走到連續 30 分鐘。</p>
+        <ul>
+          <li>走與跑交替的間歇，時間為你安排好</li>
+          <li>進度以「週」推進，而不是靠意志力</li>
+          <li>沒有 Apple Watch 也行——iPhone 就能引導整趟跑</li>
+        </ul>
+      </div>
+      <div class="duocard">
+        <div class="situation">「我是不是加量加太快了？」</div>
+        <h3>有人在幫你盯著加量曲線</h3>
+        <p>RunCraft 追蹤你的急性／慢性訓練負荷比——這週的量對照你累積出來的底子——並在那一跳變成傷病<em>之前</em>出聲，而不是之後。</p>
+        <ul>
+          <li>每週負荷趨勢，以看得懂的橫幅呈現</li>
+          <li>加量踏進風險區時提早警告</li>
+          <li>80/20 檢查，讓輕鬆日誠實地輕鬆</li>
+        </ul>
+      </div>
+      <div class="duocard">
+        <div class="situation">「跑完了。剛剛那趟算好嗎？」</div>
+        <h3>一個答案，而不只是一個數字</h3>
+        <p>每一趟都對照「它原本該是的那堂課」評分，而不是對照排行榜上的陌生人。你會知道自己有沒有跑到，以及它為你的體能帶來了什麼。</p>
+        <ul>
+          <li>每公里分段配速與心率</li>
+          <li>對照課表的體感評分</li>
+          <li>VDOT 以月為單位的長期進步</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Situation 6: custom session -->
     <div class="row">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h14M4 11h10M4 16h6"/>
-            <circle cx="17" cy="15" r="3"/>
-            <path d="M17 13v2l1 1"/>
-          </svg>
-        </div>
-        <h3>自訂你的課表</h3>
-        <p>用拖放編輯器設計間歇課表，一鍵傳送到 Apple Watch。</p>
+        <div class="situation">「教練給我一堂課，沒有 app 看得懂。」</div>
+        <h3>編一次，就在手腕上跑</h3>
+        <p>熱身、主課、恢復、收操——拖進位置，一鍵傳到 Apple Watch。它會完全照著你寫的跑。</p>
         <ul>
           <li>熱身、主課、恢復、收操區段</li>
           <li>每一步可設定距離或時間目標</li>
@@ -125,64 +165,15 @@
       </div>
     </div>
 
-    <!-- Row 4: 訓練負荷守門 -->
+    <!-- Situation 7: sharing -->
     <div class="row rev">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M11 3L3 8v6c0 4 8 7 8 7s8-3 8-7V8L11 3z"/>
-          </svg>
-        </div>
-        <h3>訓練負荷守門</h3>
-        <p>急性／慢性負荷比隨時監控你的加量節奏，避免衝過頭。</p>
+        <div class="situation">「這一趟值得記下來。」</div>
+        <h3>一張值得發出去的卡片</h3>
+        <p>有些跑步配得上一張照片。放進你自己拍的那張，RunCraft 把數據乾淨地疊上去，做成限動格式的卡片——不必再截一張雜亂的儀表板。</p>
         <ul>
-          <li>每週負荷趨勢以清楚的橫幅呈現</li>
-          <li>在衝進受傷風險區之前提早警告</li>
-          <li>80/20 輕鬆跑檢查，讓恢復日誠實地輕鬆</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hant/loadbanner.png" alt="顯示每週加量的訓練負荷橫幅" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Row 5: 看懂每一次練跑 -->
-    <div class="row">
-      <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="3 17 8 12 12 15 17 8 21 11"/>
-            <path d="M3 20h18"/>
-          </svg>
-        </div>
-        <h3>看懂每一次練跑</h3>
-        <p>詳盡的跑後分析，把分段數據變成看得懂、用得上的洞察。</p>
-        <ul>
-          <li>每公里分段配速與心率</li>
-          <li>對照課表的體感評分</li>
-          <li>VDOT 長期進步曲線</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hant/detail.png" alt="跑步詳情與每公里分段" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Row 6: 天生適合分享 -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="16" height="16" rx="3"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-        </div>
-        <h3>天生適合分享</h3>
-        <p>把任何一次跑步變成限動格式卡片——乾淨的數據疊在你自己的照片上，尺寸剛好給 Instagram。</p>
-        <ul>
-          <li>從相簿挑一張照片</li>
-          <li>數據自動疊加</li>
+          <li>你的照片、你的跑步，數據乾淨地疊在上面</li>
+          <li>尺寸剛好給 Instagram 限動</li>
           <li>發佈前先預覽</li>
         </ul>
       </div>
@@ -194,18 +185,13 @@
 
   <section id="watch">
     <div class="kicker">Apple Watch</div>
-    <h2>戴在手腕上的配速教練</h2>
+    <h2>跑到一半，最不該做的就是心算</h2>
 
     <div class="row">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="7" y="3" width="8" height="18" rx="3"/>
-            <path d="M7 7H5a2 2 0 00-2 2v4a2 2 0 002 2h2M15 7h2a2 2 0 012 2v4a2 2 0 01-2 2h-2"/>
-          </svg>
-        </div>
+        <div class="situation">「我現在有在配速上嗎？」</div>
         <h3>專心跑，不用算</h3>
-        <p>直接從手錶開始今天的課表。跑步過程中，RunCraft 引導每一步：</p>
+        <p>從手錶開始今天的課表，剩下的交給 RunCraft。你會拿到一個目標、偏離時手腕上的一下震動，以及還剩多少——注意力可以留給跑步本身。</p>
         <ul>
           <li>即時配速目標與達標回饋</li>
           <li>心率區間顯示，偏離時觸覺提醒</li>
@@ -215,6 +201,42 @@
       </div>
       <div class="media">
         <img class="watchshot" src="../assets/watch-pace.png" alt="Apple Watch 配速目標畫面顯示達標配速" width="300" height="357" loading="lazy">
+      </div>
+    </div>
+
+    <div class="row rev">
+      <div class="copy">
+        <div class="situation">「手機在口袋裡——它還跟著嗎？」</div>
+        <h3>iPhone 即時同步這堂課</h3>
+        <p>跑到一半掏出手機，同一堂課就在上面——趟數、即時配速、心率區間——與手腕上完全同步。終點時遞給旁邊的人，他們也看得到你跑到哪裡。</p>
+        <ul>
+          <li>手錶的趟數進度即時鏡射</li>
+          <li>配速、心率區間與步頻一目了然</li>
+          <li>兩台裝置都能暫停或結束訓練</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="../assets/zh-Hant/detail.png" alt="iPhone 即時鏡射 Apple Watch 上的間歇訓練，顯示趟數進度與配速" width="600" height="1303" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="kicker">為什麼有效</div>
+    <h2>以 VDOT 為本，而非憑感覺</h2>
+    <p class="lede">上面每一個配速、每一堂課、每一則預測，都來自同一個地方：Jack Daniels 的 VDOT 方法——教練們數十年來用來把單一場比賽成績，轉換成一整套訓練處方的框架。RunCraft 不發明新的訓練哲學，它只是把長久以來擋在跑者與一份真正課表之間的計算做完，而且每天都做，不用你開口。</p>
+    <div class="support-card">
+      <div>
+        <h3>一次買斷</h3>
+        <p>沒有訂閱，也沒有「解鎖你自己資料」的付費等級。買一次就好。</p>
+      </div>
+      <div>
+        <h3>你的資料屬於你</h3>
+        <p>在裝置上計算，透過你自己的 iCloud 私密同步。<a href="./privacy.html">閱讀隱私權政策</a></p>
+      </div>
+      <div>
+        <h3>由一位跑者打造</h3>
+        <p>一款獨立 app，由開發者自己一再遇到的訓練問題塑形而成。<a href="press/">媒體資料</a></p>
       </div>
     </div>
   </section>
@@ -228,8 +250,8 @@
         <p>RunCraft 上架後，App Store 的評分與評論是給我們回饋最好的地方——每一則我們都會看。你也可以隨時來信 <a href="mailto:support@marstudio.app">support@marstudio.app</a>。</p>
       </div>
       <div>
-        <h3>隱私</h3>
-        <p>你的健康數據屬於你——在裝置上計算，透過 iCloud 私密同步。<a href="./privacy.html">閱讀隱私權政策</a></p>
+        <h3>媒體報導</h3>
+        <p>要寫 RunCraft 嗎？logo、螢幕截圖與制式介紹都準備好了。<a href="press/">開啟媒體資料</a></p>
       </div>
     </div>
   </section>
@@ -238,6 +260,7 @@
     <span>© 2026 Cheng Lung Lin · RunCraft 是一款獨立開發的 iOS app。</span>
     <div class="links">
       <a href="https://github.com/marslin1220/RunCraft-web">GitHub</a>
+      <a href="press/">媒體資料</a>
       <a href="./privacy.html">隱私權政策</a>
       <a href="#support">支援</a>
     </div>

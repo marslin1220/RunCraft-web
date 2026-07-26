@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RunCraft — 러너를 위한 VDOT 훈련 플랜</title>
-<meta name="description" content="RunCraft는 검증된 VDOT 방법론을 iPhone과 Apple Watch 위의 퍼스널 러닝 코치로 만들어 줍니다. 개인화된 마라톤 플랜, 손목 위 페이스 가이드, 그리고 모든 러닝을 성장으로 바꾸는 인사이트까지.">
-<meta property="og:title" content="RunCraft — 러너를 위한 VDOT 훈련 플랜">
-<meta property="og:description" content="VDOT 방법론 기반, iPhone과 Apple Watch 위의 퍼스널 러닝 코치.">
+<title>RunCraft — 오늘 뛰어야 할 훈련이 한눈에</title>
+<meta name="description" content="대부분의 러닝 앱은 플랜을 건네주거나, 방금 끝낸 러닝을 기록하거나 둘 중 하나입니다. RunCraft는 그 둘을 잇습니다 — 실제 체력에서 만들어진 플랜, 손목 위 실시간 페이스 가이드, 그리고 결승선을 지날 때마다 기다리고 있는 답: 다음엔 무엇을 할 것인가.">
+<meta property="og:title" content="RunCraft — 오늘 뛰어야 할 훈련이 한눈에">
+<meta property="og:description" content="레이스는 이미 캘린더에 있습니다. 오늘 무엇을 뛸지는 RunCraft가 정하고, 끝까지 안내합니다.">
 <meta property="og:image" content="https://runcraft.marstudio.app/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../icon.png">
@@ -24,8 +24,9 @@
   <nav>
     <a class="brand" href="#"><img src="../icon.png" alt="RunCraft 아이콘" width="32" height="32">RunCraft</a>
     <div class="links">
-      <a href="#features">기능</a>
+      <a href="#situations">상황</a>
       <a href="#watch">Apple Watch</a>
+      <a href="#method">원리</a>
       <a href="#support">지원</a>
       <a href="./privacy.html">개인정보</a>
       <span class="lang">
@@ -40,7 +41,7 @@
 
   <header class="hero">
     <h1>오늘 뛰어야 할 훈련이<br><em>한눈에</em></h1>
-    <p class="sub">RunCraft는 검증된 VDOT 방법론을 iPhone과 Apple Watch 위의 퍼스널 러닝 코치로 만들어 줍니다 — 주기화된 플랜, 손목 위 페이스 가이드, 그리고 모든 러닝을 성장으로 바꾸는 인사이트까지.</p>
+    <p class="sub">대부분의 러닝 앱은 플랜을 건네주거나, 방금 끝낸 러닝을 기록하거나 둘 중 하나입니다. RunCraft는 그 둘을 잇습니다 — 플랜은 당신의 실제 체력에서 만들어지고, 페이스는 손목 위에서 실시간으로 안내되며, 결승선을 지날 때마다 답이 기다리고 있습니다: 다음엔 무엇을 할 것인가.</p>
     <div class="cta">
       <span class="btn-soon"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.06 10.05c.02 2.6 2.28 3.46 2.3 3.47-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.63 2.12-1.15.02-1.52-.68-2.84-.68-1.31 0-1.72.66-2.81.7-1.13.05-2-1.13-2.72-2.18C1.7 13.79.58 9.9 2.1 7.28c.75-1.3 2.1-2.13 3.56-2.15 1.11-.02 2.16.75 2.84.75.68 0 1.95-.92 3.29-.79.56.03 2.14.23 3.15 1.71-.08.05-1.88 1.1-1.86 3.25zM10.9 3.68c.6-.73 1-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.68-.91 2.66.96.08 1.95-.49 2.55-1.21z"/></svg> App Store 출시 예정</span>
       <span class="badge-note">iPhone &amp; Apple Watch · 한 번 구매, 구독 없음</span>
@@ -50,26 +51,45 @@
     </div>
   </header>
 
-  <section id="features">
-    <div class="kicker">왜 RunCraft인가</div>
-    <h2>감이 아닌, VDOT 기반</h2>
-    <p class="lede">목표 레이스와 최근 기록을 입력하세요. RunCraft가 피트니스 점수를 산출하고 실제 페이스에 맞춰 모든 세션을 구성합니다 — 이지 런은 정말 편안하게, 포인트 훈련은 정확한 목표로.</p>
+  <section id="situations">
+    <div class="kicker">익숙한 이야기인가요?</div>
+    <h2>문제는 노력 부족이 아니었습니다</h2>
+    <p class="lede">정체된 러너 대부분은 게으른 게 아닙니다. 추측하고 있을 뿐입니다 — 페이스를, 훈련량을, 오늘이 강해야 할 날인지 편해야 할 날인지를. 그 추측이 드러나는 장면들입니다.</p>
 
-    <!-- Row 1: 개인화된 페이스 존 -->
+    <div class="painlist">
+      <div class="pain">
+        <h3>모든 러닝이 비슷하게 '적당히 힘든' 채로 끝난다</h3>
+        <p>이지 데이는 회복될 만큼 편하지 않고, 포인트 훈련은 빠르게 뛸 만큼 신선하지 않습니다. 꾸준히 훈련하는데도 기록은 그대로입니다.</p>
+      </div>
+      <div class="pain">
+        <h3>인터넷에서 찾은 플랜은 당신을 위해 쓰인 게 아니다</h3>
+        <p>검색 결과의 PDF는 다른 사람의 체력을 전제합니다. 거기 적힌 페이스는 당신에게 조깅이거나 레이스이고, 어느 쪽인지도 알 수 없습니다.</p>
+      </div>
+      <div class="pain">
+        <h3>거리를 늘리면서 아무 일 없기를 바라고 있다</h3>
+        <p>늘리는 동안은 계속 괜찮습니다 — 어느 순간 아니게 될 때까지. 어딘가 아프기 시작했을 땐, 그 실수는 이미 3주 전의 것입니다.</p>
+      </div>
+      <div class="pain">
+        <h3>다 뛰고도 잘한 건지 알 수가 없다</h3>
+        <p>워치는 8km를 44분에 뛰었다고 말합니다. 그게 오늘 뛰기로 했던 그 세션이었는지는 말해 주지 않습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="answers">
+    <div class="kicker">RunCraft의 답</div>
+    <h2>모든 상황에, 답이 있습니다</h2>
+
+    <!-- Situation 1: what does "easy" actually mean -->
     <div class="row">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="9"/>
-            <path d="M11 6v5l3 2"/>
-          </svg>
-        </div>
-        <h3>개인화된 페이스 존</h3>
-        <p>실제 레이스 기록에서 도출된 VDOT 점수가 모든 훈련 존을 정확하게 계산합니다.</p>
+        <div class="situation">"내 이지 페이스는 정확히 몇 분이지?"</div>
+        <h3>실제로 뛴 기록 하나에서, 모든 페이스로</h3>
+        <p>최근 레이스나 타임 트라이얼 기록을 하나만 입력하세요. RunCraft가 거기서 VDOT 체력 점수를 도출하고, 그 하나의 숫자를 훈련에 쓸 모든 페이스로 바꿉니다 — '이지'에 구체적인 숫자가 붙고, 나머지 강도도 마찬가지입니다.</p>
         <ul>
           <li>Easy·Marathon·Threshold·Interval·Repetition 페이스</li>
-          <li>5K부터 마라톤까지 기록 예측</li>
-          <li>체력이 향상되면 존이 자동 업데이트</li>
+          <li>5K부터 마라톤까지 현실적인 기록 예측</li>
+          <li>체력이 오르면 페이스도 따라 이동 — 수동 재설정 불필요</li>
         </ul>
       </div>
       <div class="media">
@@ -77,24 +97,16 @@
       </div>
     </div>
 
-    <!-- Row 2: '오늘'을 아는 플랜 -->
+    <!-- Situation 2: the 6am decision -->
     <div class="row rev">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="16" height="16" rx="3"/>
-            <path d="M3 9h16M8 2v4M14 2v4"/>
-          </svg>
-        </div>
-        <h3>'오늘'을 아는 플랜</h3>
-        <p>VDOT로 자동 생성되는, 레이스 당일까지의 16주 주기화 스케줄.</p>
+        <div class="situation">"새벽 6시, 더는 아무것도 결정하고 싶지 않다."</div>
+        <h3>오늘의 세션은 이미 준비되어 있습니다</h3>
+        <p>주기화 스케줄은 레이스 당일에서 거꾸로 짜이기 때문에, 백지에서 시작하는 아침은 없습니다. 앱을 열거나 — 잠금 화면을 한 번 힐끗 보는 것만으로 — 오늘은 이미 정해져 있습니다.</p>
         <ul>
-          <li>앱을 열면 오늘의 세션이 바로 보입니다</li>
-          <li>러닝 입문자도 걷기·달리기 플랜으로 30분 연속까지</li>
-          <li>Apple Watch가 없어도 iPhone만으로 가이드 러닝</li>
-          <li>레이스 예정이 없어도 매주 간단한 루틴으로 달릴 수 있습니다</li>
-          <li>잠금 화면·홈 화면 위젯으로 언제나 한눈에</li>
+          <li>위젯으로 오늘의 세션을 한눈에</li>
           <li>컨디션이 떨어지면 회복일을 자동 조정</li>
+          <li>레이스 예정이 없나요? 매주 간단한 루틴으로 달리면 됩니다</li>
         </ul>
       </div>
       <div class="media">
@@ -102,18 +114,46 @@
       </div>
     </div>
 
-    <!-- Row 3: 나만의 워크아웃 만들기 -->
+    <!-- Three situations with no distinct screenshot of their own. -->
+    <div class="duo three">
+      <div class="duocard">
+        <div class="situation">"아직 30분을 쉬지 않고 못 뛰어요."</div>
+        <h3>부끄러움이 아니라, 걷기에서 시작</h3>
+        <p>모든 플랜이 5K에서 시작해야 하는 건 아닙니다. RunCraft의 걷기·달리기 프로그레션은 지금 당신이 있는 지점에서 출발해 30분 연속까지 한 걸음씩 쌓아 올립니다.</p>
+        <ul>
+          <li>걷기와 달리기를 번갈아, 당신에게 맞춘 시간으로</li>
+          <li>진행은 의지가 아니라 '주' 단위로</li>
+          <li>Apple Watch가 없어도 OK — iPhone만으로 전체 러닝 안내</li>
+        </ul>
+      </div>
+      <div class="duocard">
+        <div class="situation">"너무 빨리 늘리고 있는 건 아닐까?"</div>
+        <h3>그 증가 곡선을 대신 지켜보는 것</h3>
+        <p>RunCraft는 급성:만성 훈련 부하 비율 — 이번 주의 훈련량과 그동안 쌓아온 기반의 비 — 을 추적하고, 그 급증이 부상이 되기 <em>전에</em> 말해 줍니다. 그 후가 아니라.</p>
+        <ul>
+          <li>주간 부하 추세를 알기 쉬운 배너로 표시</li>
+          <li>위험 구간에 들어서면 미리 경고</li>
+          <li>80/20 체크로 이지 데이를 정직하게 이지하게</li>
+        </ul>
+      </div>
+      <div class="duocard">
+        <div class="situation">"다 뛰었다. 방금 그거 괜찮았나?"</div>
+        <h3>숫자가 아니라, 답을</h3>
+        <p>모든 러닝은 '원래 그래야 했던 세션'과 비교해 평가됩니다 — 리더보드의 낯선 사람이 아니라. 목표를 맞췄는지, 그리고 그것이 체력에 무엇을 남겼는지 알 수 있습니다.</p>
+        <ul>
+          <li>1km 구간별 페이스와 심박수</li>
+          <li>계획 대비 노력 평가</li>
+          <li>VDOT 변화는 일 단위가 아니라 월 단위로</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Situation 6: custom session -->
     <div class="row">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h14M4 11h10M4 16h6"/>
-            <circle cx="17" cy="15" r="3"/>
-            <path d="M17 13v2l1 1"/>
-          </svg>
-        </div>
-        <h3>나만의 워크아웃 만들기</h3>
-        <p>드래그 앤 드롭 편집기로 인터벌 세션을 설계하고, 한 번의 탭으로 Apple Watch에 전송하세요.</p>
+        <div class="situation">"코치가 준 훈련을 이해하는 앱이 없어요."</div>
+        <h3>한 번 만들면, 손목 위에서 그대로</h3>
+        <p>웜업, 반복, 회복, 쿨다운 — 끌어다 놓고 한 번의 탭으로 Apple Watch에 전송하세요. 적은 그대로 실행됩니다.</p>
         <ul>
           <li>웜업·메인·회복·쿨다운 블록</li>
           <li>스텝별 거리 또는 시간 목표</li>
@@ -125,64 +165,15 @@
       </div>
     </div>
 
-    <!-- Row 4: 훈련 부하 가드 -->
+    <!-- Situation 7: sharing -->
     <div class="row rev">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M11 3L3 8v6c0 4 8 7 8 7s8-3 8-7V8L11 3z"/>
-          </svg>
-        </div>
-        <h3>훈련 부하 가드</h3>
-        <p>급성:만성 부하 비율이 훈련량 증가를 지켜보며 오버트레이닝을 막아 줍니다.</p>
+        <div class="situation">"이건 남겨 두고 싶다."</div>
+        <h3>올릴 만한 카드 한 장</h3>
+        <p>사진을 남길 만한 러닝도 있습니다. 직접 찍은 사진을 넣으면 RunCraft가 그 위에 기록을 깔끔하게 얹어 스토리 형식 카드로 만들어 줍니다 — 복잡한 대시보드 스크린샷은 필요 없습니다.</p>
         <ul>
-          <li>주간 부하 추세를 명확한 배너로 표시</li>
-          <li>부상 위험 구간에 들어서기 전에 경고</li>
-          <li>80/20 이지 런 체크로 회복일을 정직하게</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ko/loadbanner.png" alt="주간 훈련량 증가를 보여주는 부하 배너" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Row 5: 모든 러닝을 이해하다 -->
-    <div class="row">
-      <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="3 17 8 12 12 15 17 8 21 11"/>
-            <path d="M3 20h18"/>
-          </svg>
-        </div>
-        <h3>모든 러닝을 이해하다</h3>
-        <p>스플릿 데이터를 실행 가능한 인사이트로 바꾸는 상세한 러닝 후 분석.</p>
-        <ul>
-          <li>1km 구간별 페이스와 심박수</li>
-          <li>계획 대비 노력 평가</li>
-          <li>시간에 따른 VDOT 변화</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ko/detail.png" alt="1km 구간 기록이 표시된 러닝 상세" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Row 6: 공유를 위해 태어나다 -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="16" height="16" rx="3"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-        </div>
-        <h3>공유를 위해 태어나다</h3>
-        <p>어떤 러닝이든 스토리 포맷 카드로 — 내 사진 위에 깔끔한 기록, Instagram에 딱 맞는 사이즈.</p>
-        <ul>
-          <li>라이브러리에서 사진 선택</li>
-          <li>기록 자동 오버레이</li>
+          <li>당신의 사진, 당신의 러닝, 그 위에 깔끔한 기록</li>
+          <li>Instagram 스토리에 딱 맞는 사이즈</li>
           <li>게시 전 미리보기</li>
         </ul>
       </div>
@@ -194,18 +185,13 @@
 
   <section id="watch">
     <div class="kicker">Apple Watch</div>
-    <h2>손목 위의 페이싱 코치</h2>
+    <h2>인터벌 도중은 계산하기 가장 나쁜 때입니다</h2>
 
     <div class="row">
       <div class="copy">
-        <div class="ico">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="7" y="3" width="8" height="18" rx="3"/>
-            <path d="M7 7H5a2 2 0 00-2 2v4a2 2 0 002 2h2M15 7h2a2 2 0 012 2v4a2 2 0 01-2 2h-2"/>
-          </svg>
-        </div>
+        <div class="situation">"지금 페이스에 맞게 가고 있나?"</div>
         <h3>계산은 그만, 달리기만</h3>
-        <p>오늘의 워크아웃을 워치에서 바로 시작하세요. 러닝 중에는 RunCraft가 모든 스텝을 안내합니다:</p>
+        <p>오늘의 워크아웃을 워치에서 시작하면 나머지는 RunCraft가 끌고 갑니다. 목표가 보이고, 벗어나면 손목을 톡 치고, 얼마나 남았는지도 알려 줍니다 — 집중은 러닝에 두세요.</p>
         <ul>
           <li>실시간 페이스 목표와 달성 피드백</li>
           <li>심박 존 표시, 벗어나면 햅틱 알림</li>
@@ -215,6 +201,42 @@
       </div>
       <div class="media">
         <img class="watchshot" src="../assets/watch-pace.png" alt="목표 페이스 달성을 보여주는 Apple Watch 페이스 화면" width="300" height="357" loading="lazy">
+      </div>
+    </div>
+
+    <div class="row rev">
+      <div class="copy">
+        <div class="situation">"폰은 주머니에 있는데 — 계속 따라오고 있나?"</div>
+        <h3>iPhone이 세션을 실시간으로 미러링합니다</h3>
+        <p>러닝 중에 폰을 꺼내면 같은 워크아웃이 그대로 있습니다 — 반복 횟수, 실시간 페이스, 심박 존이 손목과 동기화된 채로. 결승선에서 누군가에게 건네면 지금 어디쯤인지 그대로 보여 줄 수 있습니다.</p>
+        <ul>
+          <li>워치의 반복 진행 상황을 실시간 미러링</li>
+          <li>페이스·심박 존·케이던스를 한눈에</li>
+          <li>어느 기기에서든 일시정지 또는 종료</li>
+        </ul>
+      </div>
+      <div class="media">
+        <img class="shot" src="../assets/ko/detail.png" alt="Apple Watch의 인터벌 워크아웃을 실시간 미러링하는 iPhone" width="600" height="1303" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="kicker">왜 작동하는가</div>
+    <h2>감이 아닌, VDOT 기반</h2>
+    <p class="lede">위의 모든 페이스, 모든 세션, 모든 예측은 한곳에서 나옵니다: 잭 다니엘스의 VDOT 방법론 — 코치들이 수십 년간 하나의 레이스 기록을 온전한 훈련 처방으로 바꾸는 데 사용해 온 프레임워크입니다. RunCraft는 새로운 훈련 철학을 만들지 않습니다. 러너와 '진짜 플랜' 사이를 오래 가로막아 온 계산을 대신할 뿐입니다 — 그것도 매일, 부탁하지 않아도.</p>
+    <div class="support-card">
+      <div>
+        <h3>한 번 구매</h3>
+        <p>구독도, 내 데이터를 풀어 주는 유료 등급도 없습니다. 한 번 사면 그걸로 끝입니다.</p>
+      </div>
+      <div>
+        <h3>데이터는 당신의 것</h3>
+        <p>기기에서 계산하고, 당신 자신의 iCloud로 비공개 동기화합니다. <a href="./privacy.html">정책 읽기</a></p>
+      </div>
+      <div>
+        <h3>러너 한 명이 만들었습니다</h3>
+        <p>개발자가 반복해서 부딪힌 훈련 문제들이 형태를 만든 인디 앱입니다. <a href="press/">프레스 킷</a></p>
       </div>
     </div>
   </section>
@@ -228,8 +250,8 @@
         <p>RunCraft가 App Store에 출시되면, 평점과 리뷰가 피드백을 전하는 가장 좋은 방법입니다 — 모든 리뷰를 읽고 있습니다. 언제든지 <a href="mailto:support@marstudio.app">support@marstudio.app</a> 로 이메일을 보내실 수도 있습니다.</p>
       </div>
       <div>
-        <h3>개인정보</h3>
-        <p>건강 데이터는 온전히 당신의 것 — 기기에서 계산하고 iCloud로 비공개 동기화합니다. <a href="./privacy.html">정책 읽기</a></p>
+        <h3>프레스</h3>
+        <p>RunCraft에 대해 쓰시나요? 로고, 스크린샷, 소개 문구가 준비되어 있습니다. <a href="press/">프레스 킷 열기</a></p>
       </div>
     </div>
   </section>
@@ -238,6 +260,7 @@
     <span>© 2026 Cheng Lung Lin · RunCraft는 인디 iOS 앱입니다.</span>
     <div class="links">
       <a href="https://github.com/marslin1220/RunCraft-web">GitHub</a>
+      <a href="press/">프레스 킷</a>
       <a href="./privacy.html">개인정보 처리방침</a>
       <a href="#support">지원</a>
     </div>
