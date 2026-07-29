@@ -90,7 +90,8 @@ These actions have different effects:
 
 None of these actions deletes workouts saved in **Apple Health**. Apple Health
 workouts are managed separately in the Health app and follow Apple's own
-deletion controls.
+deletion controls. If RunCraft still has permission to read Apple Health,
+those workouts may be imported into RunCraft again later.
 
 ---
 
