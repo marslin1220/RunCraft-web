@@ -49,7 +49,7 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
 
   <div class="prose">
     <h1>RunCraft プライバシーポリシー</h1>
-    <p class="meta">発効日：2026年6月11日 &nbsp;·&nbsp; 最終更新：2026年7月25日</p>
+    <p class="meta">発効日：2026年6月11日 &nbsp;·&nbsp; 最終更新：2026年7月29日</p>
 
     <p>本プライバシーポリシーは、RunCraft アプリ（「RunCraft」「私たち」）があなたのデータをどのように扱うかを説明しています。簡単に言えば：<em>あなたのデータはあなたのもの</em>——お使いのデバイス上に保存され、あなた自身のプライベートな iCloud を通じてのみ同期されます。RunCraft 独自のサーバーはなく、アカウントも、アナリティクスも、サードパーティトラッキングも一切ありません。</p>
 
@@ -71,7 +71,7 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
       <li><em>睡眠</em>——昨夜の合計睡眠時間。HRV と同じ目的で使用します。</li>
       <li><em>VO₂max</em>——直近180日間のサンプル。Insights タブの VDOT トレンドに表示します。</li>
     </ul>
-    <p>いずれも<em>読み取り専用</em>です。RunCraft は HealthKit に<em>何も書き込みません</em>。</p>
+    <p>iPhone アプリはこれらの記録を読み取り、Apple ヘルス内の既存記録を変更しません。Apple Watch の RunCraft でワークアウトを記録すると、完了したワークアウトは HealthKit によって Apple ヘルスへ保存されます。</p>
     <p>アクセスはいつでも取り消せます：<em>iOS 設定 → プライバシーとセキュリティ → ヘルス → RunCraft</em>。取り消し後、影響を受ける機能（VDOT 検出・回復バナー・VO₂max グラフ）は静かに停止しますが、それ以外の機能は引き続き利用できます。</p>
 
     <hr>
@@ -79,15 +79,22 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
     <h2>RunCraft が保存するデータ</h2>
     <p>RunCraft が生成するすべてのデータは、<em>iPhone のアプリサンドボックス内</em>のプライベート SQLite データベースにローカル保存されます。</p>
     <ul>
-      <li>レース目標（名前・日付・距離）</li>
-      <li>生成された16週間のトレーニングプラン</li>
-      <li>作成したワークアウトと保存したテンプレート</li>
-      <li>完了したランの記録（音声入力または HealthKit 同期）</li>
+      <li>レース目標、または初心者向け／週間ルーティンの設定</li>
+      <li>レース日と利用可能な準備期間に応じて生成される、期間が固定されていないトレーニングプラン</li>
+      <li>予定されたセッション、作成したワークアウト、保存したテンプレート</li>
+      <li>手動で記録した、Apple ヘルスから読み込んだ、または関連付けた完了済みランの概要</li>
+      <li>RunCraft で削除したワークアウトが再読み込みされるのを防ぐための記録</li>
       <li>VDOT 履歴（変更ごとに1行）</li>
-      <li>設定（ペース単位・リマインダー時刻など）</li>
     </ul>
     <p>このデータベースは、あなた自身の<em>プライベートな iCloud アカウント</em>（Apple の CloudKit プライベートデータベース）を通じて、お使いの Apple デバイス間で同期されます。同期はすべてあなたの iCloud 内で完結し——RunCraft 独自のサーバーはなく、あなたのデータを受信・閲覧・保存することは一切ありません。同期は「iOS の設定 →〔あなたの名前〕→ iCloud → iCloud を使用しているApp → RunCraft」でオフにできます。</p>
-    <p>データを削除するには：iPhone から RunCraft を削除してください。同期されたコピーを削除するには、同じ設定画面で iCloud の RunCraft をオフにしてください。</p>
+    <p>単位、リマインダー、表示方法などの設定はデバイス上に別途保存されます。同期データベースには含まれないため、別のデバイスでは再設定が必要な場合があります。</p>
+    <p>次の操作は、それぞれ効果が異なります。</p>
+    <ul>
+      <li><em>1台のデバイスから RunCraft を削除：</em>そのデバイス上の RunCraft のローカルデータベースと設定を削除します。プライベート iCloud データベースに保存済みの記録は削除されません。</li>
+      <li><em>iCloud で RunCraft をオフ：</em>そのデバイスで今後の同期を停止します。既存のローカルデータや iCloud に保存済みの記録は削除されません。</li>
+      <li><em>RunCraft と iCloud のデータを削除：</em>今後の RunCraft アップデートで「設定 → プライバシーとデータ」にアプリ内コントロールを追加し、アプリのローカルデータベースとプライベート iCloud データベース内の同期記録を完全に削除できるようにします。</li>
+    </ul>
+    <p>いずれの操作でも、<em>Apple ヘルス</em>に保存されたワークアウトは削除されません。Apple ヘルスのワークアウトはヘルスケア App で別途管理し、Apple が提供する削除機能を使用してください。</p>
 
     <hr>
 
@@ -129,7 +136,7 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
     <p>ご質問・ご懸念・ご要望はこちら：<a href="mailto:support@marstudio.app">support@marstudio.app</a></p>
 
     <hr>
-    <p style="color:var(--text-faint);font-size:13px;">最終確認：2026年7月25日</p>
+    <p style="color:var(--text-faint);font-size:13px;">最終確認：2026年7月29日</p>
   </div>
 
 </div>
