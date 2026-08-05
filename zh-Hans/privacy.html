@@ -49,7 +49,7 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
 
   <div class="prose">
     <h1>RunCraft 隐私政策</h1>
-    <p class="meta">生效日期：2026 年 6 月 11 日 &nbsp;·&nbsp; 最后更新：2026 年 7 月 25 日</p>
+    <p class="meta">生效日期：2026 年 6 月 11 日 &nbsp;·&nbsp; 最后更新：2026 年 7 月 29 日</p>
 
     <p>本隐私政策说明 RunCraft App（“RunCraft”、“我们”）如何处理你的数据。简而言之：<em>你的数据属于你</em>——存在你的设备上，只通过你自己的私人 iCloud 同步。RunCraft 没有自己的服务器、没有账号、没有数据分析，也没有第三方追踪。</p>
 
@@ -71,7 +71,7 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
       <li><em>睡眠</em>——昨晚的总睡眠时长。用途同 HRV。</li>
       <li><em>VO₂max</em>——最近 180 天的样本，显示于 Insights 页面的 VDOT 趋势图。</li>
     </ul>
-    <p>以上均为<em>只读</em>。RunCraft <em>不会</em>将任何数据写回 HealthKit。</p>
+    <p>iPhone App 会读取这些记录，不会修改 Apple 健康内已有的记录。当你使用 Apple Watch 上的 RunCraft 记录训练时，HealthKit 会将完成的训练存储至 Apple 健康。</p>
     <p>你可以随时撤销授权：<em>iOS 设置 → 隐私与安全性 → 健康 → RunCraft</em>。撤销后，受影响的功能（VDOT 检测、恢复提示、VO₂max 图表）将静默停止，其余功能不受影响。</p>
 
     <hr>
@@ -79,15 +79,22 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
     <h2>RunCraft 存储哪些数据</h2>
     <p>RunCraft 产生的所有内容均<em>本机存储</em>在你 iPhone 的应用程序沙盒内的私有 SQLite 数据库中：</p>
     <ul>
-      <li>你的比赛目标（名称、日期、距离）</li>
-      <li>生成的 16 周训练计划</li>
-      <li>你创建的课表与保存的模板</li>
-      <li>完成的跑步记录（语音记录或 HealthKit 同步）</li>
+      <li>你的比赛目标，或新手／每周例行跑步设置</li>
+      <li>根据比赛日期与可用准备时间生成、周数不固定的训练计划</li>
+      <li>已安排的训练、你创建的课表与保存的模板</li>
+      <li>手动记录、从 Apple 健康导入或与其关联的已完成跑步摘要</li>
+      <li>避免已在 RunCraft 删除的训练被再次导入的标记</li>
       <li>VDOT 历史记录（每次变更一条）</li>
-      <li>你的偏好设置（配速单位、提醒时间等）</li>
     </ul>
     <p>此数据库会通过你自己的<em>私人 iCloud 账号</em>（Apple CloudKit 私有数据库）在你的 Apple 设备间同步，让课表与记录从一台 iPhone 延续到下一台。同步完全留在你的 iCloud 内——RunCraft 没有自己的服务器，永远不会接收、看到或存储你的数据。你可以在“iOS 设置 →〔你的名字〕→ iCloud → 使用 iCloud 的 App → RunCraft”关闭同步。</p>
-    <p>如需删除数据：从 iPhone 移除 RunCraft 即可。如需移除已同步的副本，请在同一个设置画面关闭 RunCraft 的 iCloud。</p>
+    <p>配速单位、提醒与显示方式等偏好设置会另外存储在设备上，不属于同步数据库；在其他设备上可能需要重新设置。</p>
+    <p>以下操作有不同效果：</p>
+    <ul>
+      <li><em>从一台设备删除 RunCraft：</em>移除该设备上的 RunCraft 本机数据库与偏好设置，不会删除私人 iCloud 数据库中已有的记录。</li>
+      <li><em>在 iCloud 关闭 RunCraft：</em>停止该设备后续的同步，不会删除已有的本机数据或已存储在 iCloud 的记录。</li>
+      <li><em>删除 RunCraft 与 iCloud 数据：</em>即将推出的 RunCraft 更新会在“设置 → 隐私与数据”加入 App 内控制项，可永久删除 App 的本机数据库及私人 iCloud 数据库中的同步记录。</li>
+    </ul>
+    <p>以上操作都不会删除存储在<em>Apple 健康</em>的训练。Apple 健康训练需另外在“健康”App 中管理，并适用 Apple 提供的删除控制。如果 RunCraft 仍有权读取 Apple 健康，这些训练之后可能再次导入 RunCraft。</p>
 
     <hr>
 
@@ -129,7 +136,7 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
     <p>如有问题、疑虑或请求，请联系：<a href="mailto:support@marstudio.app">support@marstudio.app</a></p>
 
     <hr>
-    <p style="color:var(--text-faint);font-size:13px;">最后审阅：2026 年 7 月 25 日</p>
+    <p style="color:var(--text-faint);font-size:13px;">最后审阅：2026 年 7 月 29 日</p>
   </div>
 
 </div>

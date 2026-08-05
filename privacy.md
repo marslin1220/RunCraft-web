@@ -7,7 +7,7 @@ permalink: /privacy/
 # RunCraft Privacy Policy
 
 **Effective date:** 11 June 2026
-**Last updated:** 25 July 2026
+**Last updated:** 29 July 2026
 
 This Privacy Policy describes how the RunCraft app ("RunCraft", "we", "us")
 handles your data. The short version: **your data stays yours** — it lives on
@@ -40,7 +40,9 @@ When you grant permission, RunCraft reads the following from **Apple Health
 - **VO₂max** — last 180 days of samples. Plotted on the Insights tab
   alongside your VDOT trend.
 
-Reads only. RunCraft **does not write** anything back to HealthKit.
+The iPhone app reads these records and does not modify existing Apple Health
+records. When you record a workout with RunCraft on Apple Watch, HealthKit
+saves the completed workout to Apple Health.
 
 You can revoke this access at any time: **iOS Settings → Privacy &
 Security → Health → RunCraft**. When access is revoked, the affected
@@ -54,12 +56,14 @@ working but RunCraft continues to function for everything else.
 Everything RunCraft generates is stored **locally on your iPhone** in a
 private SQLite database inside the app's sandbox:
 
-- Your race goal (name, date, distance)
-- The generated 16-week training plan
-- Workouts you author and templates you save
-- Completed run records (when you log them by voice or HealthKit syncs)
+- Your race goal or beginner / weekly-routine setup
+- Your generated training plan, whose length depends on the race date and
+  available lead time
+- Planned sessions, workouts you author, and templates you save
+- Completed run summaries logged manually, imported from, or linked to Apple
+  Health
+- Markers that keep a workout you deleted in RunCraft from being re-imported
 - VDOT history (one row per change)
-- Your preferences (pace unit, reminder time, etc.)
 
 This database syncs across your own Apple devices through your **private
 iCloud account** (Apple's CloudKit private database), so your plan and history
@@ -68,8 +72,26 @@ iCloud — **RunCraft has no servers of its own and never receives, sees, or
 stores your data**. You can turn the sync off in **iOS Settings → [your name]
 → iCloud → Apps Using iCloud → RunCraft**.
 
-To delete the data: delete RunCraft from your iPhone. To remove synced copies,
-also turn off RunCraft in iCloud from the same Settings screen.
+Preferences such as units, reminders, and presentation choices are stored
+separately on the device. They are not part of the synchronized database and
+may need to be configured again on another device.
+
+These actions have different effects:
+
+- **Delete RunCraft from one device:** removes that device's local RunCraft
+  database and preferences. It does not delete records already stored in your
+  private iCloud database.
+- **Turn off RunCraft in iCloud:** stops future synchronization on that device.
+  It does not delete existing local data or records already stored in iCloud.
+- **Delete RunCraft and iCloud data:** a forthcoming RunCraft update will add
+  an in-app control under **Settings → Privacy & Data** that permanently
+  deletes the app's local database and its synchronized records from your
+  private iCloud database.
+
+None of these actions deletes workouts saved in **Apple Health**. Apple Health
+workouts are managed separately in the Health app and follow Apple's own
+deletion controls. If RunCraft still has permission to read Apple Health,
+those workouts may be imported into RunCraft again later.
 
 ---
 
@@ -133,4 +155,4 @@ Questions, concerns, or requests: [support@marstudio.app](mailto:support@marstud
 
 ---
 
-*Last reviewed: 25 July 2026*
+*Last reviewed: 29 July 2026*
