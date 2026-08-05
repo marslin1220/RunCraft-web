@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>RunCraft Threads Authorization</title>
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  .auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 48px 0;
+  }
+  .auth-panel {
+    width: min(720px, 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.045);
+    padding: clamp(24px, 5vw, 42px);
+  }
+  .auth-panel h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+  .auth-panel p {
+    margin-top: 14px;
+    color: var(--text-dim);
+  }
+  .auth-result {
+    margin-top: 28px;
+    display: grid;
+    gap: 14px;
+  }
+  .auth-label {
+    color: var(--text-faint);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .auth-code {
+    width: 100%;
+    min-height: 128px;
+    resize: vertical;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #080a12;
+    color: var(--text);
+    padding: 14px;
+    font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .auth-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .auth-button {
+    border: 0;
+    border-radius: 12px;
+    background: var(--accent);
+    color: #04121a;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 11px 18px;
+  }
+  .auth-button.secondary {
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text);
+  }
+  .auth-status {
+    min-height: 24px;
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  .auth-error {
+    color: #ffbe8a;
+  }
+</style>
+</head>
+<body>
+<div class="wrap auth-page">
+  <main class="auth-panel">
+    <a class="brand" href="../"><img src="../icon.png" alt="RunCraft icon" width="32" height="32">RunCraft</a>
+    <h1>Threads authorization</h1>
+    <p id="intro">Copy the command below, then run it in the RunCraft Growth workspace.</p>
+
+    <section class="auth-result" aria-live="polite">
+      <div>
+        <div class="auth-label" id="result-label">Command</div>
+        <textarea class="auth-code" id="result" readonly></textarea>
+      </div>
+      <div class="auth-actions">
+        <button class="auth-button" type="button" id="copy">Copy command</button>
+        <a class="auth-button secondary" href="../">Back to RunCraft</a>
+      </div>
+      <div class="auth-status" id="status"></div>
+    </section>
+  </main>
+</div>
+
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var code = params.get("code");
+  var error = params.get("error");
+  var errorDescription = params.get("error_description");
+  var result = document.getElementById("result");
+  var label = document.getElementById("result-label");
+  var intro = document.getElementById("intro");
+  var status = document.getElementById("status");
+  var copy = document.getElementById("copy");
+
+  if (code) {
+    result.value = 'swift run growth auth-exchange --code "' + code.replace(/"/g, '\\"') + '"';
+  } else if (error) {
+    label.textContent = "Authorization error";
+    intro.textContent = "Threads returned an authorization error.";
+    status.className = "auth-status auth-error";
+    status.textContent = errorDescription || error;
+    result.value = window.location.href;
+    copy.textContent = "Copy URL";
+  } else {
+    label.textContent = "No code found";
+    intro.textContent = "This page is used after approving RunCraft Growth in Threads.";
+    status.textContent = "Open the authorization URL from the growth tool first.";
+    result.value = "swift run growth auth-url";
+    copy.textContent = "Copy command";
+  }
+
+  copy.addEventListener("click", function () {
+    result.select();
+    navigator.clipboard.writeText(result.value).then(function () {
+      status.className = "auth-status";
+      status.textContent = "Copied.";
+    }, function () {
+      status.className = "auth-status auth-error";
+      status.textContent = "Copy failed. Select the text and copy it manually.";
+    });
+  });
+})();
+</script>
+</body>
+</html>
