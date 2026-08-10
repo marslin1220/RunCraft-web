@@ -246,9 +246,27 @@ h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.015
   box-shadow: 0 20px 56px rgba(0, 0, 0, 0.5);
   display: inline-block;
 }
+.watchstack {
+  position: relative;
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watchstack .watchshot {
+  position: absolute;
+  width: min(178px, 42vw);
+}
+.watchstack .watchshot:nth-child(1) { transform: translate(-76px, 24px) rotate(-4deg); z-index: 1; }
+.watchstack .watchshot:nth-child(2) { transform: translate(0, -20px); z-index: 3; }
+.watchstack .watchshot:nth-child(3) { transform: translate(76px, 24px) rotate(4deg); z-index: 2; }
 @media (max-width: 760px) {
   .row, .row.rev { flex-direction: column; gap: 32px; }
   .row .media { order: -1; }
+  .watchstack { min-height: 285px; }
+  .watchstack .watchshot { width: min(154px, 39vw); }
+  .watchstack .watchshot:nth-child(1) { transform: translate(-58px, 20px) rotate(-4deg); }
+  .watchstack .watchshot:nth-child(3) { transform: translate(58px, 20px) rotate(4deg); }
 }
 
 /* Situation framing — the runner's words above the feature's answer */
