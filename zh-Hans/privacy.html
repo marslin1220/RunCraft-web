@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RunCraft 隐私政策</title>
-<meta name="description" content="RunCraft 不收集任何用户数据。你的数据只在你自己的私人 iCloud 同步，不经过我们的服务器。">
+<meta name="description" content="RunCraft 是 iPhone 与 Apple Watch 的跑步规划及训练 App，无需 RunCraft 账号，没有广告 SDK 或第三方分析追踪。App 数据在你的设备上处理；部分训练数据可通过你的私人 Apple iCloud 数据库同步。开发者没有运营会自动接收你训练记录的服务。">
 <link rel="icon" href="../icon.png">
 <link rel="alternate" hreflang="en"      href="https://runcraft.marstudio.app/privacy/">
 <link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/privacy.html">
@@ -49,87 +49,26 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
 
   <div class="prose">
     <h1>RunCraft 隐私政策</h1>
-    <p class="meta">生效日期：2026 年 6 月 11 日 &nbsp;·&nbsp; 最后更新：2026 年 7 月 25 日</p>
-
-    <p>本隐私政策说明 RunCraft App（“RunCraft”、“我们”）如何处理你的数据。简而言之：<em>你的数据属于你</em>——存在你的设备上，只通过你自己的私人 iCloud 同步。RunCraft 没有自己的服务器、没有账号、没有数据分析，也没有第三方追踪。</p>
-
-    <hr>
-
-    <h2>关于我们</h2>
-    <p>RunCraft 是一款遵循 Jack Daniels VDOT 训练方法论的 iOS 跑步 App，由林政龍以个人项目形式发行。</p>
-    <ul>
-      <li>联系邮箱：<a href="mailto:support@marstudio.app">support@marstudio.app</a></li>
-    </ul>
-
-    <hr>
-
-    <h2>RunCraft 读取哪些数据</h2>
-    <p>当你授予权限后，RunCraft 会从你 iPhone 的 <em>Apple 健康（HealthKit）</em> 读取以下数据：</p>
-    <ul>
-      <li><em>跑步记录</em>——距离、时长、开始时间。用于检测你的 5K／10K／半程马拉松最佳成绩，并推算初始 VDOT。</li>
-      <li><em>心率变异度（HRV）</em>——最近 7 天平均值。供“今日恢复偏低”提示使用，建议将高强度课表换为轻松跑。</li>
-      <li><em>睡眠</em>——昨晚的总睡眠时长。用途同 HRV。</li>
-      <li><em>VO₂max</em>——最近 180 天的样本，显示于 Insights 页面的 VDOT 趋势图。</li>
-    </ul>
-    <p>以上均为<em>只读</em>。RunCraft <em>不会</em>将任何数据写回 HealthKit。</p>
-    <p>你可以随时撤销授权：<em>iOS 设置 → 隐私与安全性 → 健康 → RunCraft</em>。撤销后，受影响的功能（VDOT 检测、恢复提示、VO₂max 图表）将静默停止，其余功能不受影响。</p>
-
-    <hr>
-
-    <h2>RunCraft 存储哪些数据</h2>
-    <p>RunCraft 产生的所有内容均<em>本机存储</em>在你 iPhone 的应用程序沙盒内的私有 SQLite 数据库中：</p>
-    <ul>
-      <li>你的比赛目标（名称、日期、距离）</li>
-      <li>生成的 16 周训练计划</li>
-      <li>你创建的课表与保存的模板</li>
-      <li>完成的跑步记录（语音记录或 HealthKit 同步）</li>
-      <li>VDOT 历史记录（每次变更一条）</li>
-      <li>你的偏好设置（配速单位、提醒时间等）</li>
-    </ul>
-    <p>此数据库会通过你自己的<em>私人 iCloud 账号</em>（Apple CloudKit 私有数据库）在你的 Apple 设备间同步，让课表与记录从一台 iPhone 延续到下一台。同步完全留在你的 iCloud 内——RunCraft 没有自己的服务器，永远不会接收、看到或存储你的数据。你可以在“iOS 设置 →〔你的名字〕→ iCloud → 使用 iCloud 的 App → RunCraft”关闭同步。</p>
-    <p>如需删除数据：从 iPhone 移除 RunCraft 即可。如需移除已同步的副本，请在同一个设置画面关闭 RunCraft 的 iCloud。</p>
-
-    <hr>
-
-    <h2>Apple 系统框架的处理方式</h2>
-    <p>部分功能会移交给 Apple 自身的系统，Apple 的隐私政策适用于这些情况：</p>
-    <ul>
-      <li><em>WorkoutKit</em>——点选“开始训练”时，课表结构会通过 Apple 的 <code>WorkoutScheduler</code> 发送至配对的 Apple Watch。适用 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 隐私政策</a>。</li>
-      <li><em>App Intents／Siri</em>——当你使用 Siri 询问“今天的训练是什么？”时，语音转录与调用由 Apple 处理。适用 <a href="https://www.apple.com/legal/privacy/data/en/siri/" target="_blank" rel="noopener">Apple Siri 隐私政策</a>。</li>
-      <li><em>本机通知</em>——每日训练提醒由 <code>UNUserNotificationCenter</code> 在本机排程并传递，通知数据不会离开你的 iPhone。</li>
-    </ul>
-    <p>RunCraft 不会看到你的 Siri 语音转录或 Apple ID。</p>
-
-    <hr>
-
-    <h2>我们不收集的数据</h2>
-    <ul class="no-list">
-      <li>❌ 无账号、无注册、不收集电子邮件</li>
-      <li>❌ 无数据分析（不使用 Firebase、Mixpanel、Amplitude）</li>
-      <li>❌ 无崩溃回报服务（不使用 Sentry、Crashlytics）</li>
-      <li>❌ 无广告 SDK</li>
-      <li>❌ 无第三方追踪器</li>
-      <li>❌ 不收集位置数据（HealthKit 跑步记录中已含的除外）</li>
-      <li>❌ 无第三方云端——唯一的同步是通过你自己的私人 Apple iCloud，绝不经过我们的服务器（我们没有服务器）</li>
-    </ul>
-
-    <hr>
-
-    <h2>儿童</h2>
-    <p>RunCraft 在 App Store 评级为 <em>4+</em>，不含任何不当内容。由于我们<em>完全不收集任何用户识别数据</em>，因此亦不会刻意收集 13 岁以下儿童的数据。</p>
-
-    <hr>
-
-    <h2>政策变更</h2>
-    <p>若 RunCraft 对数据处理方式有所调整——包括日后新增 Pro 订阅，或同步内容有任何变更——本页面将更新，顶部的生效日期也会随之变更。重大变更将通过 App 内的设置 → 关于区域通知，让你无需重新阅读政策即可掌握最新信息。</p>
-
-    <hr>
-
-    <h2>联系我们</h2>
-    <p>如有问题、疑虑或请求，请联系：<a href="mailto:support@marstudio.app">support@marstudio.app</a></p>
-
-    <hr>
-    <p style="color:var(--text-faint);font-size:13px;">最后审阅：2026 年 7 月 25 日</p>
+    <p>最后更新：2026 年 11 月 5 日。发行者：林政龙。联系邮箱：<a href="mailto:support@marstudio.app">support@marstudio.app</a>。</p>
+    <h2>你的数据与选择</h2>
+    <p>RunCraft 是 iPhone 与 Apple Watch 的跑步规划及训练 App，无需 RunCraft 账号，没有广告 SDK 或第三方分析追踪。App 数据在你的设备上处理；部分训练数据可通过你的私人 Apple iCloud 数据库同步。开发者没有运营会自动接收你训练记录的服务。</p>
+    <h2>Apple 健康：读取与写入</h2>
+    <p>取得许可后，RunCraft 会读取可用的训练、时间与距离、心率与静息心率、心率变异、睡眠、心肺适能、跑姿与步频、用力程度及训练路线，用于跑步历史、分析、配速参考与训练背景查看。可用数据取决于设备、已有记录及授权。</p>
+    <p>使用 RunCraft 在 iPhone 或 Apple Watch 记录训练时，App 会将完成的训练及支持的测量数据写入 Apple 健康；户外训练也可能包含路线。浏览或手动输入支持的信息不一定需要健康权限，但记录训练和依赖数据的功能需要相关授权。你可在 Apple 健康或系统“隐私与安全性”设置管理权限。</p>
+    <h2>位置与照片</h2>
+    <p>取得定位权限后，户外训练可使用 GPS 记录路线、距离与配速，包括训练持续进行时的后台记录。获准时，RunCraft 也能读取 Apple 健康中已保存的训练路线，不会将位置用于广告。分享卡照片由你通过系统照片选择器选择，App 不需要无限制读取整个相册；分享图片的目的地也由你选择。</p>
+    <h2>存储与私人 iCloud 同步</h2>
+    <p>RunCraft 在你的设备存储目标、课程选择、计划、训练模板、跑步摘要、成绩依据、训练反馈及偏好。iCloud 可用时，部分规划与历史记录会通过你的私人 CloudKit 数据库同步。原始 GPS 路线与健康传感器样本从 Apple 健康读取，不复制到该同步数据库。部分查看、暂停与提醒设置及偏好只保存在单个设备。配对的 iPhone 与 Watch 会交换训练引导、进度与完成结果所需信息。</p>
+    <p>Apple 根据自己的隐私政策提供健康、iCloud 与设备服务。关闭 iCloud 同步不会删除已有本地或云端记录。</p>
+    <h2>购买与自愿提供的支持信息</h2>
+    <p>下载与 Lifetime 购买由 Apple 的 App Store 处理。RunCraft 通过 StoreKit 交易及获取 App 的信息判定权限、恢复购买；开发者不会取得你的付款卡信息。</p>
+    <p>技术诊断记录保存在本地，用于排查问题。导出文件可能包含 App／设备版本、时间戳及经过脱敏处理的技术事件，不会自动发送给开发者。若你发邮件或选择分享诊断文件、截图，收件人会收到你发送的信息，包括邮箱地址及你自行添加的个人数据。分享前请先查看内容；已发送的支持往来可联系支持要求删除。Apple 也可能依据你的 Apple 分享设置另外提供崩溃或使用报告。</p>
+    <h2>保留与删除</h2>
+    <p>已保存的 App 记录会保留至你删除。可使用“设置 → 隐私与数据 → 删除 RunCraft 数据”，移除 App 计划、历史、偏好与私人 iCloud 同步记录。云端删除需要连接网络；如仍待完成，请根据 App 的状态或重试提示操作。仅删除 App 会移除本地数据，不会删除已有私人 iCloud 记录。</p>
+    <p>Apple 健康的训练独立保存，不会因此删除；请在健康 App 管理。如仍允许读取，这些训练以后可能再次导入。本地诊断记录设有保存时间与容量限制，也可通过诊断控件清除；导出的 ZIP 或图片仍保留在你保存或分享的位置。Lifetime 权限由 Apple 管理，不会因删除 RunCraft 数据而取消。</p>
+    <h2>政策更新与联系</h2>
+    <p>数据处理方式变更时会更新本页。有关 App 或你自愿提供给支持团队的数据，请联系 <a href="mailto:support@marstudio.app">support@marstudio.app</a>。RunCraft 不要求建立个人档案，也不将健康或位置数据用于广告。Apple 服务及你选择的分享目的地各有其隐私政策。</p>
+    <p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
   </div>
 
 </div>
