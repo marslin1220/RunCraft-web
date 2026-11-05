@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RunCraft プライバシーポリシー</title>
-<meta name="description" content="RunCraft はユーザーデータを収集しません。あなたのデータはあなた自身のプライベートな iCloud でのみ同期されます。">
+<meta name="description" content="RunCraftはiPhoneとApple Watch向けのランニング計画・ワークアウトアプリです。RunCraftアカウント、広告SDK、第三者の分析トラッキングはありません。アプリのデータは端末で処理され、一部の練習データは個人のApple iCloudデータベースで同期できます。開発者はワークアウトを自動受信するサービスを運営していません。">
 <link rel="icon" href="../icon.png">
 <link rel="alternate" hreflang="en"      href="https://runcraft.marstudio.app/privacy/">
 <link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/privacy.html">
@@ -49,87 +49,26 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
 
   <div class="prose">
     <h1>RunCraft プライバシーポリシー</h1>
-    <p class="meta">発効日：2026年6月11日 &nbsp;·&nbsp; 最終更新：2026年7月25日</p>
-
-    <p>本プライバシーポリシーは、RunCraft アプリ（「RunCraft」「私たち」）があなたのデータをどのように扱うかを説明しています。簡単に言えば：<em>あなたのデータはあなたのもの</em>——お使いのデバイス上に保存され、あなた自身のプライベートな iCloud を通じてのみ同期されます。RunCraft 独自のサーバーはなく、アカウントも、アナリティクスも、サードパーティトラッキングも一切ありません。</p>
-
-    <hr>
-
-    <h2>私たちについて</h2>
-    <p>RunCraft は Jack Daniels の VDOT トレーニング手法を採用した iOS ランニングアプリで、Cheng Lung Lin が個人プロジェクトとして公開しています。</p>
-    <ul>
-      <li>お問い合わせ：<a href="mailto:support@marstudio.app">support@marstudio.app</a></li>
-    </ul>
-
-    <hr>
-
-    <h2>RunCraft が読み取るデータ</h2>
-    <p>権限を付与した場合、RunCraft は iPhone の <em>Apple ヘルス（HealthKit）</em> から以下のデータを読み取ります。</p>
-    <ul>
-      <li><em>ランニングワークアウト</em>——距離・時間・開始時刻。5K / 10K / ハーフマラソンの自己ベストを検出し、初期 VDOT を算出するために使用します。</li>
-      <li><em>心拍変動（HRV）</em>——直近7日間の平均値。「今日の回復が低下しています」バナーに使用し、ハードセッションをイージーランに変更するよう提案します。</li>
-      <li><em>睡眠</em>——昨夜の合計睡眠時間。HRV と同じ目的で使用します。</li>
-      <li><em>VO₂max</em>——直近180日間のサンプル。Insights タブの VDOT トレンドに表示します。</li>
-    </ul>
-    <p>いずれも<em>読み取り専用</em>です。RunCraft は HealthKit に<em>何も書き込みません</em>。</p>
-    <p>アクセスはいつでも取り消せます：<em>iOS 設定 → プライバシーとセキュリティ → ヘルス → RunCraft</em>。取り消し後、影響を受ける機能（VDOT 検出・回復バナー・VO₂max グラフ）は静かに停止しますが、それ以外の機能は引き続き利用できます。</p>
-
-    <hr>
-
-    <h2>RunCraft が保存するデータ</h2>
-    <p>RunCraft が生成するすべてのデータは、<em>iPhone のアプリサンドボックス内</em>のプライベート SQLite データベースにローカル保存されます。</p>
-    <ul>
-      <li>レース目標（名前・日付・距離）</li>
-      <li>生成された16週間のトレーニングプラン</li>
-      <li>作成したワークアウトと保存したテンプレート</li>
-      <li>完了したランの記録（音声入力または HealthKit 同期）</li>
-      <li>VDOT 履歴（変更ごとに1行）</li>
-      <li>設定（ペース単位・リマインダー時刻など）</li>
-    </ul>
-    <p>このデータベースは、あなた自身の<em>プライベートな iCloud アカウント</em>（Apple の CloudKit プライベートデータベース）を通じて、お使いの Apple デバイス間で同期されます。同期はすべてあなたの iCloud 内で完結し——RunCraft 独自のサーバーはなく、あなたのデータを受信・閲覧・保存することは一切ありません。同期は「iOS の設定 →〔あなたの名前〕→ iCloud → iCloud を使用しているApp → RunCraft」でオフにできます。</p>
-    <p>データを削除するには：iPhone から RunCraft を削除してください。同期されたコピーを削除するには、同じ設定画面で iCloud の RunCraft をオフにしてください。</p>
-
-    <hr>
-
-    <h2>Apple フレームワークの取り扱い</h2>
-    <p>一部の機能は Apple 独自のシステムに処理を委ねており、それらには Apple のプライバシーポリシーが適用されます。</p>
-    <ul>
-      <li><em>WorkoutKit</em>——「ワークアウトを開始」をタップすると、ワークアウト構造が Apple の <code>WorkoutScheduler</code> を通じてペアリングした Apple Watch に送信されます。<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a>が適用されます。</li>
-      <li><em>App Intents／Siri</em>——Siri に「今日のトレーニングは？」と尋ねた場合、応答はローカルで生成されますが、音声認識と呼び出しは Apple が処理します。<a href="https://www.apple.com/legal/privacy/data/en/siri/" target="_blank" rel="noopener">Apple Siri プライバシーポリシー</a>が適用されます。</li>
-      <li><em>ローカル通知</em>——毎日のトレーニングリマインダーは <code>UNUserNotificationCenter</code> によってローカルでスケジュールされ、配信されます。通知データは iPhone の外に出ません。</li>
-    </ul>
-    <p>RunCraft は Siri の音声認識テキストや Apple ID を受け取ることはありません。</p>
-
-    <hr>
-
-    <h2>収集しないデータ</h2>
-    <ul class="no-list">
-      <li>❌ アカウント・サインアップ・メールアドレスの収集なし</li>
-      <li>❌ アナリティクスなし（Firebase・Mixpanel・Amplitude 不使用）</li>
-      <li>❌ クラッシュレポートサービスなし（Sentry・Crashlytics 不使用）</li>
-      <li>❌ 広告 SDK なし</li>
-      <li>❌ サードパーティトラッカーなし</li>
-      <li>❌ HealthKit ワークアウトに含まれる以外の位置情報なし</li>
-      <li>❌ サードパーティのクラウドなし——同期はあなた自身のプライベートな Apple iCloud のみを通じて行われ、当方のサーバー（存在しません）を経由することはありません</li>
-    </ul>
-
-    <hr>
-
-    <h2>お子様について</h2>
-    <p>RunCraft の App Store レーティングは <em>4+</em> で、不適切なコンテンツは含まれていません。<em>ユーザーを識別するデータを一切収集しない</em>ため、13歳未満のお子様のデータを意図的に収集することもありません。</p>
-
-    <hr>
-
-    <h2>ポリシーの変更</h2>
-    <p>RunCraft のデータ取り扱い方法が変わる場合——Pro サブスクリプションの将来的な追加や、同期対象の変更を含む——このページを更新し、上部の発効日を変更します。重要な変更は、アプリ内の設定 → About セクションで通知しますので、ポリシーを再読しなくても変更内容を把握できます。</p>
-
-    <hr>
-
-    <h2>お問い合わせ</h2>
-    <p>ご質問・ご懸念・ご要望はこちら：<a href="mailto:support@marstudio.app">support@marstudio.app</a></p>
-
-    <hr>
-    <p style="color:var(--text-faint);font-size:13px;">最終確認：2026年7月25日</p>
+    <p>最終更新：2026年11月5日。発行者：Cheng Lung Lin。連絡先：<a href="mailto:support@marstudio.app">support@marstudio.app</a>。</p>
+    <h2>データと選択</h2>
+    <p>RunCraftはiPhoneとApple Watch向けのランニング計画・ワークアウトアプリです。RunCraftアカウント、広告SDK、第三者の分析トラッキングはありません。アプリのデータは端末で処理され、一部の練習データは個人のApple iCloudデータベースで同期できます。開発者はワークアウトを自動受信するサービスを運営していません。</p>
+    <h2>Appleヘルスケアへの読み取りと書き込み</h2>
+    <p>許可に応じて、RunCraftは利用可能なワークアウト、時間・距離、心拍・安静時心拍、心拍変動、睡眠、心肺機能、ランニングフォーム・ケイデンス、運動強度、経路を読み取ります。履歴、分析、ペースの目安、練習背景の確認に使用します。利用できるデータは端末、記録、権限によって異なります。</p>
+    <p>iPhoneまたはApple WatchでRunCraftのワークアウトを記録すると、完了したワークアウトと対応する測定値をAppleヘルスケアに書き込みます。屋外の記録には経路が含まれる場合があります。閲覧や対応する情報の手入力に健康データの許可が必須とは限りませんが、記録やデータを使う機能には必要な許可が求められます。権限はヘルスケアやシステムのプライバシーとセキュリティ設定で管理できます。</p>
+    <h2>位置情報と写真</h2>
+    <p>位置情報を許可した場合、屋外ワークアウト中にGPSで経路、距離、ペースを記録できます。ワークアウトがバックグラウンドで継続している間も記録する場合があります。許可があればヘルスケアの保存済み経路も読み取れます。位置情報を広告には使いません。共有カードの写真はシステムの写真ピッカーで選び、ライブラリ全体への無制限のアクセスは必要ありません。画像の共有先も自分で選択します。</p>
+    <h2>保存と個人のiCloud同期</h2>
+    <p>目標、コース選択、予定、ワークアウトテンプレート、ランの概要、記録の根拠、練習のフィードバック、設定を端末に保存します。iCloudが利用できる場合、一部の計画・履歴を個人のCloudKitデータベースで同期します。生のGPS経路や健康センサーのサンプルはヘルスケアから読み取り、この同期データベースにはコピーしません。一部の確認、休止、チェックイン、設定は端末内に保存されます。ペアリングしたiPhoneとWatchは、ワークアウトの案内、進捗、完了に必要な情報を交換します。</p>
+    <p>Appleは独自のポリシーに基づいてヘルスケア、iCloud、端末サービスを運営します。iCloud同期をオフにしても、既存の端末やクラウドの記録は削除されません。</p>
+    <h2>購入と任意のサポート</h2>
+    <p>ダウンロードとLifetime購入はAppleのApp Storeが処理します。RunCraftはStoreKitの取引・アプリ入手情報で利用権限を判断し、購入を復元します。開発者は決済カード情報を受け取りません。</p>
+    <p>問題の調査用に技術診断ログを端末に保存します。書き出したファイルにはアプリ・端末のバージョン、時刻、個人情報を除去する処理を施した技術イベントが含まれる場合があります。開発者へ自動送信はしません。メール、診断ファイル、スクリーンショットを任意で送ると、受信者にはメールアドレスや自分で含めた個人情報などが届きます。共有前に内容を確認してください。送信済みの問い合わせの削除はサポートへ依頼できます。AppleはAppleの共有設定に応じて別途クラッシュや利用状況の報告を提供する場合があります。</p>
+    <h2>保持と削除</h2>
+    <p>保存したアプリの記録は、削除するまで保持します。「設定 → プライバシーとデータ → RunCraftデータを削除」で、プラン、履歴、設定、個人iCloudの同期記録を削除できます。クラウドの削除には接続が必要です。保留中の場合はアプリの状態表示や再試行の案内に従ってください。アプリの削除だけでは、既存の個人iCloudの記録は削除されません。</p>
+    <p>ヘルスケアのワークアウトは独立して残ります。ヘルスケアで管理・削除してください。読み取りを許可したままにすると、再度取り込まれる場合があります。端末の診断ログには保存期間・容量の制限があり、診断画面から消去できます。書き出したZIPや画像は保存・共有先に残ります。Lifetimeの権限はAppleが管理し、RunCraftデータを削除しても取り消されません。</p>
+    <h2>更新と連絡先</h2>
+    <p>データの扱いが変わった場合はこのページを更新します。アプリやサポートへ任意で送った情報については<a href="mailto:support@marstudio.app">support@marstudio.app</a>へご連絡ください。個人プロフィールの作成は不要で、健康・位置情報を広告に使用しません。Appleのサービスや選んだ共有先には、それぞれのプライバシーポリシーが適用されます。</p>
+    <p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
   </div>
 
 </div>

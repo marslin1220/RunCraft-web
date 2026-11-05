@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RunCraft 隱私權政策</title>
-<meta name="description" content="RunCraft 不收集任何使用者資料。你的數據只在你自己的私人 iCloud 同步，不經過我們的伺服器。">
+<meta name="description" content="RunCraft 是 iPhone 與 Apple Watch 的跑步規劃及訓練 App，不需 RunCraft 帳號，沒有廣告 SDK 或第三方分析追蹤。App 資料在你的裝置上處理；部分訓練資料可透過你的私人 Apple iCloud 資料庫同步。開發者沒有營運會自動接收你訓練紀錄的服務。">
 <link rel="icon" href="../icon.png">
 <link rel="alternate" hreflang="en"      href="https://runcraft.marstudio.app/privacy/">
 <link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/privacy.html">
@@ -49,87 +49,26 @@ footer { text-align: center; padding: 32px 0; color: var(--text-faint); font-siz
 
   <div class="prose">
     <h1>RunCraft 隱私權政策</h1>
-    <p class="meta">生效日期：2026 年 6 月 11 日 &nbsp;·&nbsp; 最後更新：2026 年 7 月 25 日</p>
-
-    <p>本隱私權政策說明 RunCraft App（「RunCraft」、「我們」）如何處理你的資料。簡而言之：<em>你的資料屬於你</em>——存在你的裝置上，只透過你自己的私人 iCloud 同步。RunCraft 沒有自己的伺服器、沒有帳號、沒有數據分析，也沒有第三方追蹤。</p>
-
-    <hr>
-
-    <h2>關於我們</h2>
-    <p>RunCraft 是一款遵循 Jack Daniels VDOT 訓練方法論的 iOS 跑步 App，由林政龍以個人專案形式發行。</p>
-    <ul>
-      <li>聯絡信箱：<a href="mailto:support@marstudio.app">support@marstudio.app</a></li>
-    </ul>
-
-    <hr>
-
-    <h2>RunCraft 讀取哪些資料</h2>
-    <p>當你授予權限後，RunCraft 會從你 iPhone 的 <em>Apple 健康（HealthKit）</em> 讀取以下資料：</p>
-    <ul>
-      <li><em>跑步紀錄</em>——距離、時長、開始時間。用於偵測你的 5K／10K／半程馬拉松最佳成績，並推算初始 VDOT。</li>
-      <li><em>心率變異度（HRV）</em>——最近 7 天平均值。供「今日恢復偏低」提示使用，建議將高強度課表換為輕鬆跑。</li>
-      <li><em>睡眠</em>——昨晚的總睡眠時數。用途同 HRV。</li>
-      <li><em>VO₂max</em>——最近 180 天的樣本，顯示於 Insights 頁面的 VDOT 趨勢圖。</li>
-    </ul>
-    <p>以上均為<em>唯讀</em>。RunCraft <em>不會</em>將任何資料寫回 HealthKit。</p>
-    <p>你可以隨時撤銷授權：<em>iOS 設定 → 隱私權與安全性 → 健康 → RunCraft</em>。撤銷後，受影響的功能（VDOT 偵測、恢復提示、VO₂max 圖表）將靜默停止，其餘功能不受影響。</p>
-
-    <hr>
-
-    <h2>RunCraft 儲存哪些資料</h2>
-    <p>RunCraft 產生的所有內容均<em>本機儲存</em>在你 iPhone 的應用程式沙盒內的私有 SQLite 資料庫中：</p>
-    <ul>
-      <li>你的比賽目標（名稱、日期、距離）</li>
-      <li>產生的 16 週訓練計劃</li>
-      <li>你建立的課表與儲存的範本</li>
-      <li>完成的跑步紀錄（語音記錄或 HealthKit 同步）</li>
-      <li>VDOT 歷史紀錄（每次變更一筆）</li>
-      <li>你的偏好設定（配速單位、提醒時間等）</li>
-    </ul>
-    <p>此資料庫會透過你自己的<em>私人 iCloud 帳號</em>（Apple CloudKit 私有資料庫）在你的 Apple 裝置間同步，讓課表與紀錄從一支 iPhone 延續到下一支。同步完全留在你的 iCloud 內——RunCraft 沒有自己的伺服器，永遠不會接收、看到或儲存你的資料。你可以在「iOS 設定 →〔你的名字〕→ iCloud → 使用 iCloud 的 App → RunCraft」關閉同步。</p>
-    <p>如需刪除資料：從 iPhone 移除 RunCraft 即可。如需移除已同步的副本，請在同一個設定畫面關閉 RunCraft 的 iCloud。</p>
-
-    <hr>
-
-    <h2>Apple 系統框架的處理方式</h2>
-    <p>部分功能會移交給 Apple 自身的系統，Apple 的隱私權政策適用於這些情況：</p>
-    <ul>
-      <li><em>WorkoutKit</em>——點選「開始訓練」時，課表結構會透過 Apple 的 <code>WorkoutScheduler</code> 傳送至配對的 Apple Watch。適用 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 隱私權政策</a>。</li>
-      <li><em>App Intents／Siri</em>——當你使用 Siri 詢問「今天的訓練是什麼？」時，語音轉錄與呼叫由 Apple 處理。適用 <a href="https://www.apple.com/legal/privacy/data/en/siri/" target="_blank" rel="noopener">Apple Siri 隱私權政策</a>。</li>
-      <li><em>本機通知</em>——每日訓練提醒由 <code>UNUserNotificationCenter</code> 在本機排程並傳遞，通知資料不會離開你的 iPhone。</li>
-    </ul>
-    <p>RunCraft 不會看到你的 Siri 語音轉錄或 Apple ID。</p>
-
-    <hr>
-
-    <h2>我們不收集的資料</h2>
-    <ul class="no-list">
-      <li>❌ 無帳號、無註冊、不收集電子郵件</li>
-      <li>❌ 無數據分析（不使用 Firebase、Mixpanel、Amplitude）</li>
-      <li>❌ 無當機回報服務（不使用 Sentry、Crashlytics）</li>
-      <li>❌ 無廣告 SDK</li>
-      <li>❌ 無第三方追蹤器</li>
-      <li>❌ 不收集位置資料（HealthKit 跑步紀錄中已含的除外）</li>
-      <li>❌ 無第三方雲端——唯一的同步是透過你自己的私人 Apple iCloud，絕不經過我們的伺服器（我們沒有伺服器）</li>
-    </ul>
-
-    <hr>
-
-    <h2>兒童</h2>
-    <p>RunCraft 在 App Store 評級為 <em>4+</em>，不含任何不當內容。由於我們<em>完全不收集任何使用者識別資料</em>，因此亦不會刻意收集 13 歲以下兒童的資料。</p>
-
-    <hr>
-
-    <h2>政策變更</h2>
-    <p>若 RunCraft 對資料處理方式有所調整——包括日後新增 Pro 訂閱，或同步內容有任何變更——本頁面將更新，頂部的生效日期也會隨之變更。重大變更將透過 App 內的設定 → 關於區域通知，讓你無需重新閱讀政策即可掌握最新資訊。</p>
-
-    <hr>
-
-    <h2>聯絡我們</h2>
-    <p>如有問題、疑慮或請求，請聯絡：<a href="mailto:support@marstudio.app">support@marstudio.app</a></p>
-
-    <hr>
-    <p style="color:var(--text-faint);font-size:13px;">最後審閱：2026 年 7 月 25 日</p>
+    <p>最後更新：2026 年 11 月 5 日。發行者：林政龍。聯絡信箱：<a href="mailto:support@marstudio.app">support@marstudio.app</a>。</p>
+    <h2>你的資料與選擇</h2>
+    <p>RunCraft 是 iPhone 與 Apple Watch 的跑步規劃及訓練 App，不需 RunCraft 帳號，沒有廣告 SDK 或第三方分析追蹤。App 資料在你的裝置上處理；部分訓練資料可透過你的私人 Apple iCloud 資料庫同步。開發者沒有營運會自動接收你訓練紀錄的服務。</p>
+    <h2>Apple 健康：讀取與寫入</h2>
+    <p>取得你的許可後，RunCraft 會讀取可用的訓練、時間與距離、心率與靜止心率、心率變異、睡眠、心肺適能、跑姿與步頻、耗力程度及訓練路線。這些資料用於跑步歷史、分析、配速參考與訓練背景檢視。可用資料取決於裝置、已有紀錄及授權。</p>
+    <p>使用 RunCraft 在 iPhone 或 Apple Watch 記錄訓練時，App 會將完成的訓練及支援的測量資料寫入 Apple 健康；戶外訓練也可能包含路線。瀏覽或手動輸入支援的資訊不一定需要健康權限，但記錄訓練和依賴資料的功能需要相關授權。你可在 Apple 健康或系統「隱私權與安全性」設定管理權限。</p>
+    <h2>位置與照片</h2>
+    <p>取得定位權限後，戶外訓練可使用 GPS 記錄路線、距離與配速，包括訓練持續進行時的背景記錄。獲准時，RunCraft 也能讀取 Apple 健康中已儲存的訓練路線，不會將位置用於廣告。加入分享卡的照片由你透過系統照片選取器選擇，App 不需要無限制讀取整個相簿；分享圖片的目的地也由你選擇。</p>
+    <h2>儲存與私人 iCloud 同步</h2>
+    <p>RunCraft 在你的裝置儲存目標、課程選擇、課表、訓練範本、跑步摘要、成績依據、訓練回饋及偏好。iCloud 可用時，部分規劃與歷史紀錄會透過你的私人 CloudKit 資料庫同步。原始 GPS 路線與健康感測樣本從 Apple 健康讀取，不複製到這個同步資料庫。部分檢視、暫停與提醒設定及偏好只保存在個別裝置。配對的 iPhone 與 Watch 會交換訓練引導、進度與完成結果所需資訊。</p>
+    <p>Apple 依自己的隱私政策提供健康、iCloud 與裝置服務。關閉 iCloud 同步不會刪除既有本機或雲端紀錄。</p>
+    <h2>購買與自願提供的支援資料</h2>
+    <p>下載與 Lifetime 購買由 Apple 的 App Store 處理。RunCraft 透過 StoreKit 交易及取得 App 的資訊判定權限、恢復購買；開發者不會取得你的付款卡資料。</p>
+    <p>技術診斷紀錄保存在本機，用於排查問題。匯出檔可能包含 App／裝置版本、時間戳及經敏感資料遮蔽的技術事件，不會自動寄給開發者。若你寄信或選擇分享診斷檔、截圖，收件者會收到你送出的資訊，包括電子郵件地址及你自行加入的個人資料。分享前請先檢視內容；已寄出的支援往來可聯絡支援要求刪除。Apple 也可能依你的 Apple 分享設定另外提供當機或使用報告。</p>
+    <h2>保留與刪除</h2>
+    <p>已儲存的 App 紀錄會保留到你刪除。可使用「設定 → 隱私權與資料 → 刪除 RunCraft 資料」，移除 App 課表、歷史、偏好與私人 iCloud 同步紀錄。雲端刪除需要連線；如果仍待完成，請依 App 顯示的狀態或重試指示操作。只刪除 App 會移除本機資料，不會刪除既有私人 iCloud 紀錄。</p>
+    <p>Apple 健康的訓練獨立保存，不會因此刪除；請在健康 App 管理。若仍允許讀取，這些訓練之後可能再次匯入。本機診斷紀錄設有保存時間與容量限制，也能從診斷控制項清除；匯出的 ZIP 或圖片仍留在你儲存或分享的位置。Lifetime 權限由 Apple 管理，不會因刪除 RunCraft 資料而取消。</p>
+    <h2>政策更新與聯絡</h2>
+    <p>資料處理方式變更時會更新本頁。關於 App 或你自願提供給支援的資料，請聯絡 <a href="mailto:support@marstudio.app">support@marstudio.app</a>。RunCraft 不要求建立個人檔案，也不將健康或位置資料用於廣告。Apple 服務及你選擇的分享目的地各有其隱私政策。</p>
+    <p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
   </div>
 
 </div>

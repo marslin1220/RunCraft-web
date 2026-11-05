@@ -6,131 +6,42 @@ permalink: /privacy/
 
 # RunCraft Privacy Policy
 
-**Effective date:** 11 June 2026
-**Last updated:** 25 July 2026
+Last updated: 5 November 2026. Published by Cheng Lung Lin. Contact: [support@marstudio.app](mailto:support@marstudio.app).
 
-This Privacy Policy describes how the RunCraft app ("RunCraft", "we", "us")
-handles your data. The short version: **your data stays yours** — it lives on
-your devices and syncs only through your own private iCloud. RunCraft has no
-servers of its own, no accounts, no analytics, and no third-party tracking.
+## Your data and your choices
 
----
+RunCraft is a running-planning and workout app for iPhone and Apple Watch. It has no RunCraft account, advertising SDKs or third-party analytics. App data is processed on your devices. Selected training data can sync through your private Apple iCloud database. The developer does not operate a service that automatically receives your workouts.
 
-## Who we are
+## Apple Health: reading and writing
 
-RunCraft is an iOS app for serious runners following Jack Daniels' VDOT
-training methodology. It is published by Cheng Lung Lin as a personal
-project.
+With your permission, RunCraft reads available workouts, time and distance, heart rate and resting heart rate, heart-rate variability, sleep, cardio fitness, running-form and cadence metrics, effort and workout routes. These support workout history, running insights, pace guidance and review of training context. Availability depends on your devices, recorded data and permissions.
 
-- **Contact:** [support@marstudio.app](mailto:support@marstudio.app)
+When you record a workout with RunCraft on iPhone or Apple Watch, RunCraft writes the completed workout and supported measurements to Apple Health. Outdoor recordings can include a workout route. Health access is optional for browsing or entering supported information manually, but recording and data-dependent features need the relevant permissions. Manage access in Apple Health or system Privacy & Security settings.
 
----
+## Location and photos
 
-## What data RunCraft reads
+With location permission, an outdoor workout can use GPS to record its route, distance and pace, including while the workout continues in the background. RunCraft can also read a saved workout route from Apple Health when permitted. It does not use location for advertising. If you add a photo to a share card, you choose it through the system photo picker; the app does not need unrestricted access to your entire library. You choose where to share the resulting image.
 
-When you grant permission, RunCraft reads the following from **Apple Health
-(HealthKit)** on your iPhone:
+## Storage and private iCloud synchronization
 
-- **Running workouts** — distance, duration, start time. Used to detect a
-  best 5K / 10K / Half Marathon time and derive your initial VDOT.
-- **Heart Rate Variability (HRV)** — last 7 days' average. Used by the
-  "Recovery looks low today" banner to suggest swapping a hard session
-  for an easy run.
-- **Sleep** — last night's total. Same purpose as HRV.
-- **VO₂max** — last 180 days of samples. Plotted on the Insights tab
-  alongside your VDOT trend.
+RunCraft stores goals, course choices, schedules, workout templates, run summaries, performance evidence, training feedback and preferences on your devices. Selected planning and history records synchronize through your private CloudKit database when iCloud is available. Raw GPS routes and raw Health sensor samples are read from Apple Health rather than copied into this synchronized database. Some review, pause and check-in records and preferences remain local to a device. Paired iPhone and Watch exchange the information needed for workout guidance, progress and completion.
 
-Reads only. RunCraft **does not write** anything back to HealthKit.
+Apple operates Health, iCloud and the device services under its own privacy policies. Turning off iCloud synchronization does not delete existing local or cloud records.
 
-You can revoke this access at any time: **iOS Settings → Privacy &
-Security → Health → RunCraft**. When access is revoked, the affected
-features (VDOT detection, recovery banner, VO₂max chart) silently stop
-working but RunCraft continues to function for everything else.
+## Purchases and optional support
 
----
+Apple processes downloads and Lifetime purchases through the App Store. RunCraft uses StoreKit transaction and acquisition information to determine access and restore purchases. The developer does not receive your payment-card details.
 
-## What data RunCraft stores
+Technical diagnostic logs are kept locally for troubleshooting. An export can contain app/device versions, timestamps and sanitized technical events. It is not automatically sent to the developer. If you email support or choose to share a diagnostic file or screenshot, the recipient receives the information you send, including your email address and any personal details you include. Review a file before sharing it. Contact support to request deletion of correspondence you have sent. Apple may separately provide crash or usage reports according to your Apple sharing settings.
 
-Everything RunCraft generates is stored **locally on your iPhone** in a
-private SQLite database inside the app's sandbox:
+## Retention and deletion
 
-- Your race goal (name, date, distance)
-- The generated 16-week training plan
-- Workouts you author and templates you save
-- Completed run records (when you log them by voice or HealthKit syncs)
-- VDOT history (one row per change)
-- Your preferences (pace unit, reminder time, etc.)
+RunCraft keeps saved app records until you delete them. Use Settings → Privacy & Data → Delete RunCraft Data to remove app plans, history, preferences and synchronized private iCloud records. Cloud deletion needs connectivity; if it remains pending, follow the app’s retry/status instructions. Deleting the app alone removes its local data but does not remove existing private iCloud records.
 
-This database syncs across your own Apple devices through your **private
-iCloud account** (Apple's CloudKit private database), so your plan and history
-follow you from one iPhone to the next. That sync stays entirely within your
-iCloud — **RunCraft has no servers of its own and never receives, sees, or
-stores your data**. You can turn the sync off in **iOS Settings → [your name]
-→ iCloud → Apps Using iCloud → RunCraft**.
+Apple Health workouts are separate and remain in Apple Health. Manage or delete them there. If read access remains enabled, those workouts can be imported again. Local diagnostic logs have age and storage limits and can be cleared from the diagnostic controls; a ZIP or image you exported remains wherever you saved or shared it. A Lifetime entitlement is managed by Apple and is not cancelled by deleting RunCraft data.
 
-To delete the data: delete RunCraft from your iPhone. To remove synced copies,
-also turn off RunCraft in iCloud from the same Settings screen.
+## Policy updates and contact
 
----
+This page is updated when data handling changes. For questions about the app or data you have voluntarily sent to support, email [support@marstudio.app](mailto:support@marstudio.app). RunCraft does not require a personal profile or use health or location data for advertising. Apple services and any destination you choose when sharing have their own privacy policies.
 
-## What Apple frameworks handle
-
-Some features hand off to Apple's own systems, which have their own
-privacy policies that apply when they receive data:
-
-- **WorkoutKit** — when you tap "Start Workout", the workout structure
-  is dispatched to your paired Apple Watch via Apple's
-  `WorkoutScheduler`. Subject to [Apple's privacy policy](https://www.apple.com/legal/privacy/).
-- **App Intents / Siri** — when you ask Siri "what's today's training?",
-  the response is generated locally but the voice transcription and
-  invocation are handled by Apple. Subject to [Apple's Siri privacy
-  policy](https://www.apple.com/legal/privacy/data/en/siri/).
-- **Local Notifications** — daily training reminders are scheduled via
-  `UNUserNotificationCenter` and delivered locally. No notification
-  data leaves your iPhone.
-
-RunCraft never sees your Siri transcriptions or your Apple ID.
-
----
-
-## What we don't collect
-
-To be explicit:
-
-- ❌ No account, no sign-up, no email collection
-- ❌ No analytics (no Firebase, no Mixpanel, no Amplitude)
-- ❌ No crash reporting service (no Sentry, no Crashlytics)
-- ❌ No advertising SDKs
-- ❌ No third-party trackers
-- ❌ No location data beyond what HealthKit workouts already contain
-- ❌ No third-party cloud — the only sync is through your own private Apple
-  iCloud, never our servers (we have none)
-
----
-
-## Children
-
-RunCraft is rated **4+** on the App Store and contains no objectionable
-content. We do not knowingly collect data from children under 13 because
-**we do not collect any user-identifying data, period**.
-
----
-
-## Changes to this policy
-
-If we change how RunCraft handles your data — including a future Pro
-subscription tier or any change to what is synced — this page will be
-updated and the effective date at the top will change.
-Material changes will be surfaced in-app via the Settings → About
-section so you don't have to re-read the policy to know something has
-changed.
-
----
-
-## Contact
-
-Questions, concerns, or requests: [support@marstudio.app](mailto:support@marstudio.app).
-
----
-
-*Last reviewed: 25 July 2026*
+Apple privacy policy: https://www.apple.com/legal/privacy/
