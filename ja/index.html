@@ -4,334 +4,81 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-itunes-app" content="app-id=6789176694">
-<title>RunCraft — ランナーを理解する適応型ランニングコーチ</title>
-<meta name="description" content="RunCraft はフィットネス、直近のトレーニング、回復状態に合わせてプランを調整し、iPhone と Apple Watch で次に何を走るべきかを案内します。">
-<meta property="og:title" content="RunCraft — ランナーを理解する適応型ランニングコーチ">
-<meta property="og:description" content="フィットネス、直近のトレーニング、回復、完了したランをつなぎ、次に何を走るべきかを継続的に調整します。">
-<meta property="og:image" content="https://runcraft.marstudio.app/assets/og.png">
+<title>RunCraft — 目標に合うプラン。毎日のランに見通しを。</title>
+<meta name="description" content="ランニング習慣づくりからレース準備まで。RunCraft はプラン、VDOT ペース、iPhone と Apple Watch のワークアウトガイドをつなぎます。無料ダウンロード、サブスクリプションなし。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RunCraft — 目標に合うプラン。毎日のランに見通しを。">
+<meta property="og:description" content="ランニング習慣づくりからレース準備まで。RunCraft はプラン、VDOT ペース、iPhone と Apple Watch のワークアウトガイドをつなぎます。無料ダウンロード、サブスクリプションなし。">
+<meta property="og:url" content="https://runcraft.marstudio.app/ja/">
+<meta property="og:image" content="https://runcraft.marstudio.app/assets/social/ja.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../icon.png">
+<link rel="canonical" href="https://runcraft.marstudio.app/ja/">
 <link rel="alternate" hreflang="en" href="https://runcraft.marstudio.app/">
 <link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/">
 <link rel="alternate" hreflang="zh-Hans" href="https://runcraft.marstudio.app/zh-Hans/">
 <link rel="alternate" hreflang="ja" href="https://runcraft.marstudio.app/ja/">
 <link rel="alternate" hreflang="ko" href="https://runcraft.marstudio.app/ko/">
 <link rel="alternate" hreflang="x-default" href="https://runcraft.marstudio.app/">
+<link rel="icon" href="../icon.png">
 <link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/refresh.css">
+
 </head>
-<body>
+<body class="refresh">
+<a class="skip-link" href="#main">本文へ移動</a>
 <div class="wrap">
-
-  <nav>
-    <a class="brand" href="#"><img src="../icon.png" alt="RunCraft アイコン" width="32" height="32">RunCraft</a>
-    <div class="navlinks">
-      <a href="#situations">シーン</a>
-      <a href="#watch">Apple Watch</a>
-      <a href="#method">理論</a>
-      <a href="#support">サポート</a>
-      <a href="./privacy.html">プライバシー</a>
-    </div>
-    <div class="navtools">
-      <button class="iconbtn langbtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="言語を選択"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 9h17.6M3.2 15h17.6"/><path d="M12 3c2.4 2.6 3.7 5.7 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.7-3.7-9S9.6 5.6 12 3z"/></svg></button>
-      <div class="langmenu" hidden>
-        <a href="../" data-lang="en">English</a>
-        <a href="../zh-Hant/" data-lang="zh-Hant">繁體中文</a>
-        <a href="../zh-Hans/" data-lang="zh-Hans">简体中文</a>
-        <a class="on" href="./" data-lang="ja">日本語</a>
-        <a href="../ko/" data-lang="ko">한국어</a>
-      </div>
-      <button class="iconbtn menubtn" type="button" aria-expanded="false" aria-label="メニュー"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <h1>今日走るべき内容が<br><em>ひと目でわかる</em></h1>
-    <p class="sub">RunCraft はプラン、完了したラン、回復状態をつなぎます。今日のセッションは、数週間前のテンプレートではなく、今のあなたを反映します。</p>
-    <div class="cta">
-      <a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.06 10.05c.02 2.6 2.28 3.46 2.3 3.47-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.63 2.12-1.15.02-1.52-.68-2.84-.68-1.31 0-1.72.66-2.81.7-1.13.05-2-1.13-2.72-2.18C1.7 13.79.58 9.9 2.1 7.28c.75-1.3 2.1-2.13 3.56-2.15 1.11-.02 2.16.75 2.84.75.68 0 1.95-.92 3.29-.79.56.03 2.14.23 3.15 1.71-.08.05-1.88 1.1-1.86 3.25zM10.9 3.68c.6-.73 1-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.68-.91 2.66.96.08 1.95-.49 2.55-1.21z"/></svg> App Store でダウンロード</a>
-      <span class="badge-note">iPhone &amp; Apple Watch · 無料ダウンロード、買い切りは任意</span>
-    </div>
-    <div class="shots">
-      <img class="phone" src="../assets/ja/plan.png" alt="今週のトレーニングプランと今日のインターバルセッション" width="600" height="1304">
-    </div>
-  </header>
-
-  <section id="situations">
-    <div class="kicker">心当たりは？</div>
-    <h2>問題は、努力不足ではなかった</h2>
-    <p class="lede">伸び悩むのは怠けているからではなく、推測しているから。その推測が現れる場面です。</p>
-
-    <div class="painlist">
-      <div class="pain">
-        <h3>どのランも同じ「中くらいにきつい」で終わる</h3>
-        <p>イージーは回復できるほど楽ではなく、ポイントは速く走れるほど新鮮でもない。走り続けても記録は止まったまま。</p>
-      </div>
-      <div class="pain">
-        <h3>ネットで見つけたプランは、あなたのために書かれていない</h3>
-        <p>拾ってきた PDF は、他人のフィットネスが前提。そのペースはジョグかレースのどちらかで、しかも判別できません。</p>
-      </div>
-      <div class="pain">
-        <h3>距離を増やしながら、無事を祈っている</h3>
-        <p>増やしている間は好調——ある日そうでなくなるまで。痛み出した時、そのミスはすでに 3 週間前のものです。</p>
-      </div>
-      <div class="pain">
-        <h3>走り終えても、良かったのかどうか分からない</h3>
-        <p>ウォッチは「8km・44分」と言います。でもそれが今日走るはずだったセッションかどうかは教えてくれません。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="answers">
-    <div class="kicker">RunCraft の答え</div>
-    <h2>どの場面にも、答えがある</h2>
-
-    <!-- Situation 1: what does "easy" actually mean -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">「自分のイージーペースって、実際何分？」</div>
-        <h3>実際に走った記録から、すべてのペースを</h3>
-        <p>レースかタイムトライアルの記録を一つ入力するだけ。RunCraft がそれを VDOT スコアに、VDOT スコアをすべての訓練ペースに変えます。「イージー」にようやく数字がつきます。</p>
-        <ul>
-          <li>Easy・Marathon・Threshold・Interval・Repetition の各ペース</li>
-          <li>5K からフルマラソンまでの現実的なレース予測</li>
-          <li>フィットネスの向上に合わせてペースも移動——手動リセット不要</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/insights.png" alt="VDOT インサイト：ペースゾーンとレース予測" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 2: the 6am decision -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">「朝 6 時に、もう何も決めたくない。」</div>
-        <h3>今日のセッションは、もう用意されている</h3>
-        <p>期分けされたスケジュールは、レース当日から逆算して組まれます。白紙の朝はありません——ロック画面を見れば、今日はもう決まっています。</p>
-        <ul>
-          <li>ウィジェットで今日のセッションをひと目で</li>
-          <li>コンディションが落ちたらリカバリー日を自動調整</li>
-          <li>レースの予定がない？　毎週のシンプルなルーティンで走れます</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/plan.png" alt="今週のトレーニングプランと今日のインターバルセッション" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">「プランはインターバル。でも回復状態はそう言っていない。」</div>
-        <h3>聞かれる前に、コーチが気づく</h3>
-        <p>睡眠、HRV、安静時心拍、直近の負荷が回復を示したら、RunCraft はプラン内に一つの明確な提案を表示します。適用するかはあなたが決めます。</p>
-        <ul>
-          <li>提案の根拠となる回復シグナルを表示</li>
-          <li>プラン全体ではなく、今日だけを調整</li>
-          <li>強制ポップアップではなくページ内バナーで表示</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/coaching.png" alt="睡眠不足と低い HRV を理由にイージーランを提案するコーチングバナー" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">「データは正常。でも今日は違う気がする。」</div>
-        <h3>センサーが見逃したことをコーチに伝える</h3>
-        <p>いつもより疲れている、脚が痛い、体調が悪いと感じた時だけ報告できます。毎日のウェルネス質問票ではなく、必要な時の逃げ道です。</p>
-        <ul>
-          <li>医療問診ではない、三つの絞った状態</li>
-          <li>今日のコーチング判断だけを補完</li>
-          <li>一度の報告でプラン全体を書き換えない</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/recovery.png" alt="疲労、脚の痛み、体調不良をランナーが任意で報告する画面" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Three situations with no distinct screenshot of their own. -->
-    <!-- Two situations with no distinct screenshot of their own. -->
-    <div class="duo">
-      <div class="duocard">
-        <div class="situation">「まだ 30 分続けて走れない。」</div>
-        <h3>恥ずかしさからではなく、歩くことから</h3>
-        <p>すべてのプランが 5K から始まる必要はありません。ウォーク＆ラン進行は今のあなたの地点から、30 分連続まで積み上げます。</p>
-        <ul>
-          <li>歩きと走りを交互に、あなたに合わせた時間配分で</li>
-          <li>進行は根性ではなく「週」の単位で</li>
-          <li>Apple Watch がなくても OK——iPhone だけでラン全体をガイド</li>
-        </ul>
-      </div>
-      <div class="duocard">
-        <div class="situation">「今はレースを目標にしていない。」</div>
-        <h3>架空のゴールを作らず、習慣を育てる</h3>
-        <p>シンプルな週間ルーティンを作るか、ランの記録だけを続けるかを選べます。方向はいつでも変更できます。</p>
-        <ul>
-          <li>自分の週に合う曜日で繰り返す</li>
-          <li>レース日も VDOT も不要</li>
-          <li>準備ができたらレーストレーニングへ切り替え</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">「走り終えた。今のは良かった？」</div>
-        <h3>何が起きたか、その意味まで見る</h3>
-        <p>RunCraft は予定していたセッションと実際のランを結びつけ、単独の完走タイムだけで終わらせません。</p>
-        <ul>
-          <li>GPS ルート、スプリット、ペース、心拍を一度に確認</li>
-          <li>運動強度と天気でセンサーだけでは説明できない背景を補足</li>
-          <li>回復、トレーニングバランス、VDOT の推移から次の一歩へ</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/analysis.png" alt="GPS、ペース、心拍、運動強度、天気をまとめたラン後分析" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 5: the ramp -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">「増やすペース、速すぎない？」</div>
-        <h3>その増やし方を、見張っているものがある</h3>
-        <p>RunCraft は急性：慢性の負荷比——今週の負荷と積み上げてきたベース——を見張り、その跳ね上がりが怪我になる<em>前に</em>声を上げます。</p>
-        <ul>
-          <li>週間負荷トレンドをわかりやすいバナーで表示</li>
-          <li>リスク域に踏み込んだら早めに警告</li>
-          <li>80/20 チェックで、イージー日を正直にイージーに</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/loadbanner.png" alt="トレーニング負荷が急上昇していることを知らせるバナー" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 6: custom session -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">「コーチのメニューを、どのアプリも理解できない。」</div>
-        <h3>一度組めば、あとは手首の上で</h3>
-        <p>ウォームアップ、本数、リカバリー、クールダウン——並べて、ワンタップで Apple Watch へ。書いたとおりに走れます。</p>
-        <ul>
-          <li>ウォームアップ・メイン・リカバリー・クールダウンのブロック</li>
-          <li>ステップごとに距離または時間の目標を設定</li>
-          <li>インターバルごとにペースアラートを設定</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/editor.png" alt="カスタムインターバルワークアウトエディタ" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 7: sharing -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">「今日のは、残しておきたい。」</div>
-        <h3>投稿する価値のある一枚に</h3>
-        <p>写真に値するランもあります。自分で撮った一枚を入れれば、RunCraft がスタッツを重ねてカードに——ダッシュボードのスクショはもう要りません。</p>
-        <ul>
-          <li>あなたの写真、あなたのラン、その上にクリーンなスタッツ</li>
-          <li>Instagram ストーリーズにぴったりのサイズ</li>
-          <li>投稿前にプレビュー</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/share.png" alt="夕日の写真の上のシェアカードプレビュー" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section id="watch">
-    <div class="kicker">Apple Watch</div>
-    <h2>インターバルの最中に、計算はしたくない</h2>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">「今、ペースに乗れてる？」</div>
-        <h3>計算はいらない、走るだけ</h3>
-        <p>今日のワークアウトをウォッチから始めれば、あとは RunCraft が運びます：ターゲット、外れたら手首に一つ、残りは何本か。意識はランに向けたままで。</p>
-        <ul>
-          <li>リアルタイムのペースターゲットと達成フィードバック</li>
-          <li>心拍ゾーン表示、外れたら触覚アラート</li>
-          <li>インターバルの進捗——本数、残り距離</li>
-          <li>文字盤のコンプリケーションに今日のセッションを表示</li>
-        </ul>
-      </div>
-      <div class="media">
-        <div class="watchstack">
-          <img class="watchshot" src="../assets/ja/watch-structured.png" alt="Apple Watch の構造化ワークアウトガイド" width="416" height="496" loading="lazy">
-          <img class="watchshot" src="../assets/ja/watch-open-goal.png" alt="Apple Watch のフリーランと四隅のデータ切り替え" width="416" height="496" loading="lazy">
-          <img class="watchshot" src="../assets/ja/watch-summary.png" alt="Apple Watch のワークアウト概要と主観的運動強度" width="416" height="496" loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">「iPhone はポケットの中——ちゃんと追えてる？」</div>
-        <h3>iPhone がセッションをリアルタイムでミラーリング</h3>
-        <p>ラン中に iPhone を取り出せば、同じワークアウトがそこに——本数、リアルタイムのペース、心拍ゾーンが、手元と同期して。</p>
-        <ul>
-          <li>ウォッチの本数進捗をリアルタイムにミラーリング</li>
-          <li>ペース・心拍ゾーン・ケイデンスをひと目で</li>
-          <li>どちらのデバイスからでも一時停止・終了が可能</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/ja/live.png" alt="Apple Watch のインターバルワークアウトをリアルタイムでミラーリングする iPhone" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section id="method">
-    <div class="kicker">なぜ機能するのか</div>
-    <h2>推測ではなく、VDOT に基づいて</h2>
-    <p class="lede">トレーニングペースはジャック・ダニエルズの VDOT から始まり、直近の走行量、完了したセッション、回復状態によって今できることに合わせます。センサーが見逃した時だけ、あなたの報告が隙間を埋めます。</p>
-    <div class="support-card">
-      <div>
-        <h3>無料で体験、必要に応じて買い切り</h3>
-        <p>App Store で初めて入手した日から21日間、すべての機能を体験できます。その後もヘルスケアの読み込みと基本的な履歴は無料です。トレーニング計画の利用とワークアウトの開始には、任意の Lifetime 購入が必要です。定期購入はありません。対象となる旧有料版の購入者は永続アクセスを保持します。</p>
-      </div>
-      <div>
-        <h3>データはあなたのもの</h3>
-        <p>デバイス上で計算し、あなた自身の iCloud でプライベートに同期します。<a href="./privacy.html">ポリシーを読む</a></p>
-      </div>
-      <div>
-        <h3>一人のランナーが作りました</h3>
-        <p>開発者自身が繰り返しぶつかったトレーニングの問題から形になった、インディーアプリです。<a href="press/">プレスキット</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="support">
-    <div class="kicker">サポート</div>
-    <h2>ご質問・フィードバック</h2>
-    <div class="support-card">
-      <div>
-        <h3>レビュー＆フィードバック</h3>
-        <p>App Store の評価とレビューがフィードバックの一番の窓口です——すべて目を通します。<a href="mailto:support@marstudio.app">support@marstudio.app</a> へのメールでも。</p>
-      </div>
-      <div>
-        <h3>プレス</h3>
-        <p>RunCraft について書かれる方へ。ロゴ・スクリーンショット・定型文をご用意しています。<a href="press/">プレスキットを開く</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <span>© 2026 Cheng Lung Lin · RunCraft はインディー iOS アプリです。</span>
-    <div class="links">
-      <a href="https://github.com/marslin1220/RunCraft-web">GitHub</a>
-      <a href="press/">プレスキット</a>
-      <a href="./privacy.html">プライバシーポリシー</a>
-      <a href="#support">サポート</a>
-    </div>
-  </footer>
-
+<nav aria-label="RunCraft">
+<a class="brand" href="./"><img src="../icon.png" alt="" width="32" height="32">RunCraft</a>
+<div class="navlinks"><a href="#method">プランの仕組み</a><a href="#watch">Apple Watch</a><a href="guide/">使い方</a><a href="#pricing">料金</a><a href="#support">サポート</a></div>
+<div class="navtools">
+<button class="iconbtn langbtn" type="button" aria-expanded="false" aria-controls="languages" aria-label="言語を選択"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 9h18M3 15h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg></button>
+<div class="langmenu" id="languages" hidden><a href="../" data-lang="en">English</a><a href="../zh-Hant/" data-lang="zh-Hant">繁體中文</a><a href="../zh-Hans/" data-lang="zh-Hans">简体中文</a><a href="./" data-lang="ja" class=on aria-current=true>日本語</a><a href="../ko/" data-lang="ko">한국어</a></div>
+<button class="iconbtn menubtn" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニュー" data-close-label="メニューを閉じる"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div>
-<script src="../assets/nav.js"></script>
-</body>
-</html>
+</nav>
+<main id="main">
+<header class="hero course-hero">
+<div class="hero-copy">
+<p class="kicker">ランニングプラン · IPHONE &amp; APPLE WATCH</p>
+<h1>目標に合うプラン。<br><em>毎日のランに見通しを。</em></h1>
+<p class="sub">走る習慣をつくるときも、次のレースを目指すときも。RunCraft はプラン、トレーニングペース、ワークアウトガイドをまとめ、今日とその先をわかりやすくします。</p>
+<div class="cta"><a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13 10c0 2.6 2.3 3.5 2.3 3.5s-.4 1.3-1.2 2.5c-.7 1-1.5 2.1-2.6 2.1s-1.5-.7-2.8-.7-1.7.7-2.8.7S3.9 17 3.2 15.9C1.7 13.8.6 9.9 2.1 7.3c.8-1.3 2.1-2.1 3.6-2.2 1.1 0 2.2.8 2.8.8s2-.9 3.3-.8c.6 0 2.1.2 3.2 1.7-.1.1-1.9 1.1-2 3.2ZM11 3.7c.6-.7 1-1.7.9-2.8-.9.1-1.9.6-2.6 1.3-.5.7-1 1.7-.9 2.7 1 .1 1.9-.5 2.6-1.2Z"/></svg>App Store でダウンロード</a><a class="text-link" href="#method">プランの仕組みを見る<span aria-hidden="true"> ↗</span></a></div>
+<p class="badge-note">無料ダウンロード · 21 日間のフル体験 · サブスクなし</p>
+</div>
+<figure class="hero-product">
+<img class="hero-phone" src="../assets/ja/live.png" alt="iPhone に表示されたワークアウトの進行、ペース、心拍数" width="1320" height="2868" fetchpriority="high">
+<img class="hero-watch" src="../assets/ja/watch-structured.png" alt="Apple Watch に表示されたインターバルの進行と現在のペース" width="410" height="502">
+<figcaption>iPhone と Apple Watch のワークアウトガイド</figcaption>
+</figure>
+</header>
+<section id="situations" class="path-section">
+<p class="kicker">あなたの目標から</p><h2>走る理由は、一つではありません。</h2><p class="lede">レースの予定がなくても始められます。</p>
+<div class="path-grid"><article class="path-card"><span class="index" aria-hidden="true">01</span><h3>走る習慣をつくる</h3><p>ラン・ウォークから始めるか、これまでの経験に合う定期的なトレーニングを選びます。</p></article><article class="path-card"><span class="index" aria-hidden="true">02</span><h3>レースに備える</h3><p>まずレースの目標を保存し、対応するプランと必要な準備・期間を確認します。</p></article><article class="path-card"><span class="index" aria-hidden="true">03</span><h3>自分のペースで走る</h3><p>体験期間中または Lifetime でフリーランを開始し、走った記録を残します。</p></article></div>
+</section>
+<section id="method" class="method-section">
+<span id="answers" class="anchor-alias" aria-hidden="true"></span>
+<div class="section-intro"><p class="kicker">プランの仕組み</p><h2>目標は、出発点です。</h2><p class="lede">日付と距離がレースを示し、これまでの経験が準備の方向を示します。</p><a class="text-link" href="guide/#course-review">ランニングガイドを読む <span aria-hidden="true">↗</span></a></div>
+<ol class="steps"><li><span class="step-number" aria-hidden="true">01</span><div><h3>方向を決める</h3><p>定期的に走るか、レースの日付と距離を保存します。名前は任意です。目標の保存だけでは現在のプランは置き換わりません。</p></div></li><li><span class="step-number" aria-hidden="true">02</span><div><h3>これまでの背景を確認</h3><p>関連する記録や保存済みの入力を確認します。変わった点を直し、プランに必要な不足情報を補います。</p></div></li><li><span class="step-number" aria-hidden="true">03</span><div><h3>確認してから選ぶ</h3><p>セッション、日程、準備条件を確認してからプランを使います。目標があるだけで、すべてのプランが適するわけではありません。</p></div></li></ol>
+</section>
+<section class="daily-section">
+<div class="section-intro"><p class="kicker">走る前に</p><h2>今日の練習と、その目的を。</h2><p class="lede">予定されたセッションと目的を、最近のランと一緒に確認。異なる練習には、それぞれのペースと役割があります。</p><ul class="benefits"><li>予定の練習、休養日、今週の走行量を確認</li><li>VDOT に基づくイージー、マラソン、閾値、インターバル、レペティションのペース参考値</li><li>最近の成績をペースの参考に。予測タイムは推定値です</li></ul></div>
+<aside class="observation"><span class="observation-mark" aria-hidden="true">↗</span><h3>数値は手がかりであり、結論ではありません。</h3><p>睡眠、HRV、安静時心拍は、利用可能な範囲で背景を補います。日付や欠測も大切です。数値だけで回復を確認したり、自動的に別の練習を処方したりはしません。</p><a class="text-link" href="guide/#observations">使い方 <span aria-hidden="true">↗</span></a></aside>
+</section>
+<section id="watch" class="watch-feature">
+<div><p class="kicker">走っている間</p><h2>セッションを手首に。</h2><p class="lede">iPhone または Apple Watch で、現在のステップ、ペース、進行を確認しながら練習。次の動作を確かめる手間を減らします。</p><ul class="benefits"><li>運動とリカバリーの区間をガイド</li><li>記録中のペースと心拍数を確認</li><li>Apple Watch がなくても iPhone でガイドを利用</li></ul></div>
+<div class="watch-gallery"><img src="../assets/ja/watch-structured.png" alt="Apple Watch に表示されたインターバルの進行と現在のペース" width="410" height="502" loading="lazy"><img src="../assets/ja/watch-open-goal.png" alt="自分のペースで走る" width="410" height="502" loading="lazy"></div>
+</section>
+<section class="review-feature">
+<p class="kicker">走った後に</p><h2>ランを残し、次を選ぶ。</h2><p class="lede">距離、スプリット、ペース、心拍数を、利用可能な運動強度や天気と一緒に振り返ります。プランの完了は次の選択への節目であり、自動的な強度アップではありません。</p><ul class="benefits"><li>完了したランとプラン履歴を保持</li><li>次の計画で関連する保存済みの背景を確認</li><li>新しい方向は明示的に選択。中断や回復は別途確認</li></ul>
+</section>
+<section id="guides" class="guide-callout"><div><h2>理解が深まると、次が見えてくる。</h2><p>始め方、ペースの意味、レースや休養の後の進め方。</p></div><a class="btn-secondary" href="guide/">ランニングガイドを読む <span aria-hidden="true">↗</span></a></section>
+<section id="pricing"><p class="kicker">シンプルな料金</p><h2>十分に試してから、決める。</h2><p class="lede">無料ダウンロード。Lifetime は任意の一度きりの購入です。サブスクや自動更新はありません。</p><div class="price-grid"><article class="price-card"><div class="price-name">21 日間</div><h3>フル体験</h3><p>プラン、ガイド付き記録、分析を試してから購入を検討できます。</p></article><article class="price-card"><div class="price-name">Free Mode</div><h3>記録はそのまま活用</h3><p>Apple ヘルスケアからの読み込みと基本履歴、VDOT、走行距離の確認は継続できます。体験後に RunCraft から練習を開始するには Lifetime が必要です。</p></article><article class="price-card"><div class="price-name">Lifetime</div><h3>一度の購入で解除</h3><p>プランと RunCraft での記録を解除。購入の復元に対応し、対象となる旧有料ユーザーはフルアクセスを保持します。</p></article></div><p class="fine-print">体験期間は最初に App Store で取得した日から始まります。初回起動日ではありません。地域の現在価格はアプリに表示されます。対象の Lifetime 購入は Apple のファミリー共有に対応します。</p></section>
+<section id="faq"><h2>走り出す前に。</h2><div class="faq-list"><details><summary>Apple Watch は必要ですか？</summary><p>いいえ。iPhone だけでもガイド付きワークアウトを実行できます。ペアリングした Apple Watch では手首で進行確認や操作ができます。利用可能なデータは端末と権限によって異なります。</p></details><details><summary>レースや VDOT は必須ですか？</summary><p>すべての経路で必要なわけではありません。ラン・ウォークやフリーランから始められます。一部のプランには経験、ペースの参考値、十分な準備期間が必要です。</p></details><details><summary>レースを保存するとプランは変わりますか？</summary><p>変わりません。目標を保存してから、練習を別途設定します。既存の練習と履歴は保持され、新しいプランは内容と準備条件の確認が必要です。</p></details><details><summary>睡眠不足で練習は自動変更されますか？</summary><p>されません。回復の観察は背景や注意点を示します。代替練習を自動計算したり、練習の準備ができたと保証したりはしません。</p></details><details><summary>プランや休養の後はどうしますか？</summary><p>次の方向と関連する保存済みの背景を確認します。新しいプランには別の確認が必要で、過去の記録だけで現在の準備や回復は証明できません。</p></details><details><summary>データはどこに保存されますか？</summary><p>RunCraft アカウントは不要で、広告や第三者の分析追跡はありません。端末上で処理し、一部の記録はプライベート iCloud データベースで同期できます。サポート用の診断ファイルは、自分で共有した場合にのみ送信されます。</p></details></div></section>
+<section id="support" class="closing"><p class="kicker">RUNCRAFT</p><h2>ランナーが作り、開発者がサポート。</h2><p class="lede">プラン、練習、アプリに関する質問は、お気軽にご連絡ください。 <a href="mailto:support@marstudio.app">support@marstudio.app</a></p><div class="cta"><a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13 10c0 2.6 2.3 3.5 2.3 3.5s-.4 1.3-1.2 2.5c-.7 1-1.5 2.1-2.6 2.1s-1.5-.7-2.8-.7-1.7.7-2.8.7S3.9 17 3.2 15.9C1.7 13.8.6 9.9 2.1 7.3c.8-1.3 2.1-2.1 3.6-2.2 1.1 0 2.2.8 2.8.8s2-.9 3.3-.8c.6 0 2.1.2 3.2 1.7-.1.1-1.9 1.1-2 3.2ZM11 3.7c.6-.7 1-1.7.9-2.8-.9.1-1.9.6-2.6 1.3-.5.7-1 1.7-.9 2.7 1 .1 1.9-.5 2.6-1.2Z"/></svg>App Store でダウンロード</a></div></section>
+</main>
+<footer>
+<p>© 2026 RunCraft · Mars Lin による独立開発アプリ。</p>
+<div class="links"><a href="guide/">使い方</a><a href="privacy.html">プライバシーポリシー</a><a href="press/">プレスキット</a><a href="https://github.com/marslin1220/RunCraft-web">GitHub</a></div>
+</footer></div><script src="../assets/nav.js" defer></script></body></html>

@@ -1,0 +1,369 @@
+{
+  "layouts": 60,
+  "accessibilityAudits": 30,
+  "interactionLocales": 5,
+  "issues": [],
+  "errors": [],
+  "results": [
+    {
+      "lang": "en",
+      "kind": "home",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "home",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "home",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "home",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "guide/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "guide/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "guide/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "guide/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "press/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "press/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "press/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "kind": "press/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "home",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "home",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "home",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "home",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "guide/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "guide/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "guide/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "guide/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "press/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "press/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "press/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hant",
+      "kind": "press/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "home",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "home",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "home",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "home",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "guide/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "guide/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "guide/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "guide/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "press/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "press/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "press/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "zh-Hans",
+      "kind": "press/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "home",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "home",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "home",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "home",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "guide/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "guide/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "guide/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "guide/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "press/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "press/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "press/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ja",
+      "kind": "press/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "home",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "home",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "home",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "home",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "guide/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "guide/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "guide/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "guide/",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "press/",
+      "width": 375,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "press/",
+      "width": 430,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "press/",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ko",
+      "kind": "press/",
+      "width": 1440,
+      "status": "passed"
+    }
+  ]
+}
