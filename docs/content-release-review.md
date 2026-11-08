@@ -111,3 +111,27 @@ the finding. Final checks were rerun successfully.
 
 No traffic baseline, conversion result, field Watch latency result or new native
 screenshot coverage is claimed by this website review.
+
+## Editorial revision, 2026-11-08
+
+Applied the installed Humanizer 3.1.0 and humanizer-zh instructions to all five
+locale content files and press biographies. Chinese copy uses concrete runner
+language; English, Japanese and Korean were revised separately for their own
+sentence patterns. No author persona was adopted.
+
+Replaced abstract references to background, inputs and proof of recovery with
+running experience, earlier answers and dated records. Removed slogan headings
+and repeated rhetorical contrasts. Kept the relevant limitations in plain
+language: missing or old data cannot establish current recovery, recent data
+alone cannot establish readiness, and readings do not automatically replace
+workouts. Retained course review, preparation, history, purchase and privacy
+conditions. Privacy-policy text, routes and native behavior are unchanged.
+
+The Japanese term for reduced training volume now refers to running less,
+rather than a word that could imply weight loss. Simplified Chinese uses its
+own running and support vocabulary. The Japanese mobile headline was shortened
+after visual inspection to avoid leaving its final syllable on a separate line.
+
+Regenerated all five social cards. Final static checks, 60 browser layout checks
+and 30 axe WCAG A/AA audits pass. This is an editorial review by the assistant,
+not an independent native-speaker certification of Japanese or Korean.

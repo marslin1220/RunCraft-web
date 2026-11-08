@@ -10,14 +10,14 @@
   "menu": "Menu",
   "close": "Close menu",
   "language": "Choose language",
-  "title": "Running plans, with a clear next step",
-  "description": "Build a running routine or prepare for a race with RunCraft. Understand your plan, follow guided workouts on iPhone or Apple Watch, and review your runs. Free download, no subscription.",
+  "title": "Running plans and guided workouts",
+  "description": "Plan your runs with RunCraft, follow workouts on iPhone or Apple Watch, and review what you ran. Build a routine or prepare for a race. Free download with a 21-day full experience and no subscription.",
   "eyebrow": "RUNNING PLANS · IPHONE & APPLE WATCH",
   "hero": [
-    "A plan for your goal.",
-    "Clarity for every run."
+    "Plan your training.",
+    "Follow each workout."
   ],
-  "intro": "Build a running habit or prepare for your next race. RunCraft brings your course, training paces and guided workouts together, so you can see what comes next.",
+  "intro": "Whether you want to run regularly or prepare for a race, RunCraft helps you arrange a plan, find your training paces and follow workouts on iPhone or Apple Watch. Your completed runs stay there to review.",
   "download": "Download on the App Store",
   "secondary": "See how plans work",
   "badge": "Free download · 21-day full experience · No subscription",
@@ -26,174 +26,174 @@
     "Structured workout progress, pace and heart rate on iPhone",
     "Interval progress and current pace on Apple Watch"
   ],
-  "path_kicker": "START WITH YOUR GOAL",
-  "path_title": "More than one reason to run.",
-  "path_intro": "You do not need a race on the calendar to get started.",
+  "path_kicker": "WAYS TO RUN",
+  "path_title": "What are you running for?",
+  "path_intro": "Start a routine, prepare for a race or head out for a free run.",
   "paths": [
     [
       "Build a running habit",
-      "Start with run-walk training or find a regular-running course that fits your background."
+      "Start with run-walk sessions, or choose a regular running programme suited to your experience."
     ],
     [
       "Prepare for a race",
-      "Save your race goal, then explore a supported course with the preparation and time it needs."
+      "Save your race goal, then check the supported courses and the preparation time and experience each needs."
     ],
     [
-      "Run your own way",
-      "Start a free run during your trial or with Lifetime, and keep your recorded runs together."
+      "Go for a free run",
+      "During your trial or with Lifetime, start recording without setting up a race or a plan."
     ]
   ],
   "steps_kicker": "HOW PLANS WORK",
-  "steps_title": "Your goal is the starting point.",
-  "steps_intro": "A date and a distance describe a race. Your running background helps determine the course.",
+  "steps_title": "How your plan takes shape",
+  "steps_intro": "Your goal, running experience and available days all help determine the course.",
   "steps": [
     [
-      "Choose a direction",
-      "Build regular running, or save a race date and distance. A race name is optional; saving a goal does not replace your current course."
+      "Set a goal",
+      "Choose regular running or save a race date and distance. The race name is optional, and saving a goal keeps your current course in place."
     ],
     [
-      "Bring your background",
-      "Review relevant recorded training and saved inputs. Correct what has changed and add only the missing information needed for the course."
+      "Check your running history",
+      "Review relevant runs and answers you have already saved. Update anything that has changed and fill in the details needed for this course."
     ],
     [
-      "Review, then choose",
-      "Check the proposed sessions, schedule and preparation requirements before using a course. A saved goal is not a guarantee that every course fits."
+      "Review the course",
+      "Check the workouts, dates and preparation requirements before choosing a course. Two runners with the same race goal may need different training."
     ]
   ],
   "daily_kicker": "BEFORE THE RUN",
-  "daily_title": "Know what today is for.",
-  "daily_body": "See the scheduled session and its purpose alongside your recent running. Training pace guidance gives each type of work its own meaning.",
+  "daily_title": "See today’s workout and its purpose",
+  "daily_body": "Look at your scheduled session alongside recent runs. Easy running and intervals have different roles, with pace guidance for each type of work.",
   "daily_bullets": [
-    "Your scheduled work, rest days and weekly running at a glance",
-    "VDOT-based guidance for Easy, Marathon, Threshold, Interval and Repetition paces",
-    "A recent performance informs pace guidance; race-time predictions remain estimates"
+    "See planned workouts, rest days and this week’s running",
+    "Use VDOT pace guidance for Easy, Marathon, Threshold, Interval and Repetition work",
+    "Use a recent performance to inform paces; predicted race times are estimates"
   ],
-  "observation_title": "Context, not a verdict.",
-  "observation_body": "Available sleep, HRV and resting-heart-rate observations add context. Dates and missing data matter: a reading does not confirm recovery or automatically prescribe a different workout.",
+  "observation_title": "Check recent sleep and heart rate",
+  "observation_body": "When records are available, you can view sleep, HRV and resting heart rate. Check their dates and any gaps before drawing conclusions. A single reading cannot tell you that you have recovered, and it will not automatically change your workout.",
   "watch_kicker": "DURING THE RUN",
-  "watch_title": "Take the session to your wrist.",
-  "watch_body": "Follow structured workouts on iPhone or Apple Watch, with the current step, pace and progress in view. Spend less time checking what comes next.",
+  "watch_title": "Follow the workout on your watch",
+  "watch_body": "On iPhone or Apple Watch, see the current interval, pace and progress as you run.",
   "watch_bullets": [
     "Follow work and recovery intervals",
     "View pace and heart rate while recording",
-    "Use iPhone guidance when you do not have an Apple Watch"
+    "Use iPhone guidance without an Apple Watch"
   ],
   "review_kicker": "AFTER THE RUN",
-  "review_title": "Keep the run. Choose the next step.",
-  "review_body": "Review recorded distance, splits, pace and heart rate with available effort and weather context. Finishing a course opens a new decision, not an automatic leap in training.",
+  "review_title": "Look back at the run you just finished",
+  "review_body": "Review distance, splits, pace and heart rate, with effort and weather details when available. When a course ends, you choose what to do next. RunCraft will not automatically increase the intensity.",
   "review_bullets": [
     "Keep completed runs and course history",
-    "Review relevant saved background when planning again",
-    "Choose a new direction explicitly; breaks and recovery still need their own review"
+    "Refer to saved running experience when setting up another course",
+    "After time off, check your current preparation and recovery before continuing"
   ],
-  "guide_title": "A little understanding goes a long way.",
-  "guide_body": "How to get started, what your paces mean, and what happens after a race or a break.",
+  "guide_title": "Setting up and using RunCraft",
+  "guide_body": "Getting started, understanding pace guidance, and returning after a race or time off.",
   "guide_link": "Read the running guide",
   "pricing_kicker": "SIMPLE PRICING",
-  "pricing_title": "Try it fully. Keep what matters.",
-  "pricing_intro": "Free to download. One optional Lifetime purchase. No subscription or automatic renewal.",
+  "pricing_title": "Download free and try it for 21 days",
+  "pricing_intro": "After the full experience, you can unlock Lifetime with one purchase. There is no subscription or automatic renewal.",
   "tiers": [
     [
       "21 days",
       "Full experience",
-      "Explore plans, guided recording and analysis before deciding."
+      "Try plans, guided workout recording and analysis before deciding whether to buy."
     ],
     [
       "Free Mode",
-      "Your history stays useful",
-      "Keep importing Apple Health workouts and viewing basic history, VDOT and mileage. Starting a RunCraft workout requires Lifetime after the trial."
+      "Keep importing and viewing runs",
+      "After the trial, continue importing Apple Health workouts and viewing basic history, VDOT and mileage. Starting a workout in RunCraft requires Lifetime."
     ],
     [
       "Lifetime",
       "One purchase",
-      "Unlock plans and RunCraft recording. Restore an existing purchase; eligible previous paid users retain full access."
+      "Unlock plans and RunCraft recording, with purchase restoration. Eligible previous paid users keep full access."
     ]
   ],
-  "trial_note": "The trial starts when you first get RunCraft from the App Store, not when you first open it. Current local pricing is shown in the app. Eligible Lifetime purchases support Apple Family Sharing.",
-  "faq_title": "Before you lace up.",
+  "trial_note": "The 21 days start when you first get RunCraft from the App Store, even if you have not opened it yet. The app shows the current price for your region. Eligible Lifetime purchases support Apple Family Sharing.",
+  "faq_title": "Common questions",
   "faq": [
     [
       "Do I need an Apple Watch?",
-      "No. Guided workouts can run directly on iPhone. A paired Apple Watch adds on-wrist guidance and controls. Data availability depends on your devices and permissions."
+      "No. iPhone can guide the workout on its own. A paired Apple Watch lets you follow progress and use controls on your wrist. The data you can see depends on your devices and the permissions you allow."
     ],
     [
-      "Do I need a race or a VDOT value?",
-      "Not for every path. You can start with run-walk training or a free run. Some courses need relevant experience, pace guidance and enough preparation time."
+      "Do I need a race goal or a VDOT value?",
+      "Not always. You can start with run-walk sessions or a free run. Some courses need pace guidance, relevant training experience and enough time to prepare."
     ],
     [
-      "Does saving a race create or replace my course?",
-      "No. Save the goal first, then arrange training separately. Existing sessions and history are retained; the course has its own review and preparation requirements."
+      "Will saving a race replace my current course?",
+      "No. Save the goal, then arrange training separately. Your existing course and history stay in place. A new course still needs its own review of the workouts and preparation requirements."
     ],
     [
       "Will poor sleep automatically change my workout?",
-      "No. Recovery observations provide context and caution. They do not automatically establish a replacement workout or certify that you are ready to train."
+      "No. Sleep and heart-rate information may prompt you to check how you feel, but RunCraft will not use it to calculate a replacement workout. Normal-looking data does not mean you are ready to train."
     ],
     [
-      "What happens after a course or a break?",
-      "Review the next direction and relevant saved background. A new course needs its own review; old records do not automatically confirm current preparation or recovery."
+      "How do I continue after a course or time off?",
+      "Choose what you want to do next and check whether your saved running experience still reflects your situation. Before starting another course, review your available time, preparation and recovery."
     ],
     [
-      "What happens to my data?",
-      "RunCraft does not require a RunCraft account or use advertising or third-party analytics. Data is processed on your devices; selected records can sync through your private iCloud database. Optional support exports are shared only when you choose."
+      "Where does my data go?",
+      "Your devices process the data, and selected records can sync through your private iCloud database. You do not need a RunCraft account. There are no ads or third-party analytics. Diagnostic files go to support only if you choose to share them."
     ]
   ],
-  "support_title": "Built by a runner. Supported by its developer.",
-  "support_body": "Questions about a course, a workout or the app? Get in touch.",
+  "support_title": "Contact the developer",
+  "support_body": "RunCraft is built by an independent developer who also runs. For questions about training or the app, email",
   "privacy": "Privacy policy",
   "press": "Press kit",
   "home": "Home",
   "copyright": "An independent app by Mars Lin.",
-  "guide_heading": "Understand the plan. Make it your run.",
-  "guide_intro": "A practical guide to choosing a course, following a session and planning what comes next.",
+  "guide_heading": "Using RunCraft",
+  "guide_intro": "Set a goal, choose a course and follow your workouts, with your running history there when you plan again.",
   "guide_sections": [
     [
       "getting-started",
-      "Start with a direction",
-      "Choose regular running, a race goal or a free run. For a race, enter the date and exact distance, with an optional name. Save it first; arrange training separately when you are ready."
+      "Choose how you want to run",
+      "Start a regular running programme, prepare for a race or go for a free run. To save a race goal, enter its date and exact distance. The name is optional. You can arrange training separately when you are ready."
     ],
     [
       "course-choice",
-      "Bring the background that matters",
-      "Review recorded running and previously saved information where available, including their dates. Recent reduced running may not describe your usual training. Correct changed details and answer course-specific questions about experience, available days and time. Missing records do not automatically make you a beginner."
+      "Check your experience and available time",
+      "Review relevant runs and saved answers, including when they were recorded. A recent taper or recovery period may not reflect your usual running. Update anything that has changed, then answer the questions this course needs about your experience, days and time. Missing records do not mean you are a beginner."
     ],
     [
       "course-review",
-      "Check the course before using it",
-      "A goal alone does not establish preparation for a demanding programme. Review the sessions, schedule and relevant requirements. If your event, timeline or preparation does not fit a supported course, review the explanation in the app before choosing a different direction."
+      "Check whether the course fits",
+      "Review the sessions, dates and preparation requirements before choosing a course. Signing up for a race does not mean you are prepared for every workout it might involve. If the supported courses do not fit your distance, timeline or preparation, read the explanation in the app before choosing another direction."
     ],
     [
       "paces",
-      "Use paces as guidance",
-      "VDOT connects a performance value to training pace guidance. Easy, Marathon, Threshold, Interval and Repetition work serve different purposes. An estimated race time is not a promised finish time, and a VDOT value alone does not establish experience with every workout."
+      "Understanding your training paces",
+      "RunCraft uses VDOT to turn a performance value into pace guidance. Easy, Marathon, Threshold, Interval and Repetition work have different purposes. Predicted race times are estimates, and a VDOT value cannot show whether you have experience with every type of workout."
     ],
     [
       "observations",
-      "Read observations with their dates",
-      "Sleep, HRV and resting heart rate depend on available measurements and comparison history. Missing or older readings cannot confirm today’s recovery. Observations can prompt caution or review; they do not automatically rewrite a workout, diagnose a condition or grant permission to train."
+      "Reading sleep and heart-rate information",
+      "Sleep, HRV and resting heart rate need enough recorded history for comparison. Gaps or readings from several days ago cannot tell you how recovered you are today. Recent data alone cannot settle whether you are ready to train, either. Use it as a reason to check how you feel. RunCraft will not automatically replace a workout from these readings or provide a medical diagnosis."
     ],
     [
       "recording",
-      "Follow and review a session",
-      "Use iPhone or a paired Apple Watch for guided workouts. Check the current step, target and progress while recording, then review the saved run and its available details. Device permissions, connectivity and supported app versions affect which information is available."
+      "Following and reviewing a workout",
+      "Use iPhone or a paired Apple Watch to follow the current interval, target and progress. After recording, review the saved run. Device permissions, connectivity and app versions affect which details are available."
     ],
     [
       "continuing",
-      "Plan again without losing the past",
-      "After a course, race or interruption, choose what comes next explicitly. Relevant recorded history and attributed saved inputs can help with the next setup, but current availability, preparation and recovery still need review. Saving a new goal does not automatically activate a new course."
+      "Training after a race or time off",
+      "When a course ends or you take time off, choose what to do next. Relevant history and saved answers can help with setup, but check your current schedule, training preparation and recovery. Saving a new goal does not activate another course, and your earlier records stay in place."
     ],
     [
       "tools",
-      "Make room for your own workouts",
-      "Use the workout editor to arrange warmup, work, recovery and cooldown blocks with time or distance targets. Run details and photo-based share cards help you review and share a completed run. These tools do not determine whether a particular workout is appropriate for you."
+      "Editing and sharing workouts",
+      "Use the editor to arrange warmup, work, recovery and cooldown blocks with time or distance targets. After a run, review its details or make a share card with your own photo. You still need to judge whether a workout suits your preparation."
     ]
   ],
-  "press_one": "RunCraft brings running plans, pace guidance and guided workouts together on iPhone and Apple Watch.",
-  "press_short": "RunCraft helps runners build a routine or prepare for a race with course planning, VDOT-based pace guidance and workouts on iPhone and Apple Watch. Runners review relevant background and course requirements, follow each session, and keep their completed runs. Free download, 21-day full experience, optional Lifetime purchase. No subscription.",
+  "press_one": "RunCraft is a running app for planning workouts, checking paces and following training on iPhone or Apple Watch.",
+  "press_short": "RunCraft helps runners build a routine or prepare for a race with course planning, VDOT pace guidance and workouts on iPhone or Apple Watch. Runners review their experience and preparation before choosing a course, then keep the runs they complete. It is free to download, with a 21-day full experience and an optional Lifetime purchase. No subscription is required.",
   "press_long": [
-    "RunCraft connects choosing a running course, following a session and reviewing the recorded run in one independent app.",
-    "Regular running and race preparation have different requirements. Relevant history and saved inputs provide context; course selection remains a deliberate review. Recovery observations are not automatic workout prescriptions or guarantees of readiness.",
-    "Guided workouts run on iPhone and Apple Watch. Runners can review available route, pace, heart-rate and effort information after recording, and build their own structured workouts.",
-    "RunCraft is free to download, with a 21-day full experience from first App Store acquisition and an optional Lifetime purchase. There is no subscription. Data is processed on device; selected records can sync through private iCloud."
+    "RunCraft is an independent running app for iPhone and Apple Watch, with course planning, guided workouts and run history.",
+    "Runners can use relevant history and saved answers to review whether a course fits their experience, schedule and preparation. Sleep and heart-rate information may prompt a closer look at how they feel. It does not automatically replace workouts or guarantee readiness to train.",
+    "Guided workouts run on iPhone or Apple Watch. After recording, runners can review the route, pace, heart rate and effort details that are available, or use the editor to build their own structured workouts.",
+    "RunCraft is free to download. The 21-day full experience starts with the first App Store acquisition, followed by an optional one-time Lifetime purchase. There is no subscription. Data is processed on device, and selected records can sync through private iCloud."
   ],
   "screens_note": "Workout guidance, recording and editing screens. Appearance and availability may vary by app version."
 }
