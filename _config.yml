@@ -2,3 +2,11 @@ title: RunCraft
 description: Running plans and guided workouts for iPhone and Apple Watch.
 theme: jekyll-theme-minimal
 url: https://runcraft.marstudio.app
+exclude:
+  - content
+  - docs
+  - scripts
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md

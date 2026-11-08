@@ -4,375 +4,90 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-itunes-app" content="app-id=6789176694">
-<title>RunCraft — An adaptive running coach for iPhone and Apple Watch</title>
-<meta name="description" content="RunCraft turns your fitness, recent training and recovery into a plan that keeps adapting — with guided workouts on iPhone and Apple Watch and clear advice on what to run next.">
-<meta property="og:title" content="RunCraft — An adaptive running coach">
-<meta property="og:description" content="A running coach that connects your plan, completed runs and recovery — then helps you decide what to run next.">
-<meta property="og:image" content="https://runcraft.marstudio.app/assets/og.png">
+<title>RunCraft — Running plans and guided workouts</title>
+<meta name="description" content="Plan your runs with RunCraft, follow workouts on iPhone or Apple Watch, and review what you ran. Build a routine or prepare for a race. Free download with a 21-day full experience and no subscription.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RunCraft — Running plans and guided workouts">
+<meta property="og:description" content="Plan your runs with RunCraft, follow workouts on iPhone or Apple Watch, and review what you ran. Build a routine or prepare for a race. Free download with a 21-day full experience and no subscription.">
+<meta property="og:url" content="https://runcraft.marstudio.app/">
+<meta property="og:image" content="https://runcraft.marstudio.app/assets/social/en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="icon.png">
+<link rel="canonical" href="https://runcraft.marstudio.app/">
 <link rel="alternate" hreflang="en" href="https://runcraft.marstudio.app/">
 <link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/">
 <link rel="alternate" hreflang="zh-Hans" href="https://runcraft.marstudio.app/zh-Hans/">
 <link rel="alternate" hreflang="ja" href="https://runcraft.marstudio.app/ja/">
 <link rel="alternate" hreflang="ko" href="https://runcraft.marstudio.app/ko/">
 <link rel="alternate" hreflang="x-default" href="https://runcraft.marstudio.app/">
+<link rel="icon" href="icon.png">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/refresh.css">
 <script>
 (function () {
-  var saved = null;
-  try { saved = localStorage.getItem("rc-lang"); } catch (e) {}
-  if (saved === "en") return;
-  var target = null;
-  if (saved && saved !== "en") {
-    target = saved;
-  } else if (!saved) {
-    var nl = (navigator.language || "").toLowerCase();
-    if (nl.indexOf("zh") === 0) {
-      target = (nl.indexOf("zh-cn") === 0 || nl.indexOf("zh-hans") === 0 || nl.indexOf("zh-sg") === 0) ? "zh-Hans" : "zh-Hant";
-    }
-    else if (nl.indexOf("ja") === 0) target = "ja";
-    else if (nl.indexOf("ko") === 0) target = "ko";
-  }
-  if (target) location.replace(target + "/" + location.hash);
+  var supported = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko'];
+  var saved; try { saved = localStorage.getItem('rc-lang'); } catch (e) {}
+  if (supported.indexOf(saved) !== -1) { if (saved !== 'en') location.replace(saved + '/' + location.hash); return; }
+  var language = (navigator.language || '').toLowerCase();
+  var target = language.indexOf('zh') === 0 ? (/^zh-(cn|hans|sg)/.test(language) ? 'zh-Hans' : 'zh-Hant') : language.indexOf('ja') === 0 ? 'ja' : language.indexOf('ko') === 0 ? 'ko' : null;
+  if (target) location.replace(target + '/' + location.hash);
 })();
 </script>
 </head>
-<body>
+<body class="refresh">
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="wrap">
-
-  <nav>
-    <a class="brand" href="#"><img src="icon.png" alt="RunCraft icon" width="32" height="32">RunCraft</a>
-    <div class="navlinks">
-      <a href="#situations">Situations</a>
-      <a href="#watch">Apple Watch</a>
-      <a href="#method">Method</a>
-      <a href="#support">Support</a>
-      <a href="privacy/">Privacy</a>
-    </div>
-    <div class="navtools">
-      <button class="iconbtn langbtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 9h17.6M3.2 15h17.6"/><path d="M12 3c2.4 2.6 3.7 5.7 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.7-3.7-9S9.6 5.6 12 3z"/></svg></button>
-      <div class="langmenu" hidden>
-        <a class="on" href="./" data-lang="en">English</a>
-        <a href="zh-Hant/" data-lang="zh-Hant">繁體中文</a>
-        <a href="zh-Hans/" data-lang="zh-Hans">简体中文</a>
-        <a href="ja/" data-lang="ja">日本語</a>
-        <a href="ko/" data-lang="ko">한국어</a>
-      </div>
-      <button class="iconbtn menubtn" type="button" aria-expanded="false" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <h1>Know exactly<br>what to run <em>today</em></h1>
-    <p class="sub">RunCraft connects your plan, completed runs and recovery — so today’s
-      session reflects the runner you are now, not a template you downloaded weeks ago.</p>
-    <div class="cta">
-      <a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.06 10.05c.02 2.6 2.28 3.46 2.3 3.47-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.63 2.12-1.15.02-1.52-.68-2.84-.68-1.31 0-1.72.66-2.81.7-1.13.05-2-1.13-2.72-2.18C1.7 13.79.58 9.9 2.1 7.28c.75-1.3 2.1-2.13 3.56-2.15 1.11-.02 2.16.75 2.84.75.68 0 1.95-.92 3.29-.79.56.03 2.14.23 3.15 1.71-.08.05-1.88 1.1-1.86 3.25zM10.9 3.68c.6-.73 1-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.68-.91 2.66.96.08 1.95-.49 2.55-1.21z"/></svg> Download on the App Store</a>
-      <span class="badge-note">iPhone &amp; Apple Watch · Free download, optional Lifetime purchase</span>
-    </div>
-    <div class="shots">
-      <img class="phone" src="assets/plan.png" alt="Weekly training plan with today's interval session" width="600" height="1304">
-    </div>
-  </header>
-
-  <section id="situations">
-    <div class="kicker">Sound familiar?</div>
-    <h2>The problem was never effort</h2>
-    <p class="lede">Runners who stall aren't lazy. They're guessing — and this is where it shows.</p>
-
-    <div class="painlist">
-      <div class="pain">
-        <h3>Every run comes out the same medium-hard</h3>
-        <p>Easy days too hard to recover from, hard days too tired to be fast. You train
-          constantly and plateau anyway.</p>
-      </div>
-      <div class="pain">
-        <h3>The plan you found online wasn't written for you</h3>
-        <p>A PDF off the internet assumes someone else's fitness. Its paces are either a
-          jog or a race, and you can't tell which.</p>
-      </div>
-      <div class="pain">
-        <h3>You're adding distance and hoping nothing breaks</h3>
-        <p>The ramp feels fine right up until it doesn't. By the time it hurts, the
-          mistake is three weeks old.</p>
-      </div>
-      <div class="pain">
-        <h3>You finish a run with no idea if it was any good</h3>
-        <p>The watch says 8 km in 44 minutes. It doesn't say whether that was the session
-          you meant to run.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="answers">
-    <div class="kicker">How RunCraft answers</div>
-    <h2>Every situation, handled</h2>
-
-    <!-- Situation 1: what does "easy" actually mean -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“How fast is my easy pace, really?”</div>
-        <h3>Your paces, from a result you actually ran</h3>
-        <p>Enter one race or time trial. RunCraft turns it into your VDOT score — and
-          your VDOT score into every pace you train at. “Easy” finally has a number.</p>
-        <ul>
-          <li>Easy, Marathon, Threshold, Interval and Repetition paces</li>
-          <li>Honest race predictions from 5K to marathon</li>
-          <li>Paces move as your fitness does — no manual resetting</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/insights.png" alt="VDOT insights: pace zones and race predictions" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 2: the 6am decision -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“It's 6am and I don't want to make a decision.”</div>
-        <h3>Today's session is already waiting</h3>
-        <p>A periodized schedule, built backwards from your race date. No morning starts
-          with a blank page — glance at the Lock Screen and today is already decided.</p>
-        <ul>
-          <li>Widgets put today's session one glance away</li>
-          <li>Recovery days adjust when your readiness dips</li>
-          <li>No race on the calendar? Run a simple weekly routine instead</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/plan.png" alt="Weekly training plan with today's interval session" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 3: objective recovery signals -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“The plan says intervals, but recovery says otherwise.”</div>
-        <h3>Your coach notices before you have to ask</h3>
-        <p>When sleep, HRV, resting heart rate or recent load points to recovery, RunCraft
-          shows one clear recommendation inside your plan. You decide whether to apply it.</p>
-        <ul>
-          <li>Explains the signals behind the recommendation</li>
-          <li>Adjusts today — not your entire plan</li>
-          <li>Never interrupts with a forced pop-up</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/coaching.png" alt="Inline coaching banner recommending an easier run after poor sleep and low HRV" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 4: runner-initiated recovery signal -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“The data looks normal, but I don’t.”</div>
-        <h3>Tell the coach what the sensors missed</h3>
-        <p>If you feel unusually tired, sore or unwell, report it when it matters. This is
-          an escape hatch, not a daily wellness questionnaire.</p>
-        <ul>
-          <li>Three focused states instead of a medical questionnaire</li>
-          <li>A bounded adjustment to today’s coaching</li>
-          <li>One report never rewrites the whole plan</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/recovery.png" alt="Runner-initiated recovery report with fatigue, sore legs and feeling unwell options" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Two situations with no distinct screenshot of their own. -->
-    <div class="duo">
-      <div class="duocard">
-        <div class="situation">“I can't run 30 minutes without stopping yet.”</div>
-        <h3>Start from walking, not from shame</h3>
-        <p>Not every plan should start at 5K. The walk-run progression begins where you
-          actually are and builds to 30 minutes non-stop.</p>
-        <ul>
-          <li>Alternating walk and run intervals, timed for you</li>
-          <li>Progression paced to weeks, not willpower</li>
-          <li>No Apple Watch needed — the iPhone can guide the whole run</li>
-        </ul>
-      </div>
-      <div class="duocard">
-        <div class="situation">“I’m not training for a race.”</div>
-        <h3>Build consistency without inventing a finish line</h3>
-        <p>Choose a simple weekly routine or just track your runs. Change direction
-          whenever you want.</p>
-        <ul>
-          <li>Repeat on the days that fit your week</li>
-          <li>No race date or VDOT required</li>
-          <li>Switch to race training when you are ready</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“I finished. Was that good?”</div>
-        <h3>See what happened — and what it means</h3>
-        <p>RunCraft connects the session you meant to run with the run you completed,
-          instead of leaving you with an isolated finish time.</p>
-        <ul>
-          <li>GPS route, splits, pace and heart rate in one review</li>
-          <li>Effort and weather add the context sensors cannot explain alone</li>
-          <li>Readiness, training balance and VDOT trends show what comes next</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/analysis.png" alt="Post-run analysis combining GPS, pace, heart rate, effort and weather" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 5: the ramp -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“Am I ramping up too fast?”</div>
-        <h3>Something is watching the ramp for you</h3>
-        <p>RunCraft watches your acute-to-chronic load — this week against the base
-          you've built — and speaks up <em>before</em> the jump becomes an injury.</p>
-        <ul>
-          <li>Weekly load trend shown as a plain-language banner</li>
-          <li>A warning when the ramp crosses into risk</li>
-          <li>An 80/20 check that keeps easy days honestly easy</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/loadbanner.png" alt="Training-load banners warning that this week's load is climbing fast" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 6: custom session -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“My coach gave me a session no app understands.”</div>
-        <h3>Build it once, run it on your wrist</h3>
-        <p>Warmup, reps, recoveries, cooldown — drag them into place, one tap to your
-          Apple Watch. It runs exactly as written.</p>
-        <ul>
-          <li>Warmup, work, recovery and cooldown blocks</li>
-          <li>Distance or time goals per step</li>
-          <li>Pace alerts configured per interval</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/editor.png" alt="Custom interval workout editor" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 7: sharing -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“That one was worth remembering.”</div>
-        <h3>A card worth posting</h3>
-        <p>Some runs earn a photo. Drop in your own shot and RunCraft lays the stats over
-          it — no cluttered dashboard screenshot required.</p>
-        <ul>
-          <li>Your photo, your run, clean stats on top</li>
-          <li>Sized for Instagram stories</li>
-          <li>Preview before you post</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/share.png" alt="Share card preview over a sunset photo" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section id="watch">
-    <div class="kicker">Apple Watch</div>
-    <h2>Mid-interval is the worst time to do math</h2>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“Am I on pace right now?”</div>
-        <h3>Run the session, not the arithmetic</h3>
-        <p>Start today's workout from your wrist and RunCraft carries it: a target, a tap
-          when you drift, a count of what's left. Your attention stays on running.</p>
-        <ul>
-          <li>Live pace target with on-target feedback</li>
-          <li>Heart-rate zone display with haptic alerts when you drift</li>
-          <li>Interval progress — rep count, distance remaining</li>
-          <li>A complication that puts today's session on your watch face</li>
-        </ul>
-      </div>
-      <div class="media">
-        <div class="watchstack">
-          <img class="watchshot" src="assets/watch-structured.png" alt="Apple Watch structured workout guidance" width="416" height="496" loading="lazy">
-          <img class="watchshot" src="assets/watch-open-goal.png" alt="Apple Watch open-goal run with selectable corner metrics" width="416" height="496" loading="lazy">
-          <img class="watchshot" src="assets/watch-summary.png" alt="Apple Watch workout summary with effort rating" width="416" height="496" loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“My phone's in my pocket — is it still following?”</div>
-        <h3>The iPhone mirrors the session live</h3>
-        <p>Pull out your phone mid-run and the same workout is there — rep counter, live
-          pace, heart-rate zone — in sync with your wrist.</p>
-        <ul>
-          <li>Live rep progress mirrored from the watch</li>
-          <li>Pace, heart-rate zone and cadence at a glance</li>
-          <li>Pause or end the workout from either device</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="assets/live.png" alt="iPhone mirroring a live Apple Watch interval workout, showing rep progress and pace" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section id="method">
-    <div class="kicker">Why it works</div>
-    <h2>Built on VDOT, not guesswork</h2>
-    <p class="lede">Training paces start with Jack Daniels’ VDOT, then recent volume,
-      completed sessions and recovery keep the plan grounded in what you can do now.
-      Your own report fills the gap only when the sensors miss something.</p>
-    <div class="support-card">
-      <div>
-        <h3>Try it free. Keep what matters.</h3>
-        <p>Your 21-day Full Experience starts when you first get RunCraft from the App Store. Afterward, Health imports and basic running history remain free; active plans and starting workouts require the optional Lifetime purchase. No subscription. Eligible previous paid-app customers keep permanent access.</p>
-      </div>
-      <div>
-        <h3>Your data stays yours</h3>
-        <p>Computed on device, synced privately through your own iCloud. <a href="privacy/">Read the policy</a></p>
-      </div>
-      <div>
-        <h3>Built by one runner</h3>
-        <p>An indie app, shaped by the training problems its developer kept hitting. <a href="press/">Press kit</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="support">
-    <div class="kicker">Support</div>
-    <h2>Questions or feedback?</h2>
-    <div class="support-card">
-      <div>
-        <h3>Reviews &amp; feedback</h3>
-        <p>App Store ratings and reviews are the best place for feedback — we read every
-          one. Or email
-          <a href="mailto:support@marstudio.app">support@marstudio.app</a>.</p>
-      </div>
-      <div>
-        <h3>Press</h3>
-        <p>Writing about RunCraft? Logos, screenshots and boilerplate are ready to go. <a href="press/">Open the press kit</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <span>© 2026 Cheng Lung Lin · RunCraft is an indie iOS app.</span>
-    <div class="links">
-      <a href="https://github.com/marslin1220/RunCraft-web">GitHub</a>
-      <a href="press/">Press</a>
-      <a href="privacy/">Privacy Policy</a>
-      <a href="#support">Support</a>
-    </div>
-  </footer>
-
+<nav aria-label="RunCraft">
+<a class="brand" href="./"><img src="icon.png" alt="" width="32" height="32">RunCraft</a>
+<div class="navlinks"><a href="#method">How plans work</a><a href="#watch">Apple Watch</a><a href="guide/">Guides</a><a href="#pricing">Pricing</a><a href="#support">Support</a></div>
+<div class="navtools">
+<button class="iconbtn langbtn" type="button" aria-expanded="false" aria-controls="languages" aria-label="Choose language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 9h18M3 15h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg></button>
+<div class="langmenu" id="languages" hidden><a href="./" data-lang="en" class=on aria-current=true>English</a><a href="zh-Hant/" data-lang="zh-Hant">繁體中文</a><a href="zh-Hans/" data-lang="zh-Hans">简体中文</a><a href="ja/" data-lang="ja">日本語</a><a href="ko/" data-lang="ko">한국어</a></div>
+<button class="iconbtn menubtn" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Menu" data-close-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div>
-<script src="assets/nav.js"></script>
-</body>
-</html>
+</nav>
+<main id="main">
+<header class="hero course-hero">
+<div class="hero-copy">
+<p class="kicker">RUNNING PLANS · IPHONE &amp; APPLE WATCH</p>
+<h1>Plan your training.<br><em>Follow each workout.</em></h1>
+<p class="sub">Whether you want to run regularly or prepare for a race, RunCraft helps you arrange a plan, find your training paces and follow workouts on iPhone or Apple Watch. Your completed runs stay there to review.</p>
+<div class="cta"><a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13 10c0 2.6 2.3 3.5 2.3 3.5s-.4 1.3-1.2 2.5c-.7 1-1.5 2.1-2.6 2.1s-1.5-.7-2.8-.7-1.7.7-2.8.7S3.9 17 3.2 15.9C1.7 13.8.6 9.9 2.1 7.3c.8-1.3 2.1-2.1 3.6-2.2 1.1 0 2.2.8 2.8.8s2-.9 3.3-.8c.6 0 2.1.2 3.2 1.7-.1.1-1.9 1.1-2 3.2ZM11 3.7c.6-.7 1-1.7.9-2.8-.9.1-1.9.6-2.6 1.3-.5.7-1 1.7-.9 2.7 1 .1 1.9-.5 2.6-1.2Z"/></svg>Download on the App Store</a><a class="text-link" href="#method">See how plans work<span aria-hidden="true"> ↗</span></a></div>
+<p class="badge-note">Free download · 21-day full experience · No subscription</p>
+</div>
+<figure class="hero-product">
+<img class="hero-phone" src="assets/live.png" alt="Structured workout progress, pace and heart rate on iPhone" width="1320" height="2868" fetchpriority="high">
+<img class="hero-watch" src="assets/watch-structured.png" alt="Interval progress and current pace on Apple Watch" width="410" height="502">
+<figcaption>Workout guidance on iPhone and Apple Watch</figcaption>
+</figure>
+</header>
+<section id="situations" class="path-section">
+<p class="kicker">WAYS TO RUN</p><h2>What are you running for?</h2><p class="lede">Start a routine, prepare for a race or head out for a free run.</p>
+<div class="path-grid"><article class="path-card"><span class="index" aria-hidden="true">01</span><h3>Build a running habit</h3><p>Start with run-walk sessions, or choose a regular running programme suited to your experience.</p></article><article class="path-card"><span class="index" aria-hidden="true">02</span><h3>Prepare for a race</h3><p>Save your race goal, then check the supported courses and the preparation time and experience each needs.</p></article><article class="path-card"><span class="index" aria-hidden="true">03</span><h3>Go for a free run</h3><p>During your trial or with Lifetime, start recording without setting up a race or a plan.</p></article></div>
+</section>
+<section id="method" class="method-section">
+<span id="answers" class="anchor-alias" aria-hidden="true"></span>
+<div class="section-intro"><p class="kicker">HOW PLANS WORK</p><h2>How your plan takes shape</h2><p class="lede">Your goal, running experience and available days all help determine the course.</p><a class="text-link" href="guide/#course-review">Read the running guide <span aria-hidden="true">↗</span></a></div>
+<ol class="steps"><li><span class="step-number" aria-hidden="true">01</span><div><h3>Set a goal</h3><p>Choose regular running or save a race date and distance. The race name is optional, and saving a goal keeps your current course in place.</p></div></li><li><span class="step-number" aria-hidden="true">02</span><div><h3>Check your running history</h3><p>Review relevant runs and answers you have already saved. Update anything that has changed and fill in the details needed for this course.</p></div></li><li><span class="step-number" aria-hidden="true">03</span><div><h3>Review the course</h3><p>Check the workouts, dates and preparation requirements before choosing a course. Two runners with the same race goal may need different training.</p></div></li></ol>
+</section>
+<section class="daily-section">
+<div class="section-intro"><p class="kicker">BEFORE THE RUN</p><h2>See today’s workout and its purpose</h2><p class="lede">Look at your scheduled session alongside recent runs. Easy running and intervals have different roles, with pace guidance for each type of work.</p><ul class="benefits"><li>See planned workouts, rest days and this week’s running</li><li>Use VDOT pace guidance for Easy, Marathon, Threshold, Interval and Repetition work</li><li>Use a recent performance to inform paces; predicted race times are estimates</li></ul></div>
+<aside class="observation"><span class="observation-mark" aria-hidden="true">↗</span><h3>Check recent sleep and heart rate</h3><p>When records are available, you can view sleep, HRV and resting heart rate. Check their dates and any gaps before drawing conclusions. A single reading cannot tell you that you have recovered, and it will not automatically change your workout.</p><a class="text-link" href="guide/#observations">Guides <span aria-hidden="true">↗</span></a></aside>
+</section>
+<section id="watch" class="watch-feature">
+<div><p class="kicker">DURING THE RUN</p><h2>Follow the workout on your watch</h2><p class="lede">On iPhone or Apple Watch, see the current interval, pace and progress as you run.</p><ul class="benefits"><li>Follow work and recovery intervals</li><li>View pace and heart rate while recording</li><li>Use iPhone guidance without an Apple Watch</li></ul></div>
+<div class="watch-gallery"><img src="assets/watch-structured.png" alt="Interval progress and current pace on Apple Watch" width="410" height="502" loading="lazy"><img src="assets/watch-open-goal.png" alt="Go for a free run" width="410" height="502" loading="lazy"></div>
+</section>
+<section class="review-feature">
+<p class="kicker">AFTER THE RUN</p><h2>Look back at the run you just finished</h2><p class="lede">Review distance, splits, pace and heart rate, with effort and weather details when available. When a course ends, you choose what to do next. RunCraft will not automatically increase the intensity.</p><ul class="benefits"><li>Keep completed runs and course history</li><li>Refer to saved running experience when setting up another course</li><li>After time off, check your current preparation and recovery before continuing</li></ul>
+</section>
+<section id="guides" class="guide-callout"><div><h2>Setting up and using RunCraft</h2><p>Getting started, understanding pace guidance, and returning after a race or time off.</p></div><a class="btn-secondary" href="guide/">Read the running guide <span aria-hidden="true">↗</span></a></section>
+<section id="pricing"><p class="kicker">SIMPLE PRICING</p><h2>Download free and try it for 21 days</h2><p class="lede">After the full experience, you can unlock Lifetime with one purchase. There is no subscription or automatic renewal.</p><div class="price-grid"><article class="price-card"><div class="price-name">21 days</div><h3>Full experience</h3><p>Try plans, guided workout recording and analysis before deciding whether to buy.</p></article><article class="price-card"><div class="price-name">Free Mode</div><h3>Keep importing and viewing runs</h3><p>After the trial, continue importing Apple Health workouts and viewing basic history, VDOT and mileage. Starting a workout in RunCraft requires Lifetime.</p></article><article class="price-card"><div class="price-name">Lifetime</div><h3>One purchase</h3><p>Unlock plans and RunCraft recording, with purchase restoration. Eligible previous paid users keep full access.</p></article></div><p class="fine-print">The 21 days start when you first get RunCraft from the App Store, even if you have not opened it yet. The app shows the current price for your region. Eligible Lifetime purchases support Apple Family Sharing.</p></section>
+<section id="faq"><h2>Common questions</h2><div class="faq-list"><details><summary>Do I need an Apple Watch?</summary><p>No. iPhone can guide the workout on its own. A paired Apple Watch lets you follow progress and use controls on your wrist. The data you can see depends on your devices and the permissions you allow.</p></details><details><summary>Do I need a race goal or a VDOT value?</summary><p>Not always. You can start with run-walk sessions or a free run. Some courses need pace guidance, relevant training experience and enough time to prepare.</p></details><details><summary>Will saving a race replace my current course?</summary><p>No. Save the goal, then arrange training separately. Your existing course and history stay in place. A new course still needs its own review of the workouts and preparation requirements.</p></details><details><summary>Will poor sleep automatically change my workout?</summary><p>No. Sleep and heart-rate information may prompt you to check how you feel, but RunCraft will not use it to calculate a replacement workout. Normal-looking data does not mean you are ready to train.</p></details><details><summary>How do I continue after a course or time off?</summary><p>Choose what you want to do next and check whether your saved running experience still reflects your situation. Before starting another course, review your available time, preparation and recovery.</p></details><details><summary>Where does my data go?</summary><p>Your devices process the data, and selected records can sync through your private iCloud database. You do not need a RunCraft account. There are no ads or third-party analytics. Diagnostic files go to support only if you choose to share them.</p></details></div></section>
+<section id="support" class="closing"><p class="kicker">RUNCRAFT</p><h2>Contact the developer</h2><p class="lede">RunCraft is built by an independent developer who also runs. For questions about training or the app, email <a href="mailto:support@marstudio.app">support@marstudio.app</a></p><div class="cta"><a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13 10c0 2.6 2.3 3.5 2.3 3.5s-.4 1.3-1.2 2.5c-.7 1-1.5 2.1-2.6 2.1s-1.5-.7-2.8-.7-1.7.7-2.8.7S3.9 17 3.2 15.9C1.7 13.8.6 9.9 2.1 7.3c.8-1.3 2.1-2.1 3.6-2.2 1.1 0 2.2.8 2.8.8s2-.9 3.3-.8c.6 0 2.1.2 3.2 1.7-.1.1-1.9 1.1-2 3.2ZM11 3.7c.6-.7 1-1.7.9-2.8-.9.1-1.9.6-2.6 1.3-.5.7-1 1.7-.9 2.7 1 .1 1.9-.5 2.6-1.2Z"/></svg>Download on the App Store</a></div></section>
+</main>
+<footer>
+<p>© 2026 RunCraft · An independent app by Mars Lin.</p>
+<div class="links"><a href="guide/">Guides</a><a href="privacy/">Privacy policy</a><a href="press/">Press kit</a><a href="https://github.com/marslin1220/RunCraft-web">GitHub</a></div>
+</footer></div><script src="assets/nav.js" defer></script></body></html>

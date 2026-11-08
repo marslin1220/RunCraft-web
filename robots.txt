@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /threads-auth/
+Disallow: /_devframe.html
+Sitemap: https://runcraft.marstudio.app/sitemap.xml

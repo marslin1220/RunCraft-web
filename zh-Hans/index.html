@@ -4,334 +4,81 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-itunes-app" content="app-id=6789176694">
-<title>RunCraft — 懂跑者的自适应训练教练</title>
-<meta name="description" content="RunCraft 根据你的体能、近期训练与恢复状态持续调整课表，通过 iPhone 与 Apple Watch 引导训练，清楚告诉你接下来该怎么跑。">
-<meta property="og:title" content="RunCraft — 懂跑者的自适应训练教练">
-<meta property="og:description" content="连接体能、近期训练、恢复状态与完成记录，持续调整你接下来该怎么跑。">
-<meta property="og:image" content="https://runcraft.marstudio.app/assets/og.png">
+<title>RunCraft — 跑步课表与训练指导</title>
+<meta name="description" content="用 RunCraft 安排跑步课表，在 iPhone 或 Apple Watch 跟着训练，跑完再回顾记录。无论想养成跑步习惯，还是准备比赛，都能从这里开始。免费下载，提供 21 天完整体验，无订阅。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RunCraft — 跑步课表与训练指导">
+<meta property="og:description" content="用 RunCraft 安排跑步课表，在 iPhone 或 Apple Watch 跟着训练，跑完再回顾记录。无论想养成跑步习惯，还是准备比赛，都能从这里开始。免费下载，提供 21 天完整体验，无订阅。">
+<meta property="og:url" content="https://runcraft.marstudio.app/zh-Hans/">
+<meta property="og:image" content="https://runcraft.marstudio.app/assets/social/zh-Hans.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../icon.png">
+<link rel="canonical" href="https://runcraft.marstudio.app/zh-Hans/">
 <link rel="alternate" hreflang="en" href="https://runcraft.marstudio.app/">
 <link rel="alternate" hreflang="zh-Hant" href="https://runcraft.marstudio.app/zh-Hant/">
 <link rel="alternate" hreflang="zh-Hans" href="https://runcraft.marstudio.app/zh-Hans/">
 <link rel="alternate" hreflang="ja" href="https://runcraft.marstudio.app/ja/">
 <link rel="alternate" hreflang="ko" href="https://runcraft.marstudio.app/ko/">
 <link rel="alternate" hreflang="x-default" href="https://runcraft.marstudio.app/">
+<link rel="icon" href="../icon.png">
 <link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/refresh.css">
+
 </head>
-<body>
+<body class="refresh">
+<a class="skip-link" href="#main">跳至主要内容</a>
 <div class="wrap">
-
-  <nav>
-    <a class="brand" href="#"><img src="../icon.png" alt="RunCraft 图标" width="32" height="32">RunCraft</a>
-    <div class="navlinks">
-      <a href="#situations">场景</a>
-      <a href="#watch">Apple Watch</a>
-      <a href="#method">原理</a>
-      <a href="#support">支持</a>
-      <a href="./privacy.html">隐私</a>
-    </div>
-    <div class="navtools">
-      <button class="iconbtn langbtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="选择语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.2 9h17.6M3.2 15h17.6"/><path d="M12 3c2.4 2.6 3.7 5.7 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.7-3.7-9S9.6 5.6 12 3z"/></svg></button>
-      <div class="langmenu" hidden>
-        <a href="../" data-lang="en">English</a>
-        <a href="../zh-Hant/" data-lang="zh-Hant">繁體中文</a>
-        <a class="on" href="./" data-lang="zh-Hans">简体中文</a>
-        <a href="../ja/" data-lang="ja">日本語</a>
-        <a href="../ko/" data-lang="ko">한국어</a>
-      </div>
-      <button class="iconbtn menubtn" type="button" aria-expanded="false" aria-label="菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <h1>今天该练什么<br><em>一看就知道</em></h1>
-    <p class="sub">RunCraft 把课表、完成的训练与恢复状态连接起来——让今天的安排反映现在的你，而不是几周前下载的固定模板。</p>
-    <div class="cta">
-      <a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.06 10.05c.02 2.6 2.28 3.46 2.3 3.47-.02.06-.36 1.24-1.19 2.45-.72 1.05-1.46 2.1-2.63 2.12-1.15.02-1.52-.68-2.84-.68-1.31 0-1.72.66-2.81.7-1.13.05-2-1.13-2.72-2.18C1.7 13.79.58 9.9 2.1 7.28c.75-1.3 2.1-2.13 3.56-2.15 1.11-.02 2.16.75 2.84.75.68 0 1.95-.92 3.29-.79.56.03 2.14.23 3.15 1.71-.08.05-1.88 1.1-1.86 3.25zM10.9 3.68c.6-.73 1-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.68-.91 2.66.96.08 1.95-.49 2.55-1.21z"/></svg> 在 App Store 下载</a>
-      <span class="badge-note">iPhone 与 Apple Watch · 免费下载，可选择一次买断</span>
-    </div>
-    <div class="shots">
-      <img class="phone" src="../assets/zh-Hans/plan.png" alt="本周训练课表与今日间歇课" width="600" height="1304">
-    </div>
-  </header>
-
-  <section id="situations">
-    <div class="kicker">是不是很熟悉？</div>
-    <h2>问题从来不是不够努力</h2>
-    <p class="lede">卡住的跑者不是懒，是在猜。以下是“猜”最常现形的地方。</p>
-
-    <div class="painlist">
-      <div class="pain">
-        <h3>每一趟都跑成差不多的“中等偏累”</h3>
-        <p>轻松日不够松，恢复不了；质量课不够新鲜，跑不快。练得很勤，成绩停在原地。</p>
-      </div>
-      <div class="pain">
-        <h3>网上找来的课表，不是为你写的</h3>
-        <p>网上的 PDF 课表预设了别人的体能。上面的配速对你不是慢跑就是比赛，而你分不出是哪一种。</p>
-      </div>
-      <div class="pain">
-        <h3>一直加量，然后祈祷不要出事</h3>
-        <p>加量一路感觉良好，直到不再良好。等到开始痛，那个错误已经是三周前犯下的。</p>
-      </div>
-      <div class="pain">
-        <h3>跑完了，却不知道这趟到底好不好</h3>
-        <p>手表说 8 公里 44 分。它没说这是不是你今天原本该跑的那一堂课。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="answers">
-    <div class="kicker">RunCraft 怎么回答</div>
-    <h2>每一种场景，都有答案</h2>
-
-    <!-- Situation 1: what does "easy" actually mean -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“我的轻松跑，到底该多快？”</div>
-        <h3>从一次真实成绩，推出你所有的配速</h3>
-        <p>输入一次比赛或测验成绩。RunCraft 把它换算成你的 VDOT 体能分数，再把这个数字变成你的每一种训练配速。“轻松”终于有了明确的数字。</p>
-        <ul>
-          <li>轻松（E）、马拉松（M）、阈值（T）、间歇（I）、次数（R）五种配速</li>
-          <li>5K 到全马的诚实成绩预测</li>
-          <li>体能进步时配速跟着走，不必手动重设</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/insights.png" alt="VDOT 洞察：配速区间与成绩预测" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 2: the 6am decision -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“早上六点，我不想再做决定。”</div>
-        <h3>今天的课表已经在那里等你</h3>
-        <p>周期化课表从比赛日往回推排定。没有一个早晨要从空白开始——瞄一眼锁定屏幕，今天已经定好了。</p>
-        <ul>
-          <li>小组件让今日课表一瞥即知</li>
-          <li>状态下滑时，恢复日自动调整</li>
-          <li>没有备赛？那就只跑每周固定的例行课表</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/plan.png" alt="本周训练课表与今日间歇课" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“课表写着间歇跑，但恢复状态并不支持。”</div>
-        <h3>不用开口，教练先注意到了</h3>
-        <p>当睡眠、HRV、静息心率或近期负荷指出需要恢复，RunCraft 会直接在课表中显示一项清楚的建议，再由你决定是否应用。</p>
-        <ul>
-          <li>说明提出建议的恢复信号</li>
-          <li>只调整今天，不随意重写整份课表</li>
-          <li>以页面内横幅显示，不用强制弹窗打断你</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/coaching.png" alt="睡眠不足与 HRV 偏低时，课表内显示改为轻松跑的教练建议" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“数据看起来正常，但我就是觉得不对。”</div>
-        <h3>把传感器没发现的情况告诉教练</h3>
-        <p>如果你异常疲累、腿部酸痛或身体不舒服，只在需要时主动反馈。这是一个安全出口，不是每天必填的健康问卷。</p>
-        <ul>
-          <li>三种聚焦状态，不做医疗问诊</li>
-          <li>只补充今天的教练判断</li>
-          <li>单次反馈不会大幅改写整份课表</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/recovery.png" alt="跑者主动反馈有点疲累、腿部酸痛或身体不舒服" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Three situations with no distinct screenshot of their own. -->
-    <!-- Two situations with no distinct screenshot of their own. -->
-    <div class="duo">
-      <div class="duocard">
-        <div class="situation">“我还没办法连续跑 30 分钟。”</div>
-        <h3>从走路开始，不必觉得丢脸</h3>
-        <p>不是每份课表都该从 5K 起跳。走跑交替进程从你真正的起点出发，一步步带你走到连续 30 分钟。</p>
-        <ul>
-          <li>走与跑交替的间歇，时间为你安排好</li>
-          <li>进度以“周”推进，而不是靠意志力</li>
-          <li>没有 Apple Watch 也行——iPhone 就能引导整趟跑</li>
-        </ul>
-      </div>
-      <div class="duocard">
-        <div class="situation">“我目前没有比赛目标。”</div>
-        <h3>不用虚构终点，也能建立规律</h3>
-        <p>选择简单的每周例行训练，或只记录跑步；之后随时可以改变方向。</p>
-        <ul>
-          <li>按适合你的日子重复训练</li>
-          <li>不需要比赛日期或 VDOT</li>
-          <li>准备好时再切换到比赛训练</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“跑完了。刚刚那趟算好吗？”</div>
-        <h3>看懂发生了什么，以及代表什么</h3>
-        <p>RunCraft 把原本要完成的训练与实际跑出的结果放在一起，而不是只留下一个完赛时间。</p>
-        <ul>
-          <li>GPS 路线、分段、配速与心率集中查看</li>
-          <li>运动自觉强度与天气补上传感器无法独自解释的背景</li>
-          <li>恢复、训练平衡与 VDOT 趋势告诉你下一步</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/analysis.png" alt="结合 GPS、配速、心率、运动自觉强度与天气的跑后分析" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 5: the ramp -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“我是不是加量加太快了？”</div>
-        <h3>有人在帮你盯着加量曲线</h3>
-        <p>RunCraft 盯着你的急性／慢性训练负荷比——这周的量对照你累积出来的底子——在那一跳变成伤病<em>之前</em>出声。</p>
-        <ul>
-          <li>每周负荷趋势，以看得懂的横幅呈现</li>
-          <li>加量踏进风险区时提早警告</li>
-          <li>80/20 检查，让轻松日诚实地轻松</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/loadbanner.png" alt="训练负荷横幅，提醒本周负荷攀升过快" width="600" height="1303" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 6: custom session -->
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“教练给我一堂课，没有 app 看得懂。”</div>
-        <h3>编一次，就在手腕上跑</h3>
-        <p>热身、主课、恢复、放松——拖进位置，一键发送到 Apple Watch。它会完全照着你写的跑。</p>
-        <ul>
-          <li>热身、主课、恢复、放松区段</li>
-          <li>每一步可设定距离或时间目标</li>
-          <li>每段间歇可单独设定配速提醒</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/editor.png" alt="自定义间歇课表编辑器" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-
-    <!-- Situation 7: sharing -->
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“这一趟值得记下来。”</div>
-        <h3>一张值得发出去的卡片</h3>
-        <p>有些跑步配得上一张照片。放进你自己拍的那张，RunCraft 把数据干净地叠上去——不必再截一张杂乱的仪表板。</p>
-        <ul>
-          <li>你的照片、你的跑步，数据干净地叠在上面</li>
-          <li>尺寸刚好给 Instagram 快拍</li>
-          <li>发布前先预览</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/share.png" alt="夕阳照片上的分享卡预览" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section id="watch">
-    <div class="kicker">Apple Watch</div>
-    <h2>跑到一半，最不该做的就是心算</h2>
-
-    <div class="row">
-      <div class="copy">
-        <div class="situation">“我现在有在配速上吗？”</div>
-        <h3>专心跑，不用算</h3>
-        <p>从手表开始今天的课表，剩下的交给 RunCraft：一个目标、偏离时的一下震动、还剩多少。注意力留给跑步本身。</p>
-        <ul>
-          <li>实时配速目标与达标反馈</li>
-          <li>心率区间显示，偏离时触觉提醒</li>
-          <li>间歇进度——趟数、剩余距离</li>
-          <li>表盘复杂功能显示今日课表</li>
-        </ul>
-      </div>
-      <div class="media">
-        <div class="watchstack">
-          <img class="watchshot" src="../assets/zh-Hans/watch-structured.png" alt="Apple Watch 结构训练引导" width="416" height="496" loading="lazy">
-          <img class="watchshot" src="../assets/zh-Hans/watch-open-goal.png" alt="Apple Watch 自由跑与四角数据切换" width="416" height="496" loading="lazy">
-          <img class="watchshot" src="../assets/zh-Hans/watch-summary.png" alt="Apple Watch 训练摘要与耗力程度" width="416" height="496" loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <div class="row rev">
-      <div class="copy">
-        <div class="situation">“手机在口袋里——它还跟着吗？”</div>
-        <h3>iPhone 实时同步这堂课</h3>
-        <p>跑到一半掏出手机，同一堂课就在上面——趟数、实时配速、心率区间——与手腕上完全同步。</p>
-        <ul>
-          <li>手表的趟数进度实时镜像</li>
-          <li>配速、心率区间与步频一目了然</li>
-          <li>两台设备都能暂停或结束训练</li>
-        </ul>
-      </div>
-      <div class="media">
-        <img class="shot" src="../assets/zh-Hans/live.png" alt="iPhone 实时镜像 Apple Watch 上的间歇训练，显示趟数进度与配速" width="600" height="1304" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section id="method">
-    <div class="kicker">为什么有效</div>
-    <h2>以 VDOT 为本，不靠猜测</h2>
-    <p class="lede">训练配速从 Jack Daniels 的 VDOT 出发，再用近期跑量、完成的课程与恢复状态，让课表符合你现在真正能做的事；只有传感器漏掉情况时，才由你的主动反馈补上。</p>
-    <div class="support-card">
-      <div>
-        <h3>免费体验，按需买断</h3>
-        <p>从首次在 App Store 获取 RunCraft 起，享有 21 天完整体验。之后 Health 导入与基本跑步记录仍免费；使用训练计划与开始训练需选购 Lifetime。没有订阅，符合条件的旧版付费用户保有永久使用权。</p>
-      </div>
-      <div>
-        <h3>你的数据属于你</h3>
-        <p>在设备上计算，通过你自己的 iCloud 私密同步。<a href="./privacy.html">阅读隐私政策</a></p>
-      </div>
-      <div>
-        <h3>由一位跑者打造</h3>
-        <p>一款独立 app，由开发者自己一再遇到的训练问题塑形而成。<a href="press/">媒体资料</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="support">
-    <div class="kicker">支持</div>
-    <h2>有问题或建议吗？</h2>
-    <div class="support-card">
-      <div>
-        <h3>评分与反馈</h3>
-        <p>App Store 的评分与评论是最好的反馈渠道——每一条我们都会看。或随时来信 <a href="mailto:support@marstudio.app">support@marstudio.app</a>。</p>
-      </div>
-      <div>
-        <h3>媒体报道</h3>
-        <p>要写 RunCraft 吗？logo、屏幕截图与标准介绍都准备好了。<a href="press/">打开媒体资料</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <span>© 2026 林政龍 · RunCraft 是一款独立开发的 iOS app。</span>
-    <div class="links">
-      <a href="https://github.com/marslin1220/RunCraft-web">GitHub</a>
-      <a href="press/">媒体资料</a>
-      <a href="./privacy.html">隐私政策</a>
-      <a href="#support">支持</a>
-    </div>
-  </footer>
-
+<nav aria-label="RunCraft">
+<a class="brand" href="./"><img src="../icon.png" alt="" width="32" height="32">RunCraft</a>
+<div class="navlinks"><a href="#method">课程如何安排</a><a href="#watch">Apple Watch</a><a href="guide/">使用指南</a><a href="#pricing">收费方式</a><a href="#support">支持</a></div>
+<div class="navtools">
+<button class="iconbtn langbtn" type="button" aria-expanded="false" aria-controls="languages" aria-label="选择语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 9h18M3 15h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg></button>
+<div class="langmenu" id="languages" hidden><a href="../" data-lang="en">English</a><a href="../zh-Hant/" data-lang="zh-Hant">繁體中文</a><a href="./" data-lang="zh-Hans" class=on aria-current=true>简体中文</a><a href="../ja/" data-lang="ja">日本語</a><a href="../ko/" data-lang="ko">한국어</a></div>
+<button class="iconbtn menubtn" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="菜单" data-close-label="关闭菜单"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div>
-<script src="../assets/nav.js"></script>
-</body>
-</html>
+</nav>
+<main id="main">
+<header class="hero course-hero">
+<div class="hero-copy">
+<p class="kicker">跑步计划 · IPHONE 与 APPLE WATCH</p>
+<h1>安排跑步训练，<br><em>跟着课表跑。</em></h1>
+<p class="sub">想开始规律跑步，或准备下一场比赛？RunCraft 让你安排课表、查看训练配速，用 iPhone 或 Apple Watch 跟着跑，跑完再回顾这次训练。</p>
+<div class="cta"><a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13 10c0 2.6 2.3 3.5 2.3 3.5s-.4 1.3-1.2 2.5c-.7 1-1.5 2.1-2.6 2.1s-1.5-.7-2.8-.7-1.7.7-2.8.7S3.9 17 3.2 15.9C1.7 13.8.6 9.9 2.1 7.3c.8-1.3 2.1-2.1 3.6-2.2 1.1 0 2.2.8 2.8.8s2-.9 3.3-.8c.6 0 2.1.2 3.2 1.7-.1.1-1.9 1.1-2 3.2ZM11 3.7c.6-.7 1-1.7.9-2.8-.9.1-1.9.6-2.6 1.3-.5.7-1 1.7-.9 2.7 1 .1 1.9-.5 2.6-1.2Z"/></svg>在 App Store 下载</a><a class="text-link" href="#method">看看课程如何安排<span aria-hidden="true"> ↗</span></a></div>
+<p class="badge-note">免费下载 · 21 天完整体验 · 无订阅</p>
+</div>
+<figure class="hero-product">
+<img class="hero-phone" src="../assets/zh-Hans/live.png" alt="iPhone 显示结构化训练进度、配速与心率" width="1320" height="2868" fetchpriority="high">
+<img class="hero-watch" src="../assets/zh-Hans/watch-structured.png" alt="Apple Watch 显示间歇进度与目前配速" width="410" height="502">
+<figcaption>iPhone 与 Apple Watch 训练引导</figcaption>
+</figure>
+</header>
+<section id="situations" class="path-section">
+<p class="kicker">选择跑步方式</p><h2>你想怎么跑？</h2><p class="lede">可以从养成习惯开始，也可以为比赛做准备。</p>
+<div class="path-grid"><article class="path-card"><span class="index" aria-hidden="true">01</span><h3>养成跑步习惯</h3><p>刚开始可以试试跑走交替；已经习惯跑步，也能根据自己的经验选择规律训练课程。</p></article><article class="path-card"><span class="index" aria-hidden="true">02</span><h3>准备比赛</h3><p>保存比赛目标后，查看支持的课程，确认需要多少准备时间、目前能否适应训练。</p></article><article class="path-card"><span class="index" aria-hidden="true">03</span><h3>自由跑</h3><p>完整体验期间或购买 Lifetime 后，可以直接开始自由跑，不必先设置比赛或课表。</p></article></div>
+</section>
+<section id="method" class="method-section">
+<span id="answers" class="anchor-alias" aria-hidden="true"></span>
+<div class="section-intro"><p class="kicker">课程如何安排</p><h2>课表怎么安排？</h2><p class="lede">安排训练时，除了目标，也会考虑你平常怎么跑、哪些日子有空。</p><a class="text-link" href="guide/#course-review">阅读跑步使用指南 <span aria-hidden="true">↗</span></a></div>
+<ol class="steps"><li><span class="step-number" aria-hidden="true">01</span><div><h3>设置目标</h3><p>选择规律跑步，或填写比赛日期与距离。比赛名称可以不填；保存目标后，目前的课表仍会保留。</p></div></li><li><span class="step-number" aria-hidden="true">02</span><div><h3>确认跑步经验</h3><p>沿用相关跑步记录与已填过的资料。你可以修改有变化的部分，再补上这次安排课程需要的信息。</p></div></li><li><span class="step-number" aria-hidden="true">03</span><div><h3>确认课程内容</h3><p>查看每次训练、安排日期与准备要求，再决定是否使用。即使目标相同，适合的课程也可能不同。</p></div></li></ol>
+</section>
+<section class="daily-section">
+<div class="section-intro"><p class="kicker">出门之前</p><h2>查看今天的训练与目的</h2><p class="lede">查看今天安排的训练、这节课的目的与近期跑步记录。轻松跑和间歇跑各有不同的配速参考。</p><ul class="benefits"><li>查看今天的课程、休息日与本周跑量</li><li>VDOT 提供轻松跑、马拉松配速跑、阈值跑、间歇跑与重复跑的配速参考</li><li>近期成绩可作为配速依据，预测完赛时间则供参考</li></ul></div>
+<aside class="observation"><span class="observation-mark" aria-hidden="true">↗</span><h3>留意最近的睡眠与心率</h3><p>有记录时，可以查看睡眠、HRV 与静息心率。看数据时也要留意日期，以及有没有漏记。单看一次数据，还不能确定身体是否恢复；App 也不会因此自动换课。</p><a class="text-link" href="guide/#observations">使用指南 <span aria-hidden="true">↗</span></a></aside>
+</section>
+<section id="watch" class="watch-feature">
+<div><p class="kicker">跑步途中</p><h2>在手表上查看训练进度</h2><p class="lede">用 iPhone 或 Apple Watch 跟着训练，查看目前跑到哪个区段、配速多少、还有多少进度。</p><ul class="benefits"><li>跟着训练与恢复区段跑</li><li>记录时查看配速与心率</li><li>没有 Apple Watch，也能用 iPhone 指导训练</li></ul></div>
+<div class="watch-gallery"><img src="../assets/zh-Hans/watch-structured.png" alt="Apple Watch 显示间歇进度与目前配速" width="410" height="502" loading="lazy"><img src="../assets/zh-Hans/watch-open-goal.png" alt="自由跑" width="410" height="502" loading="lazy"></div>
+</section>
+<section class="review-feature">
+<p class="kicker">跑完之后</p><h2>跑完后，回顾这次训练</h2><p class="lede">一起看距离、分段、配速与心率，有主观用力程度或天气记录时也能参考。课程结束后，由你决定接着怎么练，App 不会自动增加强度。</p><ul class="benefits"><li>已完成的跑步与课程历史会保留</li><li>再次安排课程时，可以参考已存的跑步经验</li><li>休息或中断后，重新确认目前的准备与恢复情况</li></ul>
+</section>
+<section id="guides" class="guide-callout"><div><h2>设置与使用说明</h2><p>了解如何开始、怎么看配速，以及比赛或休息后如何继续训练。</p></div><a class="btn-secondary" href="guide/">阅读跑步使用指南 <span aria-hidden="true">↗</span></a></section>
+<section id="pricing"><p class="kicker">简单的收费方式</p><h2>免费下载，先试用 21 天</h2><p class="lede">提供 21 天完整体验，之后可选择一次购买 Lifetime 永久解锁。无订阅，也不会自动续订。</p><div class="price-grid"><article class="price-card"><div class="price-name">21 天</div><h3>完整体验</h3><p>试用课表、跑步指导、记录与分析，再决定是否购买。</p></article><article class="price-card"><div class="price-name">Free Mode</div><h3>继续导入与查看记录</h3><p>体验期结束后，仍可导入 Apple 健康训练，查看基本历史、VDOT 与跑量。若要从 RunCraft 开始训练，则需要 Lifetime。</p></article><article class="price-card"><div class="price-name">Lifetime</div><h3>一次购买，永久解锁</h3><p>解锁课表与 RunCraft 跑步记录，并支持恢复购买。符合资格的旧版付费用户保有完整使用权。</p></article></div><p class="fine-print">21 天从你第一次在 App Store 获取 RunCraft 当天起算，即使尚未打开 App 也会开始计算。售价以 App 内显示的当地价格为准；符合资格的 Lifetime 购买支持 Apple 家人共享。</p></section>
+<section id="faq"><h2>常见问题</h2><div class="faq-list"><details><summary>一定要有 Apple Watch 吗？</summary><p>不用，iPhone 就能指导训练。配对 Apple Watch 后，也能在手腕上查看进度与操作。能获取哪些数据，取决于设备与你允许的权限。</p></details><details><summary>一定要有比赛目标或 VDOT 吗？</summary><p>不一定。跑走交替与自由跑不需要先设置比赛。部分课程会用到配速参考，也需要相关训练经验与足够的准备时间。</p></details><details><summary>保存比赛目标，会换掉目前课表吗？</summary><p>不会。保存目标后，再另外安排训练，原有课程与记录都会保留。使用新课程前，仍要确认内容与准备要求。</p></details><details><summary>睡不好，课表会自动改变吗？</summary><p>不会。睡眠与心率数据可以提醒你留意身体情况，但 App 不会因此自动算出另一节课。数据看起来正常，也不代表已经适合训练。</p></details><details><summary>课程结束，或休息一段时间后，怎么继续？</summary><p>重新选择想练的方向，并确认已存的跑步经验是否仍符合现状。开始新课程前，还是要看目前能安排多少时间、能否适应训练，以及身体是否恢复。</p></details><details><summary>我的数据会存在哪里？</summary><p>数据在你的设备上处理，部分记录可通过私人 iCloud 数据库同步。不需要建立 RunCraft 账号，也没有广告或第三方分析追踪。诊断文件只有在你主动分享给支持人员时才会发出。</p></details></div></section>
+<section id="support" class="closing"><p class="kicker">RUNCRAFT</p><h2>有问题，直接联系开发者</h2><p class="lede">RunCraft 由一位跑者独立开发。对课程或 App 有疑问，欢迎来信： <a href="mailto:support@marstudio.app">support@marstudio.app</a></p><div class="cta"><a class="btn-store" href="https://apps.apple.com/app/id6789176694"><svg width="16" height="19" viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13 10c0 2.6 2.3 3.5 2.3 3.5s-.4 1.3-1.2 2.5c-.7 1-1.5 2.1-2.6 2.1s-1.5-.7-2.8-.7-1.7.7-2.8.7S3.9 17 3.2 15.9C1.7 13.8.6 9.9 2.1 7.3c.8-1.3 2.1-2.1 3.6-2.2 1.1 0 2.2.8 2.8.8s2-.9 3.3-.8c.6 0 2.1.2 3.2 1.7-.1.1-1.9 1.1-2 3.2ZM11 3.7c.6-.7 1-1.7.9-2.8-.9.1-1.9.6-2.6 1.3-.5.7-1 1.7-.9 2.7 1 .1 1.9-.5 2.6-1.2Z"/></svg>在 App Store 下载</a></div></section>
+</main>
+<footer>
+<p>© 2026 RunCraft · 由林政龙 Mars 独立开发。</p>
+<div class="links"><a href="guide/">使用指南</a><a href="privacy.html">隐私政策</a><a href="press/">媒体资料</a><a href="https://github.com/marslin1220/RunCraft-web">GitHub</a></div>
+</footer></div><script src="../assets/nav.js" defer></script></body></html>
